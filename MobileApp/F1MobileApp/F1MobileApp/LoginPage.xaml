@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="F1MobileApp.LoginPage"
+             BackgroundColor="#e10701">
+    <ContentPage.Content>
+
+        <StackLayout 
+            
+            Padding="30" 
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand">
+
+            <Image 
+                Source="LogoF1.png" 
+                HeightRequest="200"
+                WidthRequest="200">
+            </Image>
+
+            <Entry
+                x:Name="txtUsername"
+                Placeholder="Username" 
+                TextColor="Black"
+                PlaceholderColor="Black"
+                Completed="txtUsername_Completed"
+                Text="{Binding Name}" 
+                Keyboard="Email">
+            </Entry>
+
+            <Entry 
+                x:Name="txtPassword"
+                Placeholder="Password" 
+                IsPassword="True" 
+                TextColor="Black"
+                PlaceholderColor="Black"
+                Text="{Binding Password}">
+            </Entry>
+
+            <Image 
+                x:Name="password_icon"
+                Source="HidePassword.png"
+                Margin="0,0,10,0"  
+                HeightRequest="30"  
+                HorizontalOptions="End"
+                TranslationY="-45"
+                >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="TapGestureRecognizer_Tapped"
+                        NumberOfTapsRequired="1">
+                    </TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Button 
+                VerticalOptions="Center" 
+                Text="Login" 
+                FontSize="20"
+                FontAttributes="Bold"
+                TextColor="Black" 
+                BackgroundColor="White" 
+                BorderWidth="1"
+                BorderColor="Black"
+                CornerRadius="50"
+                Clicked="Button_Clicked">
+            </Button>
+
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Don't have an account? " TextColor="Black"></Span>
+                        <Span Text="Register" TextColor="Black" FontAttributes="Bold" TextDecorations="Underline"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
