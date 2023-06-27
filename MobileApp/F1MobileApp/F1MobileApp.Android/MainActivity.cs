@@ -24,5 +24,14 @@ namespace F1MobileApp.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+        public override void OnConfigurationChanged(Android.Content.Res.Configuration newConfig)
+        {
+            base.OnConfigurationChanged(newConfig);
+            if (newConfig.Orientation == Android.Content.Res.Orientation.Landscape)
+            {
+                RequestedOrientation = ScreenOrientation.Portrait;
+            }
+        }
     }
 }

@@ -783,3 +783,4 @@ C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Deb
 C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\NuGet.Frameworks.dll
 C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\System.Collections.Immutable.dll
 C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\System.Reflection.Metadata.dll
+C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\res\drawable\logof1white.png

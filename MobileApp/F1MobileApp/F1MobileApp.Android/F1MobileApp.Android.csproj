@@ -99,5 +99,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ShowPassword.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\LogoF1White.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

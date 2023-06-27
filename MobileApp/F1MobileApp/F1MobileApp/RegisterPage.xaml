@@ -1,12 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="F1MobileApp.RegisterPage">
+             xmlns:c1="clr-namespace:C1.Xamarin.Forms.Input;assembly=C1.Xamarin.Forms.Input"
+             x:Class="F1MobileApp.RegisterPage"
+             BackgroundColor="White">
+    
     <ContentPage.Content>
         <StackLayout
-            Padding="40" 
+            
+            Padding="30" 
             VerticalOptions="Center"
-            HorizontalOptions="FillAndExpand">
+            HorizontalOptions="FillAndExpand"
+            BackgroundColor="White">
+            
+            <Image 
+                Source="LogoF1White.png" 
+                HeightRequest="200"
+                WidthRequest="200">
+            </Image>
+
+            <Entry 
+                x:Name="txtEmail"
+                Placeholder="Email" 
+                TextColor="Black"
+                PlaceholderColor="gray"
+                Completed="txtEmail_Completed"
+                Text="{Binding Email}">
+            </Entry>
+
+            <Entry 
+                x:Name="txtName"
+                Placeholder="Name" 
+                TextColor="Black"
+                PlaceholderColor="gray"
+                Completed="txtName_Completed"
+                Text="{Binding Email}">
+            </Entry>
+
+            <Entry 
+                x:Name="txtDriver"
+                Placeholder="Favourite Driver"  
+                TextColor="Black"
+                PlaceholderColor="gray"
+                Completed="txtDriver_Completed"
+                Text="{Binding Driver}">
+            </Entry>
+
             <Entry 
                 x:Name="txtPassword"
                 Placeholder="Password" 
@@ -19,7 +58,7 @@
             <Image 
                 x:Name="password_icon"
                 Source="HidePassword.png"
-                Margin="0,0,10,0"  
+                Margin="0,0,10,-30"  
                 HeightRequest="30"  
                 HorizontalOptions="End"
                 TranslationY="-45"
