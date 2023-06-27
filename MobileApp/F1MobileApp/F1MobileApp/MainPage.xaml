@@ -2,15 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="F1MobileApp.MainPage"
-              BackgroundColor="Red">
-    <ContentPage.Content>
+             BackgroundColor="Red">
 
+    <ContentPage.Content>
         <StackLayout 
             
             Padding="20" 
-            VerticalOptions="Center"
+            VerticalOptions="FillAndExpand"
             HorizontalOptions="FillAndExpand">
-
             <Label  
                 Text="ElderGuard"
                 TextColor="Black"
@@ -68,7 +67,7 @@
                 FontSize="20"
                 FontAttributes="Bold"
                 TextColor="Black" 
-                BackgroundColor="#51abcb" 
+                BackgroundColor="#51ab" 
                 BorderWidth="1"
                 BorderColor="Black"
                 CornerRadius="50"

@@ -776,3 +776,10 @@ C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Deb
 C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\res\drawable\logof1.png
 C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\res\drawable\hidepassword.png
 C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\res\drawable\showpassword.png
+C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\Microsoft.TestPlatform.CoreUtilities.dll
+C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\Microsoft.Win32.Registry.dll
+C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\NuGet.Frameworks.dll
+C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\System.Collections.Immutable.dll
+C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\System.Reflection.Metadata.dll

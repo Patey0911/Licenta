@@ -66,6 +66,10 @@
               "target": "Package",
               "version": "[6.2.14, )"
             },
+            "Microsoft.TestPlatform.ObjectModel": {
+              "target": "Package",
+              "version": "[17.6.3, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

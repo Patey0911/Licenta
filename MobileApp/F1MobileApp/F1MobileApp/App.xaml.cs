@@ -10,7 +10,10 @@ namespace F1MobileApp
         {
             InitializeComponent();
 
-            MainPage = new LoginPage();
+            MainPage = new NavigationPage(new LoginPage())
+            {
+                BarBackgroundColor = Color.FromHex("#e10701"),
+            };
         }
 
         protected override void OnStart()

@@ -3,12 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="F1MobileApp.LoginPage"
              BackgroundColor="#e10701">
+    
     <ContentPage.Content>
 
         <StackLayout 
             
             Padding="30" 
             VerticalOptions="Center"
+            BackgroundColor="#e10701"
             HorizontalOptions="FillAndExpand">
 
             <Image 
