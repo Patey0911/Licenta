@@ -1,10 +1,15 @@
-﻿using Firebase.Database;
+﻿using Firebase.Auth;
+using Firebase.Database;
 using Firebase.Database.Query;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 
 namespace F1MobileApp
 {
@@ -12,17 +17,41 @@ namespace F1MobileApp
     {
         static FirebaseClient firebaseClient = new FirebaseClient("https://licenta-ed6d3-default-rtdb.europe-west1.firebasedatabase.app/");
 
-        public static async Task AddUser(string Name, string Email, string Password, string FavoriteDriver)
+        public static async Task Save(UserModel user, int User_Number)
         {
-            /*var toUpdateStatus = (await firebaseClient
-              .Child("Users")
-              .OnceAsync<UserModel>()).Where(a => a.Object.Name == Name).FirstOrDefault();*/
+           await firebaseClient.Child("Users/User"+User_Number).PutAsync(user);
+        }
 
-            var toAdd = new UserModel(Name, Email, Password,FavoriteDriver);
+        public static async Task<List<UserModel>> GetAllUsers()
+        {
+            var userlist = (await firebaseClient
+            .Child("Users")
+            .OnceAsync<UserModel>()).Select(item =>
+            new UserModel
+            {
+                Email = item.Object.Email,
+                FavoriteDriver = item.Object.FavoriteDriver,
+                Name = item.Object.Name,
+                Password = item.Object.Password
+            }).ToList();
+            return userlist;
+        }
 
-            await firebaseClient
-              .Child("Users")
-              .PutAsync(toAdd.Email);
+        public static async Task<UserModel> GetByEmail(string email)
+        {
+            try
+            {
+                var allUsers = await GetAllUsers();
+                await firebaseClient
+                .Child("Users")
+                .OnceAsync<UserModel>();
+                return allUsers.Where(a => a.Email == email).FirstOrDefault();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine($"Error:{e}");
+                return null;
+            }
         }
     }
 }

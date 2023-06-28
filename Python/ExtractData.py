@@ -66,8 +66,8 @@ def GetCircuitData(name):
     print(AllData)
 
     FirstGP = AllData[0].get_text(strip=True)
-    CircuitLength = AllData[1].get_text(strip=True)
-    NoLaps = AllData[2].get_text(strip=True)
+    NoLaps = AllData[1].get_text(strip=True)
+    CircuitLength = AllData[2].get_text(strip=True)
     RaceDistance = AllData[3].get_text(strip=True)
     LapRecord = AllData[4].get_text(strip=True)
 

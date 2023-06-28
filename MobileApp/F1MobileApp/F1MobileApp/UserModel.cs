@@ -11,12 +11,13 @@ namespace F1MobileApp
         public string Password { get; set; }
         public string FavoriteDriver { get; set; }
 
+        public UserModel() { }
         public UserModel(string name, string email, string password, string favoriteDriver)
         {
             Name = name;
             Email = email;
             Password = password;
             FavoriteDriver = favoriteDriver;
-        }   
+        }
     }
 }

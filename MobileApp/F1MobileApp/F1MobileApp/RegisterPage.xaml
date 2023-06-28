@@ -25,6 +25,8 @@
                 TextColor="Black"
                 PlaceholderColor="gray"
                 Completed="txtEmail_Completed"
+                Keyboard="Email"
+                FontAttributes="Bold"
                 Text="{Binding Email}">
             </Entry>
 
@@ -34,6 +36,7 @@
                 TextColor="Black"
                 PlaceholderColor="gray"
                 Completed="txtName_Completed"
+                FontAttributes="Bold"
                 Text="{Binding Email}">
             </Entry>
 
@@ -43,6 +46,8 @@
                 TextColor="Black"
                 PlaceholderColor="gray"
                 Completed="txtDriver_Completed"
+                FontAttributes="Bold"
+                Focused="txtDriver_Focused"
                 Text="{Binding Driver}">
             </Entry>
 
@@ -53,6 +58,7 @@
                 TextColor="Black"
                 PlaceholderColor="gray"
                 Completed="txtPassword_Completed"
+                FontAttributes="Bold"
                 Text="{Binding Password}">
             </Entry>
             <Image 
@@ -76,6 +82,7 @@
                 IsPassword="True" 
                 TextColor="Black"
                 PlaceholderColor="gray"
+                FontAttributes="Bold"
                 Text="{Binding Password}">
             </Entry>
             <Image 
@@ -95,11 +102,11 @@
             </Image>
             <Button 
                 VerticalOptions="Center" 
-                Text="Login" 
+                Text="Register" 
                 FontSize="20"
                 FontAttributes="Bold"
                 TextColor="Black" 
-                BackgroundColor="#51abcb" 
+                BackgroundColor="#e10701" 
                 BorderWidth="1"
                 BorderColor="Black"
                 CornerRadius="50"

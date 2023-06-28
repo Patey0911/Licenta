@@ -79,311 +79,331 @@ target triple = "i686-unknown-linux-android"
 ; assembly_image_cache
 @assembly_image_cache = local_unnamed_addr global [0 x %struct.MonoImage*] zeroinitializer, align 4
 ; Each entry maps hash of an assembly name to an index into the `assembly_image_cache` array
-@assembly_image_cache_hashes = local_unnamed_addr constant [268 x i32] [
-	i32 32687329, ; 0: Xamarin.AndroidX.Lifecycle.Runtime => 0x1f2c4e1 => 79
-	i32 34715100, ; 1: Xamarin.Google.Guava.ListenableFuture.dll => 0x211b5dc => 111
-	i32 39109920, ; 2: Newtonsoft.Json.dll => 0x254c520 => 26
-	i32 57263871, ; 3: Xamarin.Forms.Core.dll => 0x369c6ff => 106
-	i32 101534019, ; 4: Xamarin.AndroidX.SlidingPaneLayout => 0x60d4943 => 94
-	i32 120558881, ; 5: Xamarin.AndroidX.SlidingPaneLayout.dll => 0x72f9521 => 94
-	i32 134690465, ; 6: Xamarin.Kotlin.StdLib.Jdk7.dll => 0x80736a1 => 119
-	i32 165246403, ; 7: Xamarin.AndroidX.Collection.dll => 0x9d975c3 => 59
-	i32 182336117, ; 8: Xamarin.AndroidX.SwipeRefreshLayout.dll => 0xade3a75 => 96
-	i32 196637014, ; 9: F1MobileApp.dll => 0xbb87156 => 6
+@assembly_image_cache_hashes = local_unnamed_addr constant [286 x i32] [
+	i32 32687329, ; 0: Xamarin.AndroidX.Lifecycle.Runtime => 0x1f2c4e1 => 88
+	i32 34715100, ; 1: Xamarin.Google.Guava.ListenableFuture.dll => 0x211b5dc => 120
+	i32 39109920, ; 2: Newtonsoft.Json.dll => 0x254c520 => 35
+	i32 57263871, ; 3: Xamarin.Forms.Core.dll => 0x369c6ff => 115
+	i32 101534019, ; 4: Xamarin.AndroidX.SlidingPaneLayout => 0x60d4943 => 103
+	i32 120558881, ; 5: Xamarin.AndroidX.SlidingPaneLayout.dll => 0x72f9521 => 103
+	i32 134690465, ; 6: Xamarin.Kotlin.StdLib.Jdk7.dll => 0x80736a1 => 128
+	i32 165246403, ; 7: Xamarin.AndroidX.Collection.dll => 0x9d975c3 => 68
+	i32 182336117, ; 8: Xamarin.AndroidX.SwipeRefreshLayout.dll => 0xade3a75 => 105
+	i32 196637014, ; 9: F1MobileApp.dll => 0xbb87156 => 7
 	i32 207143798, ; 10: Microsoft.TestPlatform.CoreUtilities.resources.dll => 0xc58c376 => 0
-	i32 209399409, ; 11: Xamarin.AndroidX.Browser.dll => 0xc7b2e71 => 57
-	i32 230216969, ; 12: Xamarin.AndroidX.Legacy.Support.Core.Utils.dll => 0xdb8d509 => 74
-	i32 232815796, ; 13: System.Web.Services => 0xde07cb4 => 130
-	i32 261689757, ; 14: Xamarin.AndroidX.ConstraintLayout.dll => 0xf99119d => 62
-	i32 278686392, ; 15: Xamarin.AndroidX.Lifecycle.LiveData.dll => 0x109c6ab8 => 78
-	i32 280482487, ; 16: Xamarin.AndroidX.Interpolator => 0x10b7d2b7 => 72
-	i32 318968648, ; 17: Xamarin.AndroidX.Activity.dll => 0x13031348 => 48
-	i32 321597661, ; 18: System.Numerics => 0x132b30dd => 40
-	i32 342366114, ; 19: Xamarin.AndroidX.Lifecycle.Common => 0x146817a2 => 76
-	i32 385762202, ; 20: System.Memory.dll => 0x16fe439a => 38
-	i32 393699800, ; 21: Firebase => 0x177761d8 => 8
-	i32 441335492, ; 22: Xamarin.AndroidX.ConstraintLayout.Core => 0x1a4e3ec4 => 61
-	i32 442521989, ; 23: Xamarin.Essentials => 0x1a605985 => 105
-	i32 450948140, ; 24: Xamarin.AndroidX.Fragment.dll => 0x1ae0ec2c => 71
-	i32 465846621, ; 25: mscorlib => 0x1bc4415d => 25
-	i32 469710990, ; 26: System.dll => 0x1bff388e => 37
-	i32 476646585, ; 27: Xamarin.AndroidX.Interpolator.dll => 0x1c690cb9 => 72
-	i32 486930444, ; 28: Xamarin.AndroidX.LocalBroadcastManager.dll => 0x1d05f80c => 83
-	i32 504143952, ; 29: Plugin.LocalNotification.dll => 0x1e0ca050 => 29
-	i32 513247710, ; 30: Microsoft.Extensions.Primitives.dll => 0x1e9789de => 20
-	i32 525008092, ; 31: SkiaSharp.dll => 0x1f4afcdc => 30
-	i32 526420162, ; 32: System.Transactions.dll => 0x1f6088c2 => 124
-	i32 527452488, ; 33: Xamarin.Kotlin.StdLib.Jdk7 => 0x1f704948 => 119
-	i32 539058512, ; 34: Microsoft.Extensions.Logging => 0x20216150 => 18
-	i32 605376203, ; 35: System.IO.Compression.FileSystem => 0x24154ecb => 128
-	i32 610194910, ; 36: System.Reactive.dll => 0x245ed5de => 42
-	i32 627609679, ; 37: Xamarin.AndroidX.CustomView => 0x2568904f => 67
-	i32 656670485, ; 38: Microsoft.TestPlatform.PlatformAbstractions.dll => 0x2723ff15 => 22
-	i32 663517072, ; 39: Xamarin.AndroidX.VersionedParcelable => 0x278c7790 => 101
-	i32 666292255, ; 40: Xamarin.AndroidX.Arch.Core.Common.dll => 0x27b6d01f => 53
-	i32 690569205, ; 41: System.Xml.Linq.dll => 0x29293ff5 => 47
-	i32 691348768, ; 42: Xamarin.KotlinX.Coroutines.Android.dll => 0x29352520 => 121
-	i32 700284507, ; 43: Xamarin.Jetbrains.Annotations => 0x29bd7e5b => 116
-	i32 720511267, ; 44: Xamarin.Kotlin.StdLib.Jdk8 => 0x2af22123 => 120
-	i32 775507847, ; 45: System.IO.Compression => 0x2e394f87 => 127
-	i32 789151979, ; 46: Microsoft.Extensions.Options => 0x2f0980eb => 19
-	i32 809851609, ; 47: System.Drawing.Common.dll => 0x30455ad9 => 126
-	i32 843511501, ; 48: Xamarin.AndroidX.Print => 0x3246f6cd => 90
-	i32 857506242, ; 49: Microsoft.VisualStudio.TestPlatform.ObjectModel.dll => 0x331c81c2 => 23
-	i32 886248193, ; 50: Microcharts.Droid => 0x34d31301 => 13
-	i32 912572698, ; 51: Xamarin.AndroidX.Biometric => 0x3664c11a => 56
-	i32 928116545, ; 52: Xamarin.Google.Guava.ListenableFuture => 0x3751ef41 => 111
-	i32 955402788, ; 53: Newtonsoft.Json => 0x38f24a24 => 26
-	i32 956575887, ; 54: Xamarin.Kotlin.StdLib.Jdk8.dll => 0x3904308f => 120
-	i32 967690846, ; 55: Xamarin.AndroidX.Lifecycle.Common.dll => 0x39adca5e => 76
-	i32 974778368, ; 56: FormsViewGroup.dll => 0x3a19f000 => 9
-	i32 1012816738, ; 57: Xamarin.AndroidX.SavedState.dll => 0x3c5e5b62 => 93
-	i32 1028951442, ; 58: Microsoft.Extensions.DependencyInjection.Abstractions => 0x3d548d92 => 15
-	i32 1035644815, ; 59: Xamarin.AndroidX.AppCompat => 0x3dbaaf8f => 52
-	i32 1042160112, ; 60: Xamarin.Forms.Platform.dll => 0x3e1e19f0 => 108
-	i32 1052210849, ; 61: Xamarin.AndroidX.Lifecycle.ViewModel.dll => 0x3eb776a1 => 80
-	i32 1084122840, ; 62: Xamarin.Kotlin.StdLib => 0x409e66d8 => 118
-	i32 1098259244, ; 63: System => 0x41761b2c => 37
-	i32 1175144683, ; 64: Xamarin.AndroidX.VectorDrawable.Animated => 0x460b48eb => 99
-	i32 1178241025, ; 65: Xamarin.AndroidX.Navigation.Runtime.dll => 0x463a8801 => 87
-	i32 1204270330, ; 66: Xamarin.AndroidX.Arch.Core.Common => 0x47c7b4fa => 53
-	i32 1253011324, ; 67: Microsoft.Win32.Registry => 0x4aaf6f7c => 132
-	i32 1264511973, ; 68: Xamarin.AndroidX.Startup.StartupRuntime.dll => 0x4b5eebe5 => 95
-	i32 1267360935, ; 69: Xamarin.AndroidX.VectorDrawable => 0x4b8a64a7 => 100
-	i32 1275534314, ; 70: Xamarin.KotlinX.Coroutines.Android => 0x4c071bea => 121
-	i32 1289200857, ; 71: Microsoft.TestPlatform.PlatformAbstractions => 0x4cd7a4d9 => 22
-	i32 1293217323, ; 72: Xamarin.AndroidX.DrawerLayout.dll => 0x4d14ee2b => 69
-	i32 1365406463, ; 73: System.ServiceModel.Internals.dll => 0x516272ff => 131
-	i32 1376866003, ; 74: Xamarin.AndroidX.SavedState => 0x52114ed3 => 93
-	i32 1382826005, ; 75: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll => 0x526c4015 => 1
-	i32 1395857551, ; 76: Xamarin.AndroidX.Media.dll => 0x5333188f => 84
-	i32 1406073936, ; 77: Xamarin.AndroidX.CoordinatorLayout => 0x53cefc50 => 63
-	i32 1411638395, ; 78: System.Runtime.CompilerServices.Unsafe => 0x5423e47b => 44
-	i32 1460219004, ; 79: Xamarin.Forms.Xaml => 0x57092c7c => 109
-	i32 1461234159, ; 80: System.Collections.Immutable.dll => 0x5718a9ef => 34
-	i32 1462112819, ; 81: System.IO.Compression.dll => 0x57261233 => 127
-	i32 1469204771, ; 82: Xamarin.AndroidX.AppCompat.AppCompatResources => 0x57924923 => 51
-	i32 1470490898, ; 83: Microsoft.Extensions.Primitives => 0x57a5e912 => 20
-	i32 1479771757, ; 84: System.Collections.Immutable => 0x5833866d => 34
-	i32 1522693535, ; 85: F1MobileApp => 0x5ac2759f => 6
-	i32 1524747670, ; 86: Plugin.LocalNotification => 0x5ae1cd96 => 29
-	i32 1582372066, ; 87: Xamarin.AndroidX.DocumentFile.dll => 0x5e5114e2 => 68
-	i32 1582526884, ; 88: Microcharts.Forms.dll => 0x5e5371a4 => 14
-	i32 1592978981, ; 89: System.Runtime.Serialization.dll => 0x5ef2ee25 => 5
-	i32 1622152042, ; 90: Xamarin.AndroidX.Loader.dll => 0x60b0136a => 82
-	i32 1624863272, ; 91: Xamarin.AndroidX.ViewPager2 => 0x60d97228 => 103
-	i32 1636350590, ; 92: Xamarin.AndroidX.CursorAdapter => 0x6188ba7e => 66
-	i32 1639515021, ; 93: System.Net.Http.dll => 0x61b9038d => 39
-	i32 1657153582, ; 94: System.Runtime => 0x62c6282e => 45
-	i32 1658241508, ; 95: Xamarin.AndroidX.Tracing.Tracing.dll => 0x62d6c1e4 => 97
-	i32 1658251792, ; 96: Xamarin.Google.Android.Material.dll => 0x62d6ea10 => 110
-	i32 1670060433, ; 97: Xamarin.AndroidX.ConstraintLayout => 0x638b1991 => 62
-	i32 1691477237, ; 98: System.Reflection.Metadata => 0x64d1e4f5 => 43
-	i32 1698840827, ; 99: Xamarin.Kotlin.StdLib.Common => 0x654240fb => 117
-	i32 1722051300, ; 100: SkiaSharp.Views.Forms => 0x66a46ae4 => 32
-	i32 1729485958, ; 101: Xamarin.AndroidX.CardView.dll => 0x6715dc86 => 58
-	i32 1766324549, ; 102: Xamarin.AndroidX.SwipeRefreshLayout => 0x6947f945 => 96
-	i32 1770582343, ; 103: Microsoft.Extensions.Logging.dll => 0x6988f147 => 18
-	i32 1776026572, ; 104: System.Core.dll => 0x69dc03cc => 35
-	i32 1788241197, ; 105: Xamarin.AndroidX.Fragment => 0x6a96652d => 71
-	i32 1808609942, ; 106: Xamarin.AndroidX.Loader => 0x6bcd3296 => 82
-	i32 1813058853, ; 107: Xamarin.Kotlin.StdLib.dll => 0x6c111525 => 118
-	i32 1813201214, ; 108: Xamarin.Google.Android.Material => 0x6c13413e => 110
-	i32 1818569960, ; 109: Xamarin.AndroidX.Navigation.UI.dll => 0x6c652ce8 => 88
-	i32 1828688058, ; 110: Microsoft.Extensions.Logging.Abstractions.dll => 0x6cff90ba => 17
-	i32 1867746548, ; 111: Xamarin.Essentials.dll => 0x6f538cf4 => 105
-	i32 1878053835, ; 112: Xamarin.Forms.Xaml.dll => 0x6ff0d3cb => 109
-	i32 1885316902, ; 113: Xamarin.AndroidX.Arch.Core.Runtime.dll => 0x705fa726 => 54
-	i32 1889954781, ; 114: System.Reflection.Metadata.dll => 0x70a66bdd => 43
-	i32 1904755420, ; 115: System.Runtime.InteropServices.WindowsRuntime.dll => 0x718842dc => 4
-	i32 1908813208, ; 116: Xamarin.GooglePlayServices.Basement => 0x71c62d98 => 113
-	i32 1919157823, ; 117: Xamarin.AndroidX.MultiDex.dll => 0x7264063f => 85
-	i32 1983156543, ; 118: Xamarin.Kotlin.StdLib.Common.dll => 0x7634913f => 117
-	i32 2011961780, ; 119: System.Buffers.dll => 0x77ec19b4 => 33
-	i32 2019465201, ; 120: Xamarin.AndroidX.Lifecycle.ViewModel => 0x785e97f1 => 80
-	i32 2055257422, ; 121: Xamarin.AndroidX.Lifecycle.LiveData.Core.dll => 0x7a80bd4e => 77
-	i32 2079903147, ; 122: System.Runtime.dll => 0x7bf8cdab => 45
-	i32 2090596640, ; 123: System.Numerics.Vectors => 0x7c9bf920 => 41
-	i32 2097448633, ; 124: Xamarin.AndroidX.Legacy.Support.Core.UI => 0x7d0486b9 => 73
-	i32 2113414696, ; 125: F1MobileApp.Android.dll => 0x7df82628 => 2
-	i32 2126786730, ; 126: Xamarin.Forms.Platform.Android => 0x7ec430aa => 107
-	i32 2129483829, ; 127: Xamarin.GooglePlayServices.Base.dll => 0x7eed5835 => 112
-	i32 2181898931, ; 128: Microsoft.Extensions.Options.dll => 0x820d22b3 => 19
-	i32 2192057212, ; 129: Microsoft.Extensions.Logging.Abstractions => 0x82a8237c => 17
-	i32 2201107256, ; 130: Xamarin.KotlinX.Coroutines.Core.Jvm.dll => 0x83323b38 => 122
-	i32 2201231467, ; 131: System.Net.Http => 0x8334206b => 39
-	i32 2216717168, ; 132: Firebase.Auth.dll => 0x84206b70 => 7
-	i32 2217644978, ; 133: Xamarin.AndroidX.VectorDrawable.Animated.dll => 0x842e93b2 => 99
-	i32 2244775296, ; 134: Xamarin.AndroidX.LocalBroadcastManager => 0x85cc8d80 => 83
-	i32 2256548716, ; 135: Xamarin.AndroidX.MultiDex => 0x8680336c => 85
-	i32 2261435625, ; 136: Xamarin.AndroidX.Legacy.Support.V4.dll => 0x86cac4e9 => 75
-	i32 2279755925, ; 137: Xamarin.AndroidX.RecyclerView.dll => 0x87e25095 => 92
-	i32 2305641583, ; 138: Microsoft.TestPlatform.CoreUtilities => 0x896d4c6f => 21
-	i32 2315684594, ; 139: Xamarin.AndroidX.Annotation.dll => 0x8a068af2 => 49
-	i32 2409053734, ; 140: Xamarin.AndroidX.Preference.dll => 0x8f973e26 => 89
-	i32 2428790861, ; 141: Plugin.Fingerprint => 0x90c4684d => 28
-	i32 2459433988, ; 142: Microsoft.TestPlatform.CoreUtilities.resources => 0x9297fc04 => 0
-	i32 2465532216, ; 143: Xamarin.AndroidX.ConstraintLayout.Core.dll => 0x92f50938 => 61
-	i32 2471841756, ; 144: netstandard.dll => 0x93554fdc => 3
-	i32 2475788418, ; 145: Java.Interop.dll => 0x93918882 => 10
-	i32 2483946094, ; 146: Plugin.Fingerprint.dll => 0x940e026e => 28
-	i32 2501346920, ; 147: System.Data.DataSetExtensions => 0x95178668 => 125
-	i32 2505896520, ; 148: Xamarin.AndroidX.Lifecycle.Runtime.dll => 0x955cf248 => 79
-	i32 2522193584, ; 149: F1MobileApp.Android => 0x96559eb0 => 2
-	i32 2526443681, ; 150: Xamarin.AndroidX.Biometric.dll => 0x969678a1 => 56
-	i32 2581819634, ; 151: Xamarin.AndroidX.VectorDrawable.dll => 0x99e370f2 => 100
-	i32 2600501332, ; 152: NuGet.Frameworks.dll => 0x9b008054 => 27
-	i32 2605712449, ; 153: Xamarin.KotlinX.Coroutines.Core.Jvm => 0x9b500441 => 122
-	i32 2613717964, ; 154: Microsoft.VisualStudio.TestPlatform.ObjectModel => 0x9bca2bcc => 23
-	i32 2620871830, ; 155: Xamarin.AndroidX.CursorAdapter.dll => 0x9c375496 => 66
-	i32 2624644809, ; 156: Xamarin.AndroidX.DynamicAnimation => 0x9c70e6c9 => 70
-	i32 2633051222, ; 157: Xamarin.AndroidX.Lifecycle.LiveData => 0x9cf12c56 => 78
-	i32 2701096212, ; 158: Xamarin.AndroidX.Tracing.Tracing => 0xa0ff7514 => 97
-	i32 2732626843, ; 159: Xamarin.AndroidX.Activity => 0xa2e0939b => 48
-	i32 2736712847, ; 160: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources => 0xa31eec8f => 1
-	i32 2737747696, ; 161: Xamarin.AndroidX.AppCompat.AppCompatResources.dll => 0xa32eb6f0 => 51
-	i32 2766581644, ; 162: Xamarin.Forms.Core => 0xa4e6af8c => 106
-	i32 2770495804, ; 163: Xamarin.Jetbrains.Annotations.dll => 0xa522693c => 116
-	i32 2778768386, ; 164: Xamarin.AndroidX.ViewPager.dll => 0xa5a0a402 => 102
-	i32 2795602088, ; 165: SkiaSharp.Views.Android.dll => 0xa6a180a8 => 31
-	i32 2810250172, ; 166: Xamarin.AndroidX.CoordinatorLayout.dll => 0xa78103bc => 63
-	i32 2819470561, ; 167: System.Xml.dll => 0xa80db4e1 => 46
-	i32 2847418871, ; 168: Xamarin.GooglePlayServices.Base => 0xa9b829f7 => 112
-	i32 2853208004, ; 169: Xamarin.AndroidX.ViewPager => 0xaa107fc4 => 102
-	i32 2855708567, ; 170: Xamarin.AndroidX.Transition => 0xaa36a797 => 98
-	i32 2903344695, ; 171: System.ComponentModel.Composition => 0xad0d8637 => 129
-	i32 2905242038, ; 172: mscorlib.dll => 0xad2a79b6 => 25
-	i32 2912489636, ; 173: SkiaSharp.Views.Android => 0xad9910a4 => 31
-	i32 2916838712, ; 174: Xamarin.AndroidX.ViewPager2.dll => 0xaddb6d38 => 103
-	i32 2919462931, ; 175: System.Numerics.Vectors.dll => 0xae037813 => 41
-	i32 2921128767, ; 176: Xamarin.AndroidX.Annotation.Experimental.dll => 0xae1ce33f => 50
-	i32 2952707053, ; 177: NuGet.Frameworks => 0xaffebbed => 27
-	i32 2974793899, ; 178: SkiaSharp.Views.Forms.dll => 0xb14fc0ab => 32
-	i32 2978675010, ; 179: Xamarin.AndroidX.DrawerLayout => 0xb18af942 => 69
-	i32 3016983068, ; 180: Xamarin.AndroidX.Startup.StartupRuntime => 0xb3d3821c => 95
-	i32 3024354802, ; 181: Xamarin.AndroidX.Legacy.Support.Core.Utils => 0xb443fdf2 => 74
-	i32 3036068679, ; 182: Microcharts.Droid.dll => 0xb4f6bb47 => 13
-	i32 3044182254, ; 183: FormsViewGroup => 0xb57288ee => 9
-	i32 3057625584, ; 184: Xamarin.AndroidX.Navigation.Common => 0xb63fa9f0 => 86
-	i32 3058099980, ; 185: Xamarin.GooglePlayServices.Tasks => 0xb646e70c => 115
-	i32 3111772706, ; 186: System.Runtime.Serialization => 0xb979e222 => 5
-	i32 3204380047, ; 187: System.Data.dll => 0xbefef58f => 123
-	i32 3211777861, ; 188: Xamarin.AndroidX.DocumentFile => 0xbf6fd745 => 68
-	i32 3230466174, ; 189: Xamarin.GooglePlayServices.Basement.dll => 0xc08d007e => 113
-	i32 3247949154, ; 190: Mono.Security => 0xc197c562 => 133
-	i32 3258312781, ; 191: Xamarin.AndroidX.CardView => 0xc235e84d => 58
-	i32 3267021929, ; 192: Xamarin.AndroidX.AsyncLayoutInflater => 0xc2bacc69 => 55
-	i32 3279906254, ; 193: Microsoft.Win32.Registry.dll => 0xc37f65ce => 132
-	i32 3317135071, ; 194: Xamarin.AndroidX.CustomView.dll => 0xc5b776df => 67
-	i32 3317144872, ; 195: System.Data => 0xc5b79d28 => 123
-	i32 3322403133, ; 196: Firebase.dll => 0xc607d93d => 8
-	i32 3340387945, ; 197: SkiaSharp => 0xc71a4669 => 30
-	i32 3340431453, ; 198: Xamarin.AndroidX.Arch.Core.Runtime => 0xc71af05d => 54
-	i32 3345895724, ; 199: Xamarin.AndroidX.ProfileInstaller.ProfileInstaller.dll => 0xc76e512c => 91
-	i32 3346324047, ; 200: Xamarin.AndroidX.Navigation.Runtime => 0xc774da4f => 87
-	i32 3353484488, ; 201: Xamarin.AndroidX.Legacy.Support.Core.UI.dll => 0xc7e21cc8 => 73
-	i32 3353544232, ; 202: Xamarin.CommunityToolkit.dll => 0xc7e30628 => 104
-	i32 3362522851, ; 203: Xamarin.AndroidX.Core => 0xc86c06e3 => 65
-	i32 3366347497, ; 204: Java.Interop => 0xc8a662e9 => 10
-	i32 3374999561, ; 205: Xamarin.AndroidX.RecyclerView => 0xc92a6809 => 92
-	i32 3395150330, ; 206: System.Runtime.CompilerServices.Unsafe.dll => 0xca5de1fa => 44
-	i32 3404865022, ; 207: System.ServiceModel.Internals => 0xcaf21dfe => 131
-	i32 3407215217, ; 208: Xamarin.CommunityToolkit => 0xcb15fa71 => 104
-	i32 3428513518, ; 209: Microsoft.Extensions.DependencyInjection.dll => 0xcc5af6ee => 16
-	i32 3429136800, ; 210: System.Xml => 0xcc6479a0 => 46
-	i32 3430777524, ; 211: netstandard => 0xcc7d82b4 => 3
-	i32 3441283291, ; 212: Xamarin.AndroidX.DynamicAnimation.dll => 0xcd1dd0db => 70
-	i32 3455791806, ; 213: Microcharts => 0xcdfb32be => 12
-	i32 3476120550, ; 214: Mono.Android => 0xcf3163e6 => 24
-	i32 3486566296, ; 215: System.Transactions => 0xcfd0c798 => 124
-	i32 3493954962, ; 216: Xamarin.AndroidX.Concurrent.Futures.dll => 0xd0418592 => 60
-	i32 3494395880, ; 217: Xamarin.GooglePlayServices.Location.dll => 0xd0483fe8 => 114
-	i32 3501239056, ; 218: Xamarin.AndroidX.AsyncLayoutInflater.dll => 0xd0b0ab10 => 55
-	i32 3509114376, ; 219: System.Xml.Linq => 0xd128d608 => 47
-	i32 3536029504, ; 220: Xamarin.Forms.Platform.Android.dll => 0xd2c38740 => 107
-	i32 3543600791, ; 221: Microsoft.TestPlatform.CoreUtilities.dll => 0xd3370e97 => 21
-	i32 3567349600, ; 222: System.ComponentModel.Composition.dll => 0xd4a16f60 => 129
-	i32 3596207933, ; 223: LiteDB.dll => 0xd659c73d => 11
-	i32 3618140916, ; 224: Xamarin.AndroidX.Preference => 0xd7a872f4 => 89
-	i32 3627220390, ; 225: Xamarin.AndroidX.Print.dll => 0xd832fda6 => 90
-	i32 3629588173, ; 226: LiteDB => 0xd8571ecd => 11
-	i32 3632359727, ; 227: Xamarin.Forms.Platform => 0xd881692f => 108
-	i32 3633644679, ; 228: Xamarin.AndroidX.Annotation.Experimental => 0xd8950487 => 50
-	i32 3641597786, ; 229: Xamarin.AndroidX.Lifecycle.LiveData.Core => 0xd90e5f5a => 77
-	i32 3668042751, ; 230: Microcharts.dll => 0xdaa1e3ff => 12
-	i32 3672681054, ; 231: Mono.Android.dll => 0xdae8aa5e => 24
-	i32 3676310014, ; 232: System.Web.Services.dll => 0xdb2009fe => 130
-	i32 3682565725, ; 233: Xamarin.AndroidX.Browser => 0xdb7f7e5d => 57
-	i32 3684561358, ; 234: Xamarin.AndroidX.Concurrent.Futures => 0xdb9df1ce => 60
-	i32 3684933406, ; 235: System.Runtime.InteropServices.WindowsRuntime => 0xdba39f1e => 4
-	i32 3689375977, ; 236: System.Drawing.Common => 0xdbe768e9 => 126
-	i32 3706696989, ; 237: Xamarin.AndroidX.Core.Core.Ktx.dll => 0xdcefb51d => 64
-	i32 3718780102, ; 238: Xamarin.AndroidX.Annotation => 0xdda814c6 => 49
-	i32 3724971120, ; 239: Xamarin.AndroidX.Navigation.Common.dll => 0xde068c70 => 86
-	i32 3731644420, ; 240: System.Reactive => 0xde6c6004 => 42
-	i32 3748608112, ; 241: System.Diagnostics.DiagnosticSource => 0xdf6f3870 => 36
-	i32 3758932259, ; 242: Xamarin.AndroidX.Legacy.Support.V4 => 0xe00cc123 => 75
-	i32 3786282454, ; 243: Xamarin.AndroidX.Collection => 0xe1ae15d6 => 59
-	i32 3822602673, ; 244: Xamarin.AndroidX.Media => 0xe3d849b1 => 84
-	i32 3829621856, ; 245: System.Numerics.dll => 0xe4436460 => 40
-	i32 3841636137, ; 246: Microsoft.Extensions.DependencyInjection.Abstractions.dll => 0xe4fab729 => 15
-	i32 3885922214, ; 247: Xamarin.AndroidX.Transition.dll => 0xe79e77a6 => 98
-	i32 3888767677, ; 248: Xamarin.AndroidX.ProfileInstaller.ProfileInstaller => 0xe7c9e2bd => 91
-	i32 3896760992, ; 249: Xamarin.AndroidX.Core.dll => 0xe843daa0 => 65
-	i32 3903721208, ; 250: Microcharts.Forms => 0xe8ae0ef8 => 14
-	i32 3920810846, ; 251: System.IO.Compression.FileSystem.dll => 0xe9b2d35e => 128
-	i32 3921031405, ; 252: Xamarin.AndroidX.VersionedParcelable.dll => 0xe9b630ed => 101
-	i32 3931092270, ; 253: Xamarin.AndroidX.Navigation.UI => 0xea4fb52e => 88
-	i32 3945713374, ; 254: System.Data.DataSetExtensions.dll => 0xeb2ecede => 125
-	i32 3955647286, ; 255: Xamarin.AndroidX.AppCompat.dll => 0xebc66336 => 52
-	i32 3967165417, ; 256: Xamarin.GooglePlayServices.Location => 0xec7623e9 => 114
-	i32 3970018735, ; 257: Xamarin.GooglePlayServices.Tasks.dll => 0xeca1adaf => 115
-	i32 4024013275, ; 258: Firebase.Auth => 0xefd991db => 7
-	i32 4025784931, ; 259: System.Memory => 0xeff49a63 => 38
-	i32 4105002889, ; 260: Mono.Security.dll => 0xf4ad5f89 => 133
-	i32 4126470640, ; 261: Microsoft.Extensions.DependencyInjection => 0xf5f4f1f0 => 16
-	i32 4151237749, ; 262: System.Core => 0xf76edc75 => 35
-	i32 4182413190, ; 263: Xamarin.AndroidX.Lifecycle.ViewModelSavedState.dll => 0xf94a8f86 => 81
-	i32 4213026141, ; 264: System.Diagnostics.DiagnosticSource.dll => 0xfb1dad5d => 36
-	i32 4256097574, ; 265: Xamarin.AndroidX.Core.Core.Ktx => 0xfdaee526 => 64
-	i32 4260525087, ; 266: System.Buffers => 0xfdf2741f => 33
-	i32 4292120959 ; 267: Xamarin.AndroidX.Lifecycle.ViewModelSavedState => 0xffd4917f => 81
+	i32 209399409, ; 11: Xamarin.AndroidX.Browser.dll => 0xc7b2e71 => 66
+	i32 230216969, ; 12: Xamarin.AndroidX.Legacy.Support.Core.Utils.dll => 0xdb8d509 => 83
+	i32 232815796, ; 13: System.Web.Services => 0xde07cb4 => 139
+	i32 261689757, ; 14: Xamarin.AndroidX.ConstraintLayout.dll => 0xf99119d => 71
+	i32 278686392, ; 15: Xamarin.AndroidX.Lifecycle.LiveData.dll => 0x109c6ab8 => 87
+	i32 280482487, ; 16: Xamarin.AndroidX.Interpolator => 0x10b7d2b7 => 81
+	i32 318968648, ; 17: Xamarin.AndroidX.Activity.dll => 0x13031348 => 57
+	i32 321597661, ; 18: System.Numerics => 0x132b30dd => 49
+	i32 342366114, ; 19: Xamarin.AndroidX.Lifecycle.Common => 0x146817a2 => 85
+	i32 385762202, ; 20: System.Memory.dll => 0x16fe439a => 47
+	i32 393699800, ; 21: Firebase => 0x177761d8 => 9
+	i32 441335492, ; 22: Xamarin.AndroidX.ConstraintLayout.Core => 0x1a4e3ec4 => 70
+	i32 442521989, ; 23: Xamarin.Essentials => 0x1a605985 => 114
+	i32 450948140, ; 24: Xamarin.AndroidX.Fragment.dll => 0x1ae0ec2c => 80
+	i32 465846621, ; 25: mscorlib => 0x1bc4415d => 34
+	i32 469710990, ; 26: System.dll => 0x1bff388e => 46
+	i32 476646585, ; 27: Xamarin.AndroidX.Interpolator.dll => 0x1c690cb9 => 81
+	i32 486930444, ; 28: Xamarin.AndroidX.LocalBroadcastManager.dll => 0x1d05f80c => 92
+	i32 504143952, ; 29: Plugin.LocalNotification.dll => 0x1e0ca050 => 38
+	i32 513247710, ; 30: Microsoft.Extensions.Primitives.dll => 0x1e9789de => 29
+	i32 525008092, ; 31: SkiaSharp.dll => 0x1f4afcdc => 39
+	i32 526420162, ; 32: System.Transactions.dll => 0x1f6088c2 => 133
+	i32 527452488, ; 33: Xamarin.Kotlin.StdLib.Jdk7 => 0x1f704948 => 128
+	i32 539058512, ; 34: Microsoft.Extensions.Logging => 0x20216150 => 27
+	i32 548916678, ; 35: Microsoft.Bcl.AsyncInterfaces => 0x20b7cdc6 => 23
+	i32 605376203, ; 36: System.IO.Compression.FileSystem => 0x24154ecb => 137
+	i32 610194910, ; 37: System.Reactive.dll => 0x245ed5de => 51
+	i32 627609679, ; 38: Xamarin.AndroidX.CustomView => 0x2568904f => 76
+	i32 656670485, ; 39: Microsoft.TestPlatform.PlatformAbstractions.dll => 0x2723ff15 => 31
+	i32 663517072, ; 40: Xamarin.AndroidX.VersionedParcelable => 0x278c7790 => 110
+	i32 666292255, ; 41: Xamarin.AndroidX.Arch.Core.Common.dll => 0x27b6d01f => 62
+	i32 690569205, ; 42: System.Xml.Linq.dll => 0x29293ff5 => 56
+	i32 691348768, ; 43: Xamarin.KotlinX.Coroutines.Android.dll => 0x29352520 => 130
+	i32 700284507, ; 44: Xamarin.Jetbrains.Annotations => 0x29bd7e5b => 125
+	i32 720511267, ; 45: Xamarin.Kotlin.StdLib.Jdk8 => 0x2af22123 => 129
+	i32 775507847, ; 46: System.IO.Compression => 0x2e394f87 => 136
+	i32 789151979, ; 47: Microsoft.Extensions.Options => 0x2f0980eb => 28
+	i32 809851609, ; 48: System.Drawing.Common.dll => 0x30455ad9 => 135
+	i32 843511501, ; 49: Xamarin.AndroidX.Print => 0x3246f6cd => 99
+	i32 857506242, ; 50: Microsoft.VisualStudio.TestPlatform.ObjectModel.dll => 0x331c81c2 => 32
+	i32 886248193, ; 51: Microcharts.Droid => 0x34d31301 => 21
+	i32 912572698, ; 52: Xamarin.AndroidX.Biometric => 0x3664c11a => 65
+	i32 928116545, ; 53: Xamarin.Google.Guava.ListenableFuture => 0x3751ef41 => 120
+	i32 955402788, ; 54: Newtonsoft.Json => 0x38f24a24 => 35
+	i32 956575887, ; 55: Xamarin.Kotlin.StdLib.Jdk8.dll => 0x3904308f => 129
+	i32 967690846, ; 56: Xamarin.AndroidX.Lifecycle.Common.dll => 0x39adca5e => 85
+	i32 974778368, ; 57: FormsViewGroup.dll => 0x3a19f000 => 11
+	i32 1012816738, ; 58: Xamarin.AndroidX.SavedState.dll => 0x3c5e5b62 => 102
+	i32 1028951442, ; 59: Microsoft.Extensions.DependencyInjection.Abstractions => 0x3d548d92 => 24
+	i32 1035644815, ; 60: Xamarin.AndroidX.AppCompat => 0x3dbaaf8f => 61
+	i32 1042160112, ; 61: Xamarin.Forms.Platform.dll => 0x3e1e19f0 => 117
+	i32 1052210849, ; 62: Xamarin.AndroidX.Lifecycle.ViewModel.dll => 0x3eb776a1 => 89
+	i32 1084122840, ; 63: Xamarin.Kotlin.StdLib => 0x409e66d8 => 127
+	i32 1098259244, ; 64: System => 0x41761b2c => 46
+	i32 1175144683, ; 65: Xamarin.AndroidX.VectorDrawable.Animated => 0x460b48eb => 108
+	i32 1178241025, ; 66: Xamarin.AndroidX.Navigation.Runtime.dll => 0x463a8801 => 96
+	i32 1204270330, ; 67: Xamarin.AndroidX.Arch.Core.Common => 0x47c7b4fa => 62
+	i32 1253011324, ; 68: Microsoft.Win32.Registry => 0x4aaf6f7c => 141
+	i32 1264511973, ; 69: Xamarin.AndroidX.Startup.StartupRuntime.dll => 0x4b5eebe5 => 104
+	i32 1267360935, ; 70: Xamarin.AndroidX.VectorDrawable => 0x4b8a64a7 => 109
+	i32 1275534314, ; 71: Xamarin.KotlinX.Coroutines.Android => 0x4c071bea => 130
+	i32 1289200857, ; 72: Microsoft.TestPlatform.PlatformAbstractions => 0x4cd7a4d9 => 31
+	i32 1293217323, ; 73: Xamarin.AndroidX.DrawerLayout.dll => 0x4d14ee2b => 78
+	i32 1365406463, ; 74: System.ServiceModel.Internals.dll => 0x516272ff => 140
+	i32 1376866003, ; 75: Xamarin.AndroidX.SavedState => 0x52114ed3 => 102
+	i32 1382826005, ; 76: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll => 0x526c4015 => 1
+	i32 1395857551, ; 77: Xamarin.AndroidX.Media.dll => 0x5333188f => 93
+	i32 1406073936, ; 78: Xamarin.AndroidX.CoordinatorLayout => 0x53cefc50 => 72
+	i32 1411638395, ; 79: System.Runtime.CompilerServices.Unsafe => 0x5423e47b => 53
+	i32 1460219004, ; 80: Xamarin.Forms.Xaml => 0x57092c7c => 118
+	i32 1461234159, ; 81: System.Collections.Immutable.dll => 0x5718a9ef => 43
+	i32 1462112819, ; 82: System.IO.Compression.dll => 0x57261233 => 136
+	i32 1469204771, ; 83: Xamarin.AndroidX.AppCompat.AppCompatResources => 0x57924923 => 60
+	i32 1470490898, ; 84: Microsoft.Extensions.Primitives => 0x57a5e912 => 29
+	i32 1479771757, ; 85: System.Collections.Immutable => 0x5833866d => 43
+	i32 1522693535, ; 86: F1MobileApp => 0x5ac2759f => 7
+	i32 1524747670, ; 87: Plugin.LocalNotification => 0x5ae1cd96 => 38
+	i32 1580996379, ; 88: Google.Apis.Auth.PlatformServices => 0x5e3c171b => 15
+	i32 1582372066, ; 89: Xamarin.AndroidX.DocumentFile.dll => 0x5e5114e2 => 77
+	i32 1582526884, ; 90: Microcharts.Forms.dll => 0x5e5371a4 => 22
+	i32 1592978981, ; 91: System.Runtime.Serialization.dll => 0x5ef2ee25 => 6
+	i32 1622152042, ; 92: Xamarin.AndroidX.Loader.dll => 0x60b0136a => 91
+	i32 1624863272, ; 93: Xamarin.AndroidX.ViewPager2 => 0x60d97228 => 112
+	i32 1636350590, ; 94: Xamarin.AndroidX.CursorAdapter => 0x6188ba7e => 75
+	i32 1639515021, ; 95: System.Net.Http.dll => 0x61b9038d => 48
+	i32 1657153582, ; 96: System.Runtime => 0x62c6282e => 54
+	i32 1658241508, ; 97: Xamarin.AndroidX.Tracing.Tracing.dll => 0x62d6c1e4 => 106
+	i32 1658251792, ; 98: Xamarin.Google.Android.Material.dll => 0x62d6ea10 => 119
+	i32 1670060433, ; 99: Xamarin.AndroidX.ConstraintLayout => 0x638b1991 => 71
+	i32 1691477237, ; 100: System.Reflection.Metadata => 0x64d1e4f5 => 52
+	i32 1698840827, ; 101: Xamarin.Kotlin.StdLib.Common => 0x654240fb => 126
+	i32 1722051300, ; 102: SkiaSharp.Views.Forms => 0x66a46ae4 => 41
+	i32 1729485958, ; 103: Xamarin.AndroidX.CardView.dll => 0x6715dc86 => 67
+	i32 1766324549, ; 104: Xamarin.AndroidX.SwipeRefreshLayout => 0x6947f945 => 105
+	i32 1770582343, ; 105: Microsoft.Extensions.Logging.dll => 0x6988f147 => 27
+	i32 1776026572, ; 106: System.Core.dll => 0x69dc03cc => 44
+	i32 1788241197, ; 107: Xamarin.AndroidX.Fragment => 0x6a96652d => 80
+	i32 1796167890, ; 108: Microsoft.Bcl.AsyncInterfaces.dll => 0x6b0f58d2 => 23
+	i32 1808609942, ; 109: Xamarin.AndroidX.Loader => 0x6bcd3296 => 91
+	i32 1813058853, ; 110: Xamarin.Kotlin.StdLib.dll => 0x6c111525 => 127
+	i32 1813201214, ; 111: Xamarin.Google.Android.Material => 0x6c13413e => 119
+	i32 1818569960, ; 112: Xamarin.AndroidX.Navigation.UI.dll => 0x6c652ce8 => 97
+	i32 1828688058, ; 113: Microsoft.Extensions.Logging.Abstractions.dll => 0x6cff90ba => 26
+	i32 1867746548, ; 114: Xamarin.Essentials.dll => 0x6f538cf4 => 114
+	i32 1878053835, ; 115: Xamarin.Forms.Xaml.dll => 0x6ff0d3cb => 118
+	i32 1885316902, ; 116: Xamarin.AndroidX.Arch.Core.Runtime.dll => 0x705fa726 => 63
+	i32 1889954781, ; 117: System.Reflection.Metadata.dll => 0x70a66bdd => 52
+	i32 1904755420, ; 118: System.Runtime.InteropServices.WindowsRuntime.dll => 0x718842dc => 5
+	i32 1908813208, ; 119: Xamarin.GooglePlayServices.Basement => 0x71c62d98 => 122
+	i32 1919157823, ; 120: Xamarin.AndroidX.MultiDex.dll => 0x7264063f => 94
+	i32 1983156543, ; 121: Xamarin.Kotlin.StdLib.Common.dll => 0x7634913f => 126
+	i32 2011961780, ; 122: System.Buffers.dll => 0x77ec19b4 => 42
+	i32 2019465201, ; 123: Xamarin.AndroidX.Lifecycle.ViewModel => 0x785e97f1 => 89
+	i32 2055257422, ; 124: Xamarin.AndroidX.Lifecycle.LiveData.Core.dll => 0x7a80bd4e => 86
+	i32 2079903147, ; 125: System.Runtime.dll => 0x7bf8cdab => 54
+	i32 2090596640, ; 126: System.Numerics.Vectors => 0x7c9bf920 => 50
+	i32 2097448633, ; 127: Xamarin.AndroidX.Legacy.Support.Core.UI => 0x7d0486b9 => 82
+	i32 2113414696, ; 128: F1MobileApp.Android.dll => 0x7df82628 => 2
+	i32 2126786730, ; 129: Xamarin.Forms.Platform.Android => 0x7ec430aa => 116
+	i32 2129483829, ; 130: Xamarin.GooglePlayServices.Base.dll => 0x7eed5835 => 121
+	i32 2181898931, ; 131: Microsoft.Extensions.Options.dll => 0x820d22b3 => 28
+	i32 2192057212, ; 132: Microsoft.Extensions.Logging.Abstractions => 0x82a8237c => 26
+	i32 2201107256, ; 133: Xamarin.KotlinX.Coroutines.Core.Jvm.dll => 0x83323b38 => 131
+	i32 2201231467, ; 134: System.Net.Http => 0x8334206b => 48
+	i32 2216717168, ; 135: Firebase.Auth.dll => 0x84206b70 => 8
+	i32 2217644978, ; 136: Xamarin.AndroidX.VectorDrawable.Animated.dll => 0x842e93b2 => 108
+	i32 2244775296, ; 137: Xamarin.AndroidX.LocalBroadcastManager => 0x85cc8d80 => 92
+	i32 2256548716, ; 138: Xamarin.AndroidX.MultiDex => 0x8680336c => 94
+	i32 2261435625, ; 139: Xamarin.AndroidX.Legacy.Support.V4.dll => 0x86cac4e9 => 84
+	i32 2279755925, ; 140: Xamarin.AndroidX.RecyclerView.dll => 0x87e25095 => 101
+	i32 2305641583, ; 141: Microsoft.TestPlatform.CoreUtilities => 0x896d4c6f => 30
+	i32 2315684594, ; 142: Xamarin.AndroidX.Annotation.dll => 0x8a068af2 => 58
+	i32 2409053734, ; 143: Xamarin.AndroidX.Preference.dll => 0x8f973e26 => 98
+	i32 2428790861, ; 144: Plugin.Fingerprint => 0x90c4684d => 37
+	i32 2459433988, ; 145: Microsoft.TestPlatform.CoreUtilities.resources => 0x9297fc04 => 0
+	i32 2465532216, ; 146: Xamarin.AndroidX.ConstraintLayout.Core.dll => 0x92f50938 => 70
+	i32 2471841756, ; 147: netstandard.dll => 0x93554fdc => 3
+	i32 2475788418, ; 148: Java.Interop.dll => 0x93918882 => 18
+	i32 2483946094, ; 149: Plugin.Fingerprint.dll => 0x940e026e => 37
+	i32 2486847491, ; 150: Google.Api.Gax => 0x943a4803 => 12
+	i32 2501346920, ; 151: System.Data.DataSetExtensions => 0x95178668 => 134
+	i32 2505896520, ; 152: Xamarin.AndroidX.Lifecycle.Runtime.dll => 0x955cf248 => 88
+	i32 2522193584, ; 153: F1MobileApp.Android => 0x96559eb0 => 2
+	i32 2526443681, ; 154: Xamarin.AndroidX.Biometric.dll => 0x969678a1 => 65
+	i32 2581819634, ; 155: Xamarin.AndroidX.VectorDrawable.dll => 0x99e370f2 => 109
+	i32 2595928349, ; 156: FirebaseAdmin => 0x9abab91d => 10
+	i32 2600501332, ; 157: NuGet.Frameworks.dll => 0x9b008054 => 36
+	i32 2605712449, ; 158: Xamarin.KotlinX.Coroutines.Core.Jvm => 0x9b500441 => 131
+	i32 2613717964, ; 159: Microsoft.VisualStudio.TestPlatform.ObjectModel => 0x9bca2bcc => 32
+	i32 2620871830, ; 160: Xamarin.AndroidX.CursorAdapter.dll => 0x9c375496 => 75
+	i32 2624644809, ; 161: Xamarin.AndroidX.DynamicAnimation => 0x9c70e6c9 => 79
+	i32 2629053246, ; 162: Google.Api.Gax.Rest => 0x9cb42b3e => 13
+	i32 2633051222, ; 163: Xamarin.AndroidX.Lifecycle.LiveData => 0x9cf12c56 => 87
+	i32 2701096212, ; 164: Xamarin.AndroidX.Tracing.Tracing => 0xa0ff7514 => 106
+	i32 2732626843, ; 165: Xamarin.AndroidX.Activity => 0xa2e0939b => 57
+	i32 2736712847, ; 166: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources => 0xa31eec8f => 1
+	i32 2737747696, ; 167: Xamarin.AndroidX.AppCompat.AppCompatResources.dll => 0xa32eb6f0 => 60
+	i32 2766581644, ; 168: Xamarin.Forms.Core => 0xa4e6af8c => 115
+	i32 2770495804, ; 169: Xamarin.Jetbrains.Annotations.dll => 0xa522693c => 125
+	i32 2778768386, ; 170: Xamarin.AndroidX.ViewPager.dll => 0xa5a0a402 => 111
+	i32 2795602088, ; 171: SkiaSharp.Views.Android.dll => 0xa6a180a8 => 40
+	i32 2810250172, ; 172: Xamarin.AndroidX.CoordinatorLayout.dll => 0xa78103bc => 72
+	i32 2819470561, ; 173: System.Xml.dll => 0xa80db4e1 => 55
+	i32 2847418871, ; 174: Xamarin.GooglePlayServices.Base => 0xa9b829f7 => 121
+	i32 2853208004, ; 175: Xamarin.AndroidX.ViewPager => 0xaa107fc4 => 111
+	i32 2855708567, ; 176: Xamarin.AndroidX.Transition => 0xaa36a797 => 107
+	i32 2893550578, ; 177: Google.Apis.Core => 0xac7813f2 => 16
+	i32 2903344695, ; 178: System.ComponentModel.Composition => 0xad0d8637 => 138
+	i32 2905242038, ; 179: mscorlib.dll => 0xad2a79b6 => 34
+	i32 2912489636, ; 180: SkiaSharp.Views.Android => 0xad9910a4 => 40
+	i32 2916838712, ; 181: Xamarin.AndroidX.ViewPager2.dll => 0xaddb6d38 => 112
+	i32 2919462931, ; 182: System.Numerics.Vectors.dll => 0xae037813 => 50
+	i32 2921128767, ; 183: Xamarin.AndroidX.Annotation.Experimental.dll => 0xae1ce33f => 59
+	i32 2952707053, ; 184: NuGet.Frameworks => 0xaffebbed => 36
+	i32 2974793899, ; 185: SkiaSharp.Views.Forms.dll => 0xb14fc0ab => 41
+	i32 2978675010, ; 186: Xamarin.AndroidX.DrawerLayout => 0xb18af942 => 78
+	i32 2990604888, ; 187: Google.Apis => 0xb2410258 => 17
+	i32 3016983068, ; 188: Xamarin.AndroidX.Startup.StartupRuntime => 0xb3d3821c => 104
+	i32 3024354802, ; 189: Xamarin.AndroidX.Legacy.Support.Core.Utils => 0xb443fdf2 => 83
+	i32 3036068679, ; 190: Microcharts.Droid.dll => 0xb4f6bb47 => 21
+	i32 3044182254, ; 191: FormsViewGroup => 0xb57288ee => 11
+	i32 3057625584, ; 192: Xamarin.AndroidX.Navigation.Common => 0xb63fa9f0 => 95
+	i32 3058099980, ; 193: Xamarin.GooglePlayServices.Tasks => 0xb646e70c => 124
+	i32 3111772706, ; 194: System.Runtime.Serialization => 0xb979e222 => 6
+	i32 3124832203, ; 195: System.Threading.Tasks.Extensions => 0xba4127cb => 4
+	i32 3130021562, ; 196: Google.Apis.Auth.PlatformServices.dll => 0xba9056ba => 15
+	i32 3203277885, ; 197: Google.Api.Gax.dll => 0xbeee243d => 12
+	i32 3204380047, ; 198: System.Data.dll => 0xbefef58f => 132
+	i32 3211777861, ; 199: Xamarin.AndroidX.DocumentFile => 0xbf6fd745 => 77
+	i32 3230466174, ; 200: Xamarin.GooglePlayServices.Basement.dll => 0xc08d007e => 122
+	i32 3247949154, ; 201: Mono.Security => 0xc197c562 => 142
+	i32 3258312781, ; 202: Xamarin.AndroidX.CardView => 0xc235e84d => 67
+	i32 3265893370, ; 203: System.Threading.Tasks.Extensions.dll => 0xc2a993fa => 4
+	i32 3267021929, ; 204: Xamarin.AndroidX.AsyncLayoutInflater => 0xc2bacc69 => 64
+	i32 3279906254, ; 205: Microsoft.Win32.Registry.dll => 0xc37f65ce => 141
+	i32 3317135071, ; 206: Xamarin.AndroidX.CustomView.dll => 0xc5b776df => 76
+	i32 3317144872, ; 207: System.Data => 0xc5b79d28 => 132
+	i32 3322403133, ; 208: Firebase.dll => 0xc607d93d => 9
+	i32 3340387945, ; 209: SkiaSharp => 0xc71a4669 => 39
+	i32 3340431453, ; 210: Xamarin.AndroidX.Arch.Core.Runtime => 0xc71af05d => 63
+	i32 3345895724, ; 211: Xamarin.AndroidX.ProfileInstaller.ProfileInstaller.dll => 0xc76e512c => 100
+	i32 3346324047, ; 212: Xamarin.AndroidX.Navigation.Runtime => 0xc774da4f => 96
+	i32 3353484488, ; 213: Xamarin.AndroidX.Legacy.Support.Core.UI.dll => 0xc7e21cc8 => 82
+	i32 3353544232, ; 214: Xamarin.CommunityToolkit.dll => 0xc7e30628 => 113
+	i32 3362522851, ; 215: Xamarin.AndroidX.Core => 0xc86c06e3 => 74
+	i32 3366347497, ; 216: Java.Interop => 0xc8a662e9 => 18
+	i32 3374999561, ; 217: Xamarin.AndroidX.RecyclerView => 0xc92a6809 => 101
+	i32 3395150330, ; 218: System.Runtime.CompilerServices.Unsafe.dll => 0xca5de1fa => 53
+	i32 3404865022, ; 219: System.ServiceModel.Internals => 0xcaf21dfe => 140
+	i32 3407215217, ; 220: Xamarin.CommunityToolkit => 0xcb15fa71 => 113
+	i32 3428513518, ; 221: Microsoft.Extensions.DependencyInjection.dll => 0xcc5af6ee => 25
+	i32 3429136800, ; 222: System.Xml => 0xcc6479a0 => 55
+	i32 3430777524, ; 223: netstandard => 0xcc7d82b4 => 3
+	i32 3441283291, ; 224: Xamarin.AndroidX.DynamicAnimation.dll => 0xcd1dd0db => 79
+	i32 3453592554, ; 225: Google.Apis.Core.dll => 0xcdd9a3ea => 16
+	i32 3455791806, ; 226: Microcharts => 0xcdfb32be => 20
+	i32 3476120550, ; 227: Mono.Android => 0xcf3163e6 => 33
+	i32 3486566296, ; 228: System.Transactions => 0xcfd0c798 => 133
+	i32 3493954962, ; 229: Xamarin.AndroidX.Concurrent.Futures.dll => 0xd0418592 => 69
+	i32 3494395880, ; 230: Xamarin.GooglePlayServices.Location.dll => 0xd0483fe8 => 123
+	i32 3501239056, ; 231: Xamarin.AndroidX.AsyncLayoutInflater.dll => 0xd0b0ab10 => 64
+	i32 3509114376, ; 232: System.Xml.Linq => 0xd128d608 => 56
+	i32 3536029504, ; 233: Xamarin.Forms.Platform.Android.dll => 0xd2c38740 => 116
+	i32 3543600791, ; 234: Microsoft.TestPlatform.CoreUtilities.dll => 0xd3370e97 => 30
+	i32 3567349600, ; 235: System.ComponentModel.Composition.dll => 0xd4a16f60 => 138
+	i32 3596207933, ; 236: LiteDB.dll => 0xd659c73d => 19
+	i32 3618140916, ; 237: Xamarin.AndroidX.Preference => 0xd7a872f4 => 98
+	i32 3621458322, ; 238: Google.Api.Gax.Rest.dll => 0xd7db1192 => 13
+	i32 3627220390, ; 239: Xamarin.AndroidX.Print.dll => 0xd832fda6 => 99
+	i32 3629588173, ; 240: LiteDB => 0xd8571ecd => 19
+	i32 3632359727, ; 241: Xamarin.Forms.Platform => 0xd881692f => 117
+	i32 3633644679, ; 242: Xamarin.AndroidX.Annotation.Experimental => 0xd8950487 => 59
+	i32 3641597786, ; 243: Xamarin.AndroidX.Lifecycle.LiveData.Core => 0xd90e5f5a => 86
+	i32 3668042751, ; 244: Microcharts.dll => 0xdaa1e3ff => 20
+	i32 3672681054, ; 245: Mono.Android.dll => 0xdae8aa5e => 33
+	i32 3676310014, ; 246: System.Web.Services.dll => 0xdb2009fe => 139
+	i32 3682565725, ; 247: Xamarin.AndroidX.Browser => 0xdb7f7e5d => 66
+	i32 3684561358, ; 248: Xamarin.AndroidX.Concurrent.Futures => 0xdb9df1ce => 69
+	i32 3684933406, ; 249: System.Runtime.InteropServices.WindowsRuntime => 0xdba39f1e => 5
+	i32 3689375977, ; 250: System.Drawing.Common => 0xdbe768e9 => 135
+	i32 3706696989, ; 251: Xamarin.AndroidX.Core.Core.Ktx.dll => 0xdcefb51d => 73
+	i32 3718780102, ; 252: Xamarin.AndroidX.Annotation => 0xdda814c6 => 58
+	i32 3724971120, ; 253: Xamarin.AndroidX.Navigation.Common.dll => 0xde068c70 => 95
+	i32 3731644420, ; 254: System.Reactive => 0xde6c6004 => 51
+	i32 3748608112, ; 255: System.Diagnostics.DiagnosticSource => 0xdf6f3870 => 45
+	i32 3758932259, ; 256: Xamarin.AndroidX.Legacy.Support.V4 => 0xe00cc123 => 84
+	i32 3786282454, ; 257: Xamarin.AndroidX.Collection => 0xe1ae15d6 => 68
+	i32 3793997468, ; 258: Google.Apis.Auth.dll => 0xe223ce9c => 14
+	i32 3822602673, ; 259: Xamarin.AndroidX.Media => 0xe3d849b1 => 93
+	i32 3829621856, ; 260: System.Numerics.dll => 0xe4436460 => 49
+	i32 3841636137, ; 261: Microsoft.Extensions.DependencyInjection.Abstractions.dll => 0xe4fab729 => 24
+	i32 3885922214, ; 262: Xamarin.AndroidX.Transition.dll => 0xe79e77a6 => 107
+	i32 3888767677, ; 263: Xamarin.AndroidX.ProfileInstaller.ProfileInstaller => 0xe7c9e2bd => 100
+	i32 3896760992, ; 264: Xamarin.AndroidX.Core.dll => 0xe843daa0 => 74
+	i32 3903721208, ; 265: Microcharts.Forms => 0xe8ae0ef8 => 22
+	i32 3920810846, ; 266: System.IO.Compression.FileSystem.dll => 0xe9b2d35e => 137
+	i32 3921031405, ; 267: Xamarin.AndroidX.VersionedParcelable.dll => 0xe9b630ed => 110
+	i32 3931092270, ; 268: Xamarin.AndroidX.Navigation.UI => 0xea4fb52e => 97
+	i32 3945713374, ; 269: System.Data.DataSetExtensions.dll => 0xeb2ecede => 134
+	i32 3955647286, ; 270: Xamarin.AndroidX.AppCompat.dll => 0xebc66336 => 61
+	i32 3967165417, ; 271: Xamarin.GooglePlayServices.Location => 0xec7623e9 => 123
+	i32 3970018735, ; 272: Xamarin.GooglePlayServices.Tasks.dll => 0xeca1adaf => 124
+	i32 4024013275, ; 273: Firebase.Auth => 0xefd991db => 8
+	i32 4025784931, ; 274: System.Memory => 0xeff49a63 => 47
+	i32 4059682726, ; 275: Google.Apis.dll => 0xf1f9d7a6 => 17
+	i32 4082882467, ; 276: Google.Apis.Auth => 0xf35bd7a3 => 14
+	i32 4105002889, ; 277: Mono.Security.dll => 0xf4ad5f89 => 142
+	i32 4126470640, ; 278: Microsoft.Extensions.DependencyInjection => 0xf5f4f1f0 => 25
+	i32 4151237749, ; 279: System.Core => 0xf76edc75 => 44
+	i32 4177102269, ; 280: FirebaseAdmin.dll => 0xf8f985bd => 10
+	i32 4182413190, ; 281: Xamarin.AndroidX.Lifecycle.ViewModelSavedState.dll => 0xf94a8f86 => 90
+	i32 4213026141, ; 282: System.Diagnostics.DiagnosticSource.dll => 0xfb1dad5d => 45
+	i32 4256097574, ; 283: Xamarin.AndroidX.Core.Core.Ktx => 0xfdaee526 => 73
+	i32 4260525087, ; 284: System.Buffers => 0xfdf2741f => 42
+	i32 4292120959 ; 285: Xamarin.AndroidX.Lifecycle.ViewModelSavedState => 0xffd4917f => 90
 ], align 4
-@assembly_image_cache_indices = local_unnamed_addr constant [268 x i32] [
-	i32 79, i32 111, i32 26, i32 106, i32 94, i32 94, i32 119, i32 59, ; 0..7
-	i32 96, i32 6, i32 0, i32 57, i32 74, i32 130, i32 62, i32 78, ; 8..15
-	i32 72, i32 48, i32 40, i32 76, i32 38, i32 8, i32 61, i32 105, ; 16..23
-	i32 71, i32 25, i32 37, i32 72, i32 83, i32 29, i32 20, i32 30, ; 24..31
-	i32 124, i32 119, i32 18, i32 128, i32 42, i32 67, i32 22, i32 101, ; 32..39
-	i32 53, i32 47, i32 121, i32 116, i32 120, i32 127, i32 19, i32 126, ; 40..47
-	i32 90, i32 23, i32 13, i32 56, i32 111, i32 26, i32 120, i32 76, ; 48..55
-	i32 9, i32 93, i32 15, i32 52, i32 108, i32 80, i32 118, i32 37, ; 56..63
-	i32 99, i32 87, i32 53, i32 132, i32 95, i32 100, i32 121, i32 22, ; 64..71
-	i32 69, i32 131, i32 93, i32 1, i32 84, i32 63, i32 44, i32 109, ; 72..79
-	i32 34, i32 127, i32 51, i32 20, i32 34, i32 6, i32 29, i32 68, ; 80..87
-	i32 14, i32 5, i32 82, i32 103, i32 66, i32 39, i32 45, i32 97, ; 88..95
-	i32 110, i32 62, i32 43, i32 117, i32 32, i32 58, i32 96, i32 18, ; 96..103
-	i32 35, i32 71, i32 82, i32 118, i32 110, i32 88, i32 17, i32 105, ; 104..111
-	i32 109, i32 54, i32 43, i32 4, i32 113, i32 85, i32 117, i32 33, ; 112..119
-	i32 80, i32 77, i32 45, i32 41, i32 73, i32 2, i32 107, i32 112, ; 120..127
-	i32 19, i32 17, i32 122, i32 39, i32 7, i32 99, i32 83, i32 85, ; 128..135
-	i32 75, i32 92, i32 21, i32 49, i32 89, i32 28, i32 0, i32 61, ; 136..143
-	i32 3, i32 10, i32 28, i32 125, i32 79, i32 2, i32 56, i32 100, ; 144..151
-	i32 27, i32 122, i32 23, i32 66, i32 70, i32 78, i32 97, i32 48, ; 152..159
-	i32 1, i32 51, i32 106, i32 116, i32 102, i32 31, i32 63, i32 46, ; 160..167
-	i32 112, i32 102, i32 98, i32 129, i32 25, i32 31, i32 103, i32 41, ; 168..175
-	i32 50, i32 27, i32 32, i32 69, i32 95, i32 74, i32 13, i32 9, ; 176..183
-	i32 86, i32 115, i32 5, i32 123, i32 68, i32 113, i32 133, i32 58, ; 184..191
-	i32 55, i32 132, i32 67, i32 123, i32 8, i32 30, i32 54, i32 91, ; 192..199
-	i32 87, i32 73, i32 104, i32 65, i32 10, i32 92, i32 44, i32 131, ; 200..207
-	i32 104, i32 16, i32 46, i32 3, i32 70, i32 12, i32 24, i32 124, ; 208..215
-	i32 60, i32 114, i32 55, i32 47, i32 107, i32 21, i32 129, i32 11, ; 216..223
-	i32 89, i32 90, i32 11, i32 108, i32 50, i32 77, i32 12, i32 24, ; 224..231
-	i32 130, i32 57, i32 60, i32 4, i32 126, i32 64, i32 49, i32 86, ; 232..239
-	i32 42, i32 36, i32 75, i32 59, i32 84, i32 40, i32 15, i32 98, ; 240..247
-	i32 91, i32 65, i32 14, i32 128, i32 101, i32 88, i32 125, i32 52, ; 248..255
-	i32 114, i32 115, i32 7, i32 38, i32 133, i32 16, i32 35, i32 81, ; 256..263
-	i32 36, i32 64, i32 33, i32 81 ; 264..267
+@assembly_image_cache_indices = local_unnamed_addr constant [286 x i32] [
+	i32 88, i32 120, i32 35, i32 115, i32 103, i32 103, i32 128, i32 68, ; 0..7
+	i32 105, i32 7, i32 0, i32 66, i32 83, i32 139, i32 71, i32 87, ; 8..15
+	i32 81, i32 57, i32 49, i32 85, i32 47, i32 9, i32 70, i32 114, ; 16..23
+	i32 80, i32 34, i32 46, i32 81, i32 92, i32 38, i32 29, i32 39, ; 24..31
+	i32 133, i32 128, i32 27, i32 23, i32 137, i32 51, i32 76, i32 31, ; 32..39
+	i32 110, i32 62, i32 56, i32 130, i32 125, i32 129, i32 136, i32 28, ; 40..47
+	i32 135, i32 99, i32 32, i32 21, i32 65, i32 120, i32 35, i32 129, ; 48..55
+	i32 85, i32 11, i32 102, i32 24, i32 61, i32 117, i32 89, i32 127, ; 56..63
+	i32 46, i32 108, i32 96, i32 62, i32 141, i32 104, i32 109, i32 130, ; 64..71
+	i32 31, i32 78, i32 140, i32 102, i32 1, i32 93, i32 72, i32 53, ; 72..79
+	i32 118, i32 43, i32 136, i32 60, i32 29, i32 43, i32 7, i32 38, ; 80..87
+	i32 15, i32 77, i32 22, i32 6, i32 91, i32 112, i32 75, i32 48, ; 88..95
+	i32 54, i32 106, i32 119, i32 71, i32 52, i32 126, i32 41, i32 67, ; 96..103
+	i32 105, i32 27, i32 44, i32 80, i32 23, i32 91, i32 127, i32 119, ; 104..111
+	i32 97, i32 26, i32 114, i32 118, i32 63, i32 52, i32 5, i32 122, ; 112..119
+	i32 94, i32 126, i32 42, i32 89, i32 86, i32 54, i32 50, i32 82, ; 120..127
+	i32 2, i32 116, i32 121, i32 28, i32 26, i32 131, i32 48, i32 8, ; 128..135
+	i32 108, i32 92, i32 94, i32 84, i32 101, i32 30, i32 58, i32 98, ; 136..143
+	i32 37, i32 0, i32 70, i32 3, i32 18, i32 37, i32 12, i32 134, ; 144..151
+	i32 88, i32 2, i32 65, i32 109, i32 10, i32 36, i32 131, i32 32, ; 152..159
+	i32 75, i32 79, i32 13, i32 87, i32 106, i32 57, i32 1, i32 60, ; 160..167
+	i32 115, i32 125, i32 111, i32 40, i32 72, i32 55, i32 121, i32 111, ; 168..175
+	i32 107, i32 16, i32 138, i32 34, i32 40, i32 112, i32 50, i32 59, ; 176..183
+	i32 36, i32 41, i32 78, i32 17, i32 104, i32 83, i32 21, i32 11, ; 184..191
+	i32 95, i32 124, i32 6, i32 4, i32 15, i32 12, i32 132, i32 77, ; 192..199
+	i32 122, i32 142, i32 67, i32 4, i32 64, i32 141, i32 76, i32 132, ; 200..207
+	i32 9, i32 39, i32 63, i32 100, i32 96, i32 82, i32 113, i32 74, ; 208..215
+	i32 18, i32 101, i32 53, i32 140, i32 113, i32 25, i32 55, i32 3, ; 216..223
+	i32 79, i32 16, i32 20, i32 33, i32 133, i32 69, i32 123, i32 64, ; 224..231
+	i32 56, i32 116, i32 30, i32 138, i32 19, i32 98, i32 13, i32 99, ; 232..239
+	i32 19, i32 117, i32 59, i32 86, i32 20, i32 33, i32 139, i32 66, ; 240..247
+	i32 69, i32 5, i32 135, i32 73, i32 58, i32 95, i32 51, i32 45, ; 248..255
+	i32 84, i32 68, i32 14, i32 93, i32 49, i32 24, i32 107, i32 100, ; 256..263
+	i32 74, i32 22, i32 137, i32 110, i32 97, i32 134, i32 61, i32 123, ; 264..271
+	i32 124, i32 8, i32 47, i32 17, i32 14, i32 142, i32 25, i32 44, ; 272..279
+	i32 10, i32 90, i32 45, i32 73, i32 42, i32 90 ; 280..285
 ], align 4
 
 @marshal_methods_number_of_classes = local_unnamed_addr constant i32 0, align 4

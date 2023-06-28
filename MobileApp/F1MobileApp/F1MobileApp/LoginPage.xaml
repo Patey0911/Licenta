@@ -21,9 +21,10 @@
 
             <Entry
                 x:Name="txtUsername"
-                Placeholder="Username" 
-                TextColor="Black"
-                PlaceholderColor="Black"
+                Placeholder="Email" 
+                TextColor="White"
+                FontAttributes="Bold"
+                PlaceholderColor="White"
                 Completed="txtUsername_Completed"
                 Text="{Binding Name}" 
                 Keyboard="Email">
@@ -33,8 +34,9 @@
                 x:Name="txtPassword"
                 Placeholder="Password" 
                 IsPassword="True" 
-                TextColor="Black"
-                PlaceholderColor="Black"
+                FontAttributes="Bold"
+                TextColor="White"
+                PlaceholderColor="White"
                 Text="{Binding Password}">
             </Entry>
 
@@ -64,7 +66,7 @@
                 BorderWidth="1"
                 BorderColor="Black"
                 CornerRadius="50"
-                Clicked="Button_Clicked">
+                Clicked="Button_ClickedAsync">
             </Button>
 
             <Label HorizontalOptions="Center">
