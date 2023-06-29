@@ -101,8 +101,10 @@ def DriversDetails():
     for i in range(0,20):
         print(Points[i].get_text(strip=True))
         print(DriversLastNames[i].get_text(strip=True))
+        print(DriversFirstNames[i].get_text(strip=True))
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/Points").set(Points[i].get_text(strip=True))
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/FirstName").set(DriversFirstNames[i].get_text(strip=True))
+        db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/LastName").set(DriversLastNames[i].get_text(strip=True))
 
     #To obtain more information about every driver we need to visit their f1 pages
     for i in range(0, 20):
@@ -138,17 +140,17 @@ def DriversDetails():
                 elif poz == 3:
                     DataName = 'Points'
                 elif poz == 4:
-                    DataName = 'Grands Prix entered'
+                    DataName = 'GrandsPrixEntered'
                 elif poz == 5:
-                    DataName = 'World Championships'
+                    DataName = 'WorldChampionships'
                 elif poz == 6:
-                    DataName = 'Highest race finish'
+                    DataName = 'HighestRaceFinish'
                 elif poz == 7:
-                    DataName = 'Highest grid position'
+                    DataName = 'HighestGridPosition'
                 elif poz == 8:
-                    DataName = 'Data of birth'
+                    DataName = 'DateOfBirth'
                 elif poz == 9:
-                    DataName = 'Place of birth'
+                    DataName = 'PlaceOfBirth'
                 if(cells[0].get_text(strip=True) == 'N/A'):
                     db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/" + DataName).set(0)
                 else:

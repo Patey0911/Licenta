@@ -33,12 +33,12 @@ namespace F1MobileApp
         {
             if (txtPassword.IsPassword)
             {
-                password_icon.Source = "ShowPassword.png";
+                password_icon.Source = "ShowPasswordWhite.png";
                 txtPassword.IsPassword = false;
             }
             else
             {
-                password_icon.Source = "HidePassword.png";
+                password_icon.Source = "HidePasswordWhite.png";
                 txtPassword.IsPassword = true;
             }
         }

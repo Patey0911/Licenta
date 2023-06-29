@@ -42,7 +42,7 @@
 
             <Image 
                 x:Name="password_icon"
-                Source="HidePassword.png"
+                Source="HidePasswordWhite.png"
                 Margin="0,0,10,0"  
                 HeightRequest="30"  
                 HorizontalOptions="End"

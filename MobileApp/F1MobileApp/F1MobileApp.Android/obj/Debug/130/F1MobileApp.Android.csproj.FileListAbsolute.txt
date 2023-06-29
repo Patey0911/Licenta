@@ -798,3 +798,5 @@ C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Deb
 C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\Google.Apis.pdb
 C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\android\assets\System.Threading.Tasks.Extensions.dll
+C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\res\drawable\showpasswordwhite.png
+C:\Users\mihal\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp.Android\obj\Debug\130\res\drawable\hidepasswordwhite.png

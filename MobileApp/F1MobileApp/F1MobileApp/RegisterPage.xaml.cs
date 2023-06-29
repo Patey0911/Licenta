@@ -132,7 +132,18 @@ namespace F1MobileApp
 
         private async void txtDriver_Focused(object sender, FocusEventArgs e)
         {
-            string action = await DisplayActionSheet("List of the Drivers", "Cancel", null, "Verstappen", "Perez", "Leclerc");
+            //Get all drivers from firebase to show for registration
+            var drivers_list = await DriverRepository.GetAllDrivers();
+            String[] drivers_names = new string[20];
+
+            int poz = 0;
+            foreach(var driver in drivers_list)
+            {
+                drivers_names[poz] = driver.LastName;
+                poz++;
+            }
+
+            string action = await DisplayActionSheet("List of the Drivers", "Cancel", null, drivers_names);
             txtDriver.Text = action;
             txtPassword.Focus();
         }
