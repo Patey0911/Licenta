@@ -3,6 +3,9 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "F1MobileApp.Android.dll" comes first in this list. */
 		"F1MobileApp.Android.dll",
+		"BottomBar.Droid.dll",
+		"BottomBar.XamarinForms.dll",
+		"BottomNavigationBar.dll",
 		"F1MobileApp.dll",
 		"Firebase.Auth.dll",
 		"Firebase.dll",
@@ -39,6 +42,12 @@ public class MonoPackageManager_Resources {
 		"System.Diagnostics.DiagnosticSource.dll",
 		"System.Reactive.dll",
 		"System.Reflection.Metadata.dll",
+		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
+		"Xamarin.Android.Support.Design.dll",
+		"Xamarin.Android.Support.v4.dll",
+		"Xamarin.Android.Support.v7.AppCompat.dll",
+		"Xamarin.Android.Support.v7.RecyclerView.dll",
+		"Xamarin.Android.Support.Vector.Drawable.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

@@ -19,6 +19,7 @@
           "NETStandard.Library": "2.0.3",
           "Plugin.Fingerprint": "2.1.5",
           "Plugin.LocalNotification": "10.1.6",
+          "ThriveGmbH.BottomNavigationBar.XF": "1.0.2",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.Essentials": "1.7.6",
           "Xamarin.Forms": "5.0.0.2578"
@@ -608,6 +609,14 @@
         }
       },
       "System.ValueTuple/4.5.0": {},
+      "ThriveGmbH.BottomNavigationBar.XF/1.0.2": {
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/BottomBar.XamarinForms.dll": {
+            "assemblyVersion": "1.0.6334.21543",
+            "fileVersion": "1.0.6334.21543"
+          }
+        }
+      },
       "Xamarin.CommunityToolkit/2.0.6": {
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.7.0",
@@ -1005,6 +1014,13 @@
       "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
       "path": "system.valuetuple/4.5.0",
       "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
+    },
+    "ThriveGmbH.BottomNavigationBar.XF/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CAxjraz7v27mWxrChvLLggDRq5Icf3OA0IL3lpGY+rfUGH488kZzBB3WJmfbgh7q5yfBbva51Iuv4tFleepV2A==",
+      "path": "thrivegmbh.bottomnavigationbar.xf/1.0.2",
+      "hashPath": "thrivegmbh.bottomnavigationbar.xf.1.0.2.nupkg.sha512"
     },
     "Xamarin.CommunityToolkit/2.0.6": {
       "type": "package",

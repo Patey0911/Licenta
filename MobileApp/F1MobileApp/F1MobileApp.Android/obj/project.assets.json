@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v13.0": {
+      "BottomNavigationBar/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "8.0.3",
+          "Xamarin.Android.Support.Animated.Vector.Drawable": "23.3.0",
+          "Xamarin.Android.Support.Design": "23.3.0",
+          "Xamarin.Android.Support.Vector.Drawable": "23.3.0",
+          "Xamarin.Android.Support.v4": "23.3.0",
+          "Xamarin.Android.Support.v7.AppCompat": "23.3.0",
+          "Xamarin.Android.Support.v7.RecyclerView": "23.3.0"
+        },
+        "compile": {
+          "lib/MonoAndroid403/BottomNavigationBar.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/MonoAndroid403/BottomNavigationBar.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "FirebaseAdmin/2.3.0": {
         "type": "package",
         "dependencies": {
@@ -685,6 +707,97 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "ThriveGmbH.BottomNavigationBar.XF/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "BottomNavigationBar": "1.1.2"
+        },
+        "compile": {
+          "lib/MonoAndroid10/BottomBar.Droid.dll": {},
+          "lib/MonoAndroid10/BottomBar.XamarinForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/BottomBar.Droid.dll": {},
+          "lib/MonoAndroid10/BottomBar.XamarinForms.dll": {}
+        }
+      },
+      "Xamarin.Android.Support.Animated.Vector.Drawable/23.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Vector.Drawable": "[23.3.0]",
+          "Xamarin.Android.Support.v4": "[23.3.0]"
+        },
+        "compile": {
+          "lib/MonoAndroid403/Xamarin.Android.Support.Animated.Vector.Drawable.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid403/Xamarin.Android.Support.Animated.Vector.Drawable.dll": {}
+        }
+      },
+      "Xamarin.Android.Support.Design/23.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v4": "[23.3.0]",
+          "Xamarin.Android.Support.v7.AppCompat": "[23.3.0]",
+          "Xamarin.Android.Support.v7.RecyclerView": "[23.3.0]"
+        },
+        "compile": {
+          "lib/MonoAndroid43/Xamarin.Android.Support.Design.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid43/Xamarin.Android.Support.Design.dll": {}
+        }
+      },
+      "Xamarin.Android.Support.v4/23.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid403/Xamarin.Android.Support.v4.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid403/Xamarin.Android.Support.v4.dll": {}
+        }
+      },
+      "Xamarin.Android.Support.v7.AppCompat/23.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Animated.Vector.Drawable": "[23.3.0]",
+          "Xamarin.Android.Support.Vector.Drawable": "[23.3.0]",
+          "Xamarin.Android.Support.v4": "[23.3.0]"
+        },
+        "compile": {
+          "lib/MonoAndroid403/Xamarin.Android.Support.v7.AppCompat.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid403/Xamarin.Android.Support.v7.AppCompat.dll": {}
+        }
+      },
+      "Xamarin.Android.Support.v7.RecyclerView/23.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v4": "[23.3.0]"
+        },
+        "compile": {
+          "lib/MonoAndroid403/Xamarin.Android.Support.v7.RecyclerView.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid403/Xamarin.Android.Support.v7.RecyclerView.dll": {}
+        }
+      },
+      "Xamarin.Android.Support.Vector.Drawable/23.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v4": "[23.3.0]"
+        },
+        "compile": {
+          "lib/MonoAndroid403/Xamarin.Android.Support.Vector.Drawable.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid403/Xamarin.Android.Support.Vector.Drawable.dll": {}
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "Xamarin.AndroidX.Activity/1.6.1.1": {
@@ -2977,6 +3090,7 @@
           "Microsoft.TestPlatform.ObjectModel": "17.6.3",
           "Plugin.Fingerprint": "2.1.5",
           "Plugin.LocalNotification": "10.1.6",
+          "ThriveGmbH.BottomNavigationBar.XF": "1.0.2",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.Essentials": "1.7.6",
           "Xamarin.Forms": "5.0.0.2578"
@@ -2991,6 +3105,19 @@
     }
   },
   "libraries": {
+    "BottomNavigationBar/1.1.2": {
+      "sha512": "HV5iFmTSMZo8UI98l82gQJ4zmtQ9GHhRqiczjc580byZWQpiBY9H3r5PtAPF8JFmYs0/jSImKbh8DXd8ncWcRg==",
+      "type": "package",
+      "path": "bottomnavigationbar/1.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bottomnavigationbar.1.1.2.nupkg.sha512",
+        "bottomnavigationbar.nuspec",
+        "lib/MonoAndroid403/BottomNavigationBar.dll",
+        "lib/MonoAndroid403/BottomNavigationBar.xml"
+      ]
+    },
     "FirebaseAdmin/2.3.0": {
       "sha512": "ror9V68bFWdr3VXoCPQrAAJ1ZA8dyLzIHJvy53BmoD83Ze9VuWC9hPBicPqqOANP3VTMWnylC7xci59UEMuU4A==",
       "type": "package",
@@ -4554,6 +4681,95 @@
         "system.valuetuple.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "ThriveGmbH.BottomNavigationBar.XF/1.0.2": {
+      "sha512": "CAxjraz7v27mWxrChvLLggDRq5Icf3OA0IL3lpGY+rfUGH488kZzBB3WJmfbgh7q5yfBbva51Iuv4tFleepV2A==",
+      "type": "package",
+      "path": "thrivegmbh.bottomnavigationbar.xf/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/BottomBar.Droid.dll",
+        "lib/MonoAndroid10/BottomBar.XamarinForms.dll",
+        "lib/Xamarin.iOS10/BottomBar.XamarinForms.dll",
+        "lib/portable-net45+win8+wpa81/BottomBar.XamarinForms.dll",
+        "thrivegmbh.bottomnavigationbar.xf.1.0.2.nupkg.sha512",
+        "thrivegmbh.bottomnavigationbar.xf.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Animated.Vector.Drawable/23.3.0": {
+      "sha512": "qCN7bgA3BpzVybYV5jJa0wQDDYqdomZ7va4gdeyXNAtjEVFPDdKdS8wrD1HuGsQfxShLPcsDFIKd1Z4birTq8g==",
+      "type": "package",
+      "path": "xamarin.android.support.animated.vector.drawable/23.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid403/Xamarin.Android.Support.Animated.Vector.Drawable.dll",
+        "xamarin.android.support.animated.vector.drawable.23.3.0.nupkg.sha512",
+        "xamarin.android.support.animated.vector.drawable.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Design/23.3.0": {
+      "sha512": "aTf8CqR0Ktzgoa9DD6YOR/BvfBcvvmUsQ3O2TtJxas0QQ1wb2raneICKyeZd89oFa3VAQbQzzXUP5NtSurF15w==",
+      "type": "package",
+      "path": "xamarin.android.support.design/23.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid43/Xamarin.Android.Support.Design.dll",
+        "xamarin.android.support.design.23.3.0.nupkg.sha512",
+        "xamarin.android.support.design.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.v4/23.3.0": {
+      "sha512": "14gFJCJF0ZDBVEHIuXefBaGKaVxWMw11yb41dcupnDPtIyQCUEz2BQGmMna2aIWquwAHrhJ8sxdmhmTdGyno+Q==",
+      "type": "package",
+      "path": "xamarin.android.support.v4/23.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid403/Xamarin.Android.Support.v4.dll",
+        "xamarin.android.support.v4.23.3.0.nupkg.sha512",
+        "xamarin.android.support.v4.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.v7.AppCompat/23.3.0": {
+      "sha512": "n5x/PwzhM9ShoESvckqI82cdWn2L3ccdfwdp0LrstcGBlIJMN9mXbntsjyKrfHXU0+RF04Iq5w0begvaAmTxcQ==",
+      "type": "package",
+      "path": "xamarin.android.support.v7.appcompat/23.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid403/Xamarin.Android.Support.v7.AppCompat.dll",
+        "xamarin.android.support.v7.appcompat.23.3.0.nupkg.sha512",
+        "xamarin.android.support.v7.appcompat.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.v7.RecyclerView/23.3.0": {
+      "sha512": "LRzIX3UHTAElbVGlXrNOL3SjsNcftfGDN9M1jhkGz5+uKxyhCFoXkvLMUvmNd5iZLdnFixAgXR+Ctm4tsRQxPQ==",
+      "type": "package",
+      "path": "xamarin.android.support.v7.recyclerview/23.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid403/Xamarin.Android.Support.v7.RecyclerView.dll",
+        "xamarin.android.support.v7.recyclerview.23.3.0.nupkg.sha512",
+        "xamarin.android.support.v7.recyclerview.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Vector.Drawable/23.3.0": {
+      "sha512": "A2yyRZp7QsRdPKIjTCQ2Ic84nNToPY5lVa8vJPLV0gJ0XBeKijQQi8biFZZdnXy+tzrUmfX6fJnlbYFSdIMhiQ==",
+      "type": "package",
+      "path": "xamarin.android.support.vector.drawable/23.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Xamarin.Android.Support.Tasks.VectorDrawable.dll",
+        "build/Xamarin.Android.Support.Vector.Drawable.targets",
+        "lib/MonoAndroid403/Xamarin.Android.Support.Vector.Drawable.dll",
+        "xamarin.android.support.vector.drawable.23.3.0.nupkg.sha512",
+        "xamarin.android.support.vector.drawable.nuspec"
       ]
     },
     "Xamarin.AndroidX.Activity/1.6.1.1": {

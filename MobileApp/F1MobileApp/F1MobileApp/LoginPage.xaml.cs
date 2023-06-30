@@ -62,7 +62,7 @@ namespace F1MobileApp
                     await DisplayAlert("Alert", "User with this email doesn't exist", "OK");
                     break;
                 case 1:
-                    await DisplayAlert("Succes", "Login succes", "OK");
+                    Navigation.PushAsync(new MainPage());
                     break;
                 case 2:
                     await DisplayAlert("Failed", "Login failed", "OK");
