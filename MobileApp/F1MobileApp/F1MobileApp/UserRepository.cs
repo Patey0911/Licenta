@@ -30,6 +30,7 @@ namespace F1MobileApp
             new UserModel
             {
                 Email = item.Object.Email,
+                FavoriteTeam = item.Object.FavoriteTeam,
                 FavoriteDriver = item.Object.FavoriteDriver,
                 Name = item.Object.Name,
                 Password = item.Object.Password

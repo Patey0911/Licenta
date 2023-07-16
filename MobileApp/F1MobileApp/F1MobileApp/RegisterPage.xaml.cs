@@ -19,7 +19,7 @@ namespace F1MobileApp
 
     public partial class RegisterPage : ContentPage
     {
-        public static string Name, FavoriteDriver, Email, Password;
+        public static string Name, FavoriteDriver, Email, Password, FavoriteTeam;
         public RegisterPage()
         {
             InitializeComponent();
@@ -60,10 +60,11 @@ namespace F1MobileApp
             Password = AESRepository.EncryptAesManaged(txtPassword.Text);   
             Email = txtEmail.Text;
             FavoriteDriver=txtDriver.Text;
+            FavoriteTeam = txtTeam.Text;
 
             var user_list = await UserRepository.GetAllUsers();
 
-            var user = new UserModel(Name, Email, Password, FavoriteDriver);
+            var user = new UserModel(Name, Email, Password, FavoriteDriver, FavoriteTeam);
             //await UserRepository.Save(user);
             //Verify if the passwords match
             if (txtPassword.Text==txtPassword_Confirm.Text)
@@ -130,17 +131,37 @@ namespace F1MobileApp
             txtName.Focus();
         }
 
+        private async void txtTeam_Focused(object sender, FocusEventArgs e)
+        {
+            //Get all teams from firebase to show for registration
+            var teams_list = await TeamRepository.GetAllTeams();
+            String[] teams_names = new string[10];
+
+            int poz = 0;
+            foreach(var team in teams_list)
+            {
+                teams_names[poz] = team.Team;
+                poz++;
+            }
+
+            string action = await DisplayActionSheet("List of the Teams", "Cancel", null, teams_names);
+            txtTeam.Text = action;
+            txtDriver.Text = "";
+            txtDriver.Focus();
+        }
+
         private async void txtDriver_Focused(object sender, FocusEventArgs e)
         {
             //Get all drivers from firebase to show for registration
-            var drivers_list = await DriverRepository.GetAllDrivers();
-            String[] drivers_names = new string[20];
+            var drivers_list = await TeamRepository.GetByTeam(txtTeam.Text);
+            String[] drivers_names = new string[2];
 
             int poz = 0;
             foreach(var driver in drivers_list)
             {
-                drivers_names[poz] = driver.LastName;
+                drivers_names[poz] = driver.Driver1;
                 poz++;
+                drivers_names[poz] = driver.Driver2;
             }
 
             string action = await DisplayActionSheet("List of the Drivers", "Cancel", null, drivers_names);
@@ -148,9 +169,14 @@ namespace F1MobileApp
             txtPassword.Focus();
         }
 
-        private void txtName_Completed(object sender, EventArgs e)
+        private void txtTeam_Completed(object sender, EventArgs e)
         {
             txtDriver.Focus();
+        }
+
+        private void txtName_Completed(object sender, EventArgs e)
+        {
+            txtTeam.Focus();
         }
 
         private void txtDriver_Completed(object sender, EventArgs e)

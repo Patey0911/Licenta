@@ -40,6 +40,16 @@
                 Text="{Binding Email}">
             </Entry>
 
+            <Entry
+                x:Name="txtTeam"
+                Placeholder="Favourite Team"
+                PlaceholderColor="gray"
+                Completed="txtTeam_Completed"
+                FontAttributes="Bold"
+                Focused="txtTeam_Focused"
+                Text="{Binding Team}">
+            </Entry>
+            
             <Entry 
                 x:Name="txtDriver"
                 Placeholder="Favourite Driver"  

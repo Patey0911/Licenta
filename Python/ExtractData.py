@@ -178,6 +178,7 @@ def TeamsPoints():
         db.reference("/Teams/" + TeamsNames[i].get_text(strip=True)+ "/Points").set(Points[i].get_text(strip=True))
         db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/Driver1").set(DriversNames[2*i].get_text(strip=True))
         db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/Driver2").set(DriversNames[2*i+1].get_text(strip=True))
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/Team").set(TeamsNames[i].get_text(strip=True))
 
 #Initialize the arrays with the variables from link
 circuits = ["bahrain", "saudi-arabia", "australia", "azerbaijan", "miami", "monaco", "spain", "canada", "austria", "great_britain", "hungary", "belgium", "netherlands", "italy", "singapore", "japan", "qatar", "united_States", "mexico", "brazil", "las_vegas", "abu_dhabi"]
