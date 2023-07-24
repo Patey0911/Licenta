@@ -98,7 +98,7 @@ def DriversDetails():
     DriversLastNames = soup.find_all('span', class_='d-block f1-bold--s f1-color--carbonBlack')
     DriversFirstNames = soup.find_all('span', class_='d-block f1--xxs f1-color--carbonBlack')
 
-    for i in range(0,20):
+    for i in range(0,21):
         print(Points[i].get_text(strip=True))
         print(DriversLastNames[i].get_text(strip=True))
         print(DriversFirstNames[i].get_text(strip=True))
@@ -107,7 +107,7 @@ def DriversDetails():
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/LastName").set(DriversLastNames[i].get_text(strip=True))
 
     #To obtain more information about every driver we need to visit their f1 pages
-    for i in range(0, 20):
+    for i in range(0, 21):
         url = 'https://www.formula1.com/en/drivers/'+DriversFirstNames[i].get_text(strip=True).lower()+'-'+DriversLastNames[i].get_text(strip=True).lower()+'.html'
 
         if(DriversLastNames[i].get_text(strip=True)=="De Vries"):

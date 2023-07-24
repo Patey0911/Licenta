@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace F1MobileApp
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-    }
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class FavoritePage : ContentPage
+	{
+		public FavoritePage ()
+		{
+			InitializeComponent ();
+		}
+	}
 }

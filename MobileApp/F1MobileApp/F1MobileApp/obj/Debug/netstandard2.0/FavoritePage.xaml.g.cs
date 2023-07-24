@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("F1MobileApp.Views.MainPage.xaml", "Views/MainPage.xaml", typeof(global::F1MobileApp.MainPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("F1MobileApp.FavoritePage.xaml", "FavoritePage.xaml", typeof(global::F1MobileApp.FavoritePage))]
 
 namespace F1MobileApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MainPage.xaml")]
-    public partial class MainPage : global::BottomBar.XamarinForms.BottomBarPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("FavoritePage.xaml")]
+    public partial class FavoritePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FavoritePage));
         }
     }
 }

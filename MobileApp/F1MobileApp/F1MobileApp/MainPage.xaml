@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="F1MobileApp.TabbedPage1"
-            xmlns:views="clr-namespace:Bottom.Views" 
+             x:Class="F1MobileApp.MainPage"
             BarBackgroundColor="Transparent"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:local="clr-namespace:F1MobileApp;assembly=F1MobileApp"
             android:TabbedPage.ToolbarPlacement ="Bottom"
              android:TabbedPage.BarItemColor="#999999"
             android:TabbedPage.BarSelectedItemColor="Black">
   <!--Pages can be added as references or inline-->
     <TabbedPage.Children>
-        <NavigationPage Title="Pirate1" Icon="ShowPassword.png">
+        <NavigationPage Title="Favorite" Icon="Favorite.png">
             <x:Arguments>
-                
+                <local:FavoritePage/>
             </x:Arguments>
         </NavigationPage>
         <NavigationPage Title="Pirate2" Icon="HidePassword.png">
             <x:Arguments>
-                
+                <local:LoginPage/>
             </x:Arguments>
         </NavigationPage>
         <NavigationPage Title="Pirate3" Icon="LogoF1.png">
             <x:Arguments>
-                
+                <local:LoginPage/>
             </x:Arguments>
         </NavigationPage>
     </TabbedPage.Children>
