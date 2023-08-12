@@ -9,26 +9,27 @@
     ".NETStandard,Version=v2.0/": {
       "F1MobileApp/1.0.0": {
         "dependencies": {
-          "FirebaseAdmin": "2.3.0",
+          "FirebaseAdmin": "2.4.0",
           "FirebaseAuthentication.net": "4.0.2",
           "FirebaseDatabase.net": "4.2.0",
           "Microcharts": "0.9.5.9",
           "Microcharts.Forms": "0.9.5.9",
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14",
-          "Microsoft.TestPlatform.ObjectModel": "17.6.3",
+          "Microsoft.TestPlatform.ObjectModel": "17.7.0",
           "NETStandard.Library": "2.0.3",
           "Plugin.Fingerprint": "2.1.5",
-          "Plugin.LocalNotification": "10.1.6",
+          "Plugin.LocalNotification": "10.1.8",
           "ThriveGmbH.BottomNavigationBar.XF": "1.0.2",
           "Xamarin.CommunityToolkit": "2.0.6",
-          "Xamarin.Essentials": "1.7.6",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Essentials": "1.8.0",
+          "Xamarin.Forms": "5.0.0.2612",
+          "Xamarin.Forms.InputKit": "4.1.6"
         },
         "runtime": {
           "F1MobileApp.dll": {}
         }
       },
-      "FirebaseAdmin/2.3.0": {
+      "FirebaseAdmin/2.4.0": {
         "dependencies": {
           "Google.Api.Gax.Rest": "3.2.0",
           "Google.Apis.Auth": "1.49.0",
@@ -36,8 +37,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/FirebaseAdmin.dll": {
-            "assemblyVersion": "2.3.0.0",
-            "fileVersion": "2.3.0.0"
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
           }
         }
       },
@@ -157,7 +158,7 @@
           "SkiaSharp": "2.80.2",
           "SkiaSharp.Views.Forms": "2.80.2",
           "System.ValueTuple": "4.5.0",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Forms": "5.0.0.2612"
         },
         "runtime": {
           "lib/netstandard2.0/Microcharts.Forms.dll": {
@@ -262,7 +263,7 @@
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.NETCore.UniversalWindowsPlatform/6.2.14": {},
-      "Microsoft.TestPlatform.ObjectModel/17.6.3": {
+      "Microsoft.TestPlatform.ObjectModel/17.7.0": {
         "dependencies": {
           "NuGet.Frameworks": "6.5.0",
           "System.Reflection.Metadata": "1.6.0"
@@ -270,15 +271,15 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.TestPlatform.CoreUtilities.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.0.0.0"
+            "fileVersion": "17.700.23.40405"
           },
           "lib/netstandard2.0/Microsoft.TestPlatform.PlatformAbstractions.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.0.0.0"
+            "fileVersion": "17.700.23.40405"
           },
           "lib/netstandard2.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.0.0.0"
+            "fileVersion": "17.700.23.40405"
           }
         },
         "resources": {
@@ -391,15 +392,15 @@
           }
         }
       },
-      "Plugin.LocalNotification/10.1.6": {
+      "Plugin.LocalNotification/10.1.8": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "7.0.0",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Plugin.LocalNotification.dll": {
-            "assemblyVersion": "10.1.6.0",
-            "fileVersion": "10.1.6.0"
+            "assemblyVersion": "10.1.8.0",
+            "fileVersion": "10.1.8.0"
           }
         }
       },
@@ -417,7 +418,7 @@
       "SkiaSharp.Views.Forms/2.80.2": {
         "dependencies": {
           "SkiaSharp": "2.80.2",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Forms": "5.0.0.2612"
         }
       },
       "System.Buffers/4.5.1": {
@@ -621,7 +622,7 @@
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.7.0",
           "System.Threading.Tasks.Extensions": "4.5.4",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Forms": "5.0.0.2612"
         },
         "runtime": {
           "lib/netstandard2.0/Xamarin.CommunityToolkit.dll": {
@@ -630,7 +631,7 @@
           }
         }
       },
-      "Xamarin.Essentials/1.7.6": {
+      "Xamarin.Essentials/1.8.0": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -641,19 +642,27 @@
           }
         }
       },
-      "Xamarin.Forms/5.0.0.2578": {
+      "Xamarin.Forms/5.0.0.2612": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.978"
+            "fileVersion": "5.0.0.993"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.978"
+            "fileVersion": "5.0.0.993"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "5.0.0.978"
+            "fileVersion": "5.0.0.993"
+          }
+        }
+      },
+      "Xamarin.Forms.InputKit/4.1.6": {
+        "runtime": {
+          "lib/netstandard2.0/Plugin.InputKit.dll": {
+            "assemblyVersion": "4.1.6.0",
+            "fileVersion": "4.1.6.0"
           }
         }
       }
@@ -665,12 +674,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "FirebaseAdmin/2.3.0": {
+    "FirebaseAdmin/2.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ror9V68bFWdr3VXoCPQrAAJ1ZA8dyLzIHJvy53BmoD83Ze9VuWC9hPBicPqqOANP3VTMWnylC7xci59UEMuU4A==",
-      "path": "firebaseadmin/2.3.0",
-      "hashPath": "firebaseadmin.2.3.0.nupkg.sha512"
+      "sha512": "sha512-0O89+8oFnHys8TPsk6af0nqcthedok4R467q/tQ/mUyKsXgG45fu1U0acnkKpOGSXT+550cyFfcUj5QlicoOvg==",
+      "path": "firebaseadmin/2.4.0",
+      "hashPath": "firebaseadmin.2.4.0.nupkg.sha512"
     },
     "FirebaseAuthentication.net/4.0.2": {
       "type": "package",
@@ -812,12 +821,12 @@
       "path": "microsoft.netcore.universalwindowsplatform/6.2.14",
       "hashPath": "microsoft.netcore.universalwindowsplatform.6.2.14.nupkg.sha512"
     },
-    "Microsoft.TestPlatform.ObjectModel/17.6.3": {
+    "Microsoft.TestPlatform.ObjectModel/17.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gSqtX3RvcFisaLPs6sKXdZkSwUix83NQ9nOU/w6pYrHTl+d8GsVHSL9rvDNxMgoV5BNOdyU7zK7JOfbSaVMDWQ==",
-      "path": "microsoft.testplatform.objectmodel/17.6.3",
-      "hashPath": "microsoft.testplatform.objectmodel.17.6.3.nupkg.sha512"
+      "sha512": "sha512-wHzM3AM5K0XZQIh+E+/qM3EvDWxZh984LPQGOe4oVOo4/OWZe9rAMzX9+Ws6NwKoaaUyXHXIx+7QW3BINQ7hUQ==",
+      "path": "microsoft.testplatform.objectmodel/17.7.0",
+      "hashPath": "microsoft.testplatform.objectmodel.17.7.0.nupkg.sha512"
     },
     "NETStandard.Library/2.0.3": {
       "type": "package",
@@ -847,12 +856,12 @@
       "path": "plugin.fingerprint/2.1.5",
       "hashPath": "plugin.fingerprint.2.1.5.nupkg.sha512"
     },
-    "Plugin.LocalNotification/10.1.6": {
+    "Plugin.LocalNotification/10.1.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-urJe0nrRCNYHRvxMvpeTCq5Iv5RtkGiLVYSUUXrItFWbb0YgVQNOFW/exPJKiJ6iShIeMhdTT5s9v/YM+06SqQ==",
-      "path": "plugin.localnotification/10.1.6",
-      "hashPath": "plugin.localnotification.10.1.6.nupkg.sha512"
+      "sha512": "sha512-LiZpaY0iA4aFhRY/Brkm//D8BQKrd/GtGfhx2lg7jQKlXb0lzlvWx/sax28D4ufJgkOGpiQqGKjZ8CMo8yuTiA==",
+      "path": "plugin.localnotification/10.1.8",
+      "hashPath": "plugin.localnotification.10.1.8.nupkg.sha512"
     },
     "SkiaSharp/2.80.2": {
       "type": "package",
@@ -1029,19 +1038,26 @@
       "path": "xamarin.communitytoolkit/2.0.6",
       "hashPath": "xamarin.communitytoolkit.2.0.6.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.7.6": {
+    "Xamarin.Essentials/1.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Le5qvBRXvL9c5of/3Si+13mdJ9+2hjQi0vFQ2sOLH7N2CZx7ATtfGF10oJiYF0zFzBEbdVzdBCWYwZgjUp9+YQ==",
-      "path": "xamarin.essentials/1.7.6",
-      "hashPath": "xamarin.essentials.1.7.6.nupkg.sha512"
+      "sha512": "sha512-g1yB0CkX7BVOx84P0SLm8guypbEfigqjddZsI9KgJzba6yRRcekBqDp6YTT1hO8ZcFcW8VZbsymejTJftJoQyg==",
+      "path": "xamarin.essentials/1.8.0",
+      "hashPath": "xamarin.essentials.1.8.0.nupkg.sha512"
     },
-    "Xamarin.Forms/5.0.0.2578": {
+    "Xamarin.Forms/5.0.0.2612": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cUjv81PVlNKqAYA9k8WV0JZiCxjuCLqpICfaumHeJvEBxo7qUrEIXHCyS9+tAAV1JL/qwzD/FnkdVy8gO9TWrA==",
-      "path": "xamarin.forms/5.0.0.2578",
-      "hashPath": "xamarin.forms.5.0.0.2578.nupkg.sha512"
+      "sha512": "sha512-zQcy3NJgRJnLRWQZ2TZPCgDoTDHoYskHLutKDvz1pVNtvJ8U7kkg4mE2XATs3dAkQ+oWoqB4VOBGRk9uAfoRMw==",
+      "path": "xamarin.forms/5.0.0.2612",
+      "hashPath": "xamarin.forms.5.0.0.2612.nupkg.sha512"
+    },
+    "Xamarin.Forms.InputKit/4.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QPtnR1z+oCWAPHJIc1DPZ3k1MBGLGdldwx5KgAsRhip40dePaZECTPPSA72kptlRokUaeWPpl3sWY3inTWXOAA==",
+      "path": "xamarin.forms.inputkit/4.1.6",
+      "hashPath": "xamarin.forms.inputkit.4.1.6.nupkg.sha512"
     }
   }
 }

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mihal\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp.Android\\F1MobileApp.Android.csproj": {}
+    "C:\\Users\\ok\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp.Android\\F1MobileApp.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mihal\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp.Android\\F1MobileApp.Android.csproj": {
+    "C:\\Users\\ok\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp.Android\\F1MobileApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mihal\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp.Android\\F1MobileApp.Android.csproj",
+        "projectUniqueName": "C:\\Users\\ok\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp.Android\\F1MobileApp.Android.csproj",
         "projectName": "F1MobileApp.Android",
-        "projectPath": "C:\\Users\\mihal\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp.Android\\F1MobileApp.Android.csproj",
-        "packagesPath": "C:\\Users\\mihal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mihal\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp.Android\\obj\\",
+        "projectPath": "C:\\Users\\ok\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp.Android\\F1MobileApp.Android.csproj",
+        "packagesPath": "C:\\Users\\ok\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ok\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ok\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid13.0": {
             "projectReferences": {
-              "C:\\Users\\mihal\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\F1MobileApp.csproj": {
-                "projectPath": "C:\\Users\\mihal\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\F1MobileApp.csproj"
+              "C:\\Users\\ok\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\F1MobileApp.csproj": {
+                "projectPath": "C:\\Users\\ok\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\F1MobileApp.csproj"
               }
             }
           }
@@ -44,31 +44,34 @@
           "dependencies": {
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.7.0, )"
+              "version": "[1.8.0, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2196, )"
+              "version": "[5.0.0.2612, )"
+            },
+            "Xamarin.Forms.InputKit": {
+              "target": "Package",
+              "version": "[4.1.6, )"
             }
           }
         }
       }
     },
-    "C:\\Users\\mihal\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\F1MobileApp.csproj": {
+    "C:\\Users\\ok\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\F1MobileApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mihal\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\F1MobileApp.csproj",
+        "projectUniqueName": "C:\\Users\\ok\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\F1MobileApp.csproj",
         "projectName": "F1MobileApp",
-        "projectPath": "C:\\Users\\mihal\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\F1MobileApp.csproj",
-        "packagesPath": "C:\\Users\\mihal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mihal\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\obj\\",
+        "projectPath": "C:\\Users\\ok\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\F1MobileApp.csproj",
+        "packagesPath": "C:\\Users\\ok\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ok\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ok\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -98,7 +101,7 @@
           "dependencies": {
             "FirebaseAdmin": {
               "target": "Package",
-              "version": "[2.3.0, )"
+              "version": "[2.4.0, )"
             },
             "FirebaseAuthentication.net": {
               "target": "Package",
@@ -122,7 +125,7 @@
             },
             "Microsoft.TestPlatform.ObjectModel": {
               "target": "Package",
-              "version": "[17.6.3, )"
+              "version": "[17.7.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -136,7 +139,7 @@
             },
             "Plugin.LocalNotification": {
               "target": "Package",
-              "version": "[10.1.6, )"
+              "version": "[10.1.8, )"
             },
             "ThriveGmbH.BottomNavigationBar.XF": {
               "target": "Package",
@@ -148,11 +151,15 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.7.6, )"
+              "version": "[1.8.0, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2578, )"
+              "version": "[5.0.0.2612, )"
+            },
+            "Xamarin.Forms.InputKit": {
+              "target": "Package",
+              "version": "[4.1.6, )"
             }
           },
           "imports": [
@@ -166,7 +173,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

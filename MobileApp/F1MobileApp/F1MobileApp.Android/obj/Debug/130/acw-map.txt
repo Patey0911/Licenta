@@ -52,6 +52,24 @@ microcharts.droid.ChartView;crc64e9f97cf19b8286a9.ChartView
 Plugin.Fingerprint.AuthenticationHandler, Plugin.Fingerprint;crc64e6d0b84c6264ccdd.AuthenticationHandler
 Plugin.Fingerprint.AuthenticationHandler;crc64e6d0b84c6264ccdd.AuthenticationHandler
 plugin.fingerprint.AuthenticationHandler;crc64e6d0b84c6264ccdd.AuthenticationHandler
+Plugin.InputKit.Platforms.Droid.AutoCompleteViewRenderer, Plugin.InputKit;crc64dbf290ea7e69bd26.AutoCompleteViewRenderer
+Plugin.InputKit.Platforms.Droid.AutoCompleteViewRenderer;crc64dbf290ea7e69bd26.AutoCompleteViewRenderer
+plugin.inputkit.platforms.droid.AutoCompleteViewRenderer;crc64dbf290ea7e69bd26.AutoCompleteViewRenderer
+Plugin.InputKit.Platforms.Droid.BoxArrayAdapter, Plugin.InputKit;crc64dbf290ea7e69bd26.BoxArrayAdapter
+Plugin.InputKit.Platforms.Droid.BoxArrayAdapter;crc64dbf290ea7e69bd26.BoxArrayAdapter
+plugin.inputkit.platforms.droid.BoxArrayAdapter;crc64dbf290ea7e69bd26.BoxArrayAdapter
+Plugin.InputKit.Platforms.Droid.CustomFilter, Plugin.InputKit;crc64dbf290ea7e69bd26.CustomFilter
+Plugin.InputKit.Platforms.Droid.CustomFilter;crc64dbf290ea7e69bd26.CustomFilter
+plugin.inputkit.platforms.droid.CustomFilter;crc64dbf290ea7e69bd26.CustomFilter
+Plugin.InputKit.Platforms.Droid.EmptyEntryRenderer, Plugin.InputKit;crc64dbf290ea7e69bd26.EmptyEntryRenderer
+Plugin.InputKit.Platforms.Droid.EmptyEntryRenderer;crc64dbf290ea7e69bd26.EmptyEntryRenderer
+plugin.inputkit.platforms.droid.EmptyEntryRenderer;crc64dbf290ea7e69bd26.EmptyEntryRenderer
+Plugin.InputKit.Platforms.Droid.NewIconViewRenderer, Plugin.InputKit;crc64dbf290ea7e69bd26.NewIconViewRenderer
+Plugin.InputKit.Platforms.Droid.NewIconViewRenderer;crc64dbf290ea7e69bd26.NewIconViewRenderer
+plugin.inputkit.platforms.droid.NewIconViewRenderer;crc64dbf290ea7e69bd26.NewIconViewRenderer
+Plugin.InputKit.Platforms.Droid.StatefulStackLayoutRenderer, Plugin.InputKit;crc64dbf290ea7e69bd26.StatefulStackLayoutRenderer
+Plugin.InputKit.Platforms.Droid.StatefulStackLayoutRenderer;crc64dbf290ea7e69bd26.StatefulStackLayoutRenderer
+plugin.inputkit.platforms.droid.StatefulStackLayoutRenderer;crc64dbf290ea7e69bd26.StatefulStackLayoutRenderer
 Plugin.LocalNotification.Platforms.GeofenceTransitionsIntentReceiver, Plugin.LocalNotification;plugin.LocalNotification.GeofenceTransitionsIntentReceiver
 Plugin.LocalNotification.Platforms.GeofenceTransitionsIntentReceiver;plugin.LocalNotification.GeofenceTransitionsIntentReceiver
 plugin.LocalNotification.GeofenceTransitionsIntentReceiver;plugin.LocalNotification.GeofenceTransitionsIntentReceiver
@@ -223,6 +241,9 @@ androidx.appcompat.widget.DecorContentParent;androidx.appcompat.widget.DecorCont
 AndroidX.AppCompat.Widget.IDecorToolbar, Xamarin.AndroidX.AppCompat;androidx.appcompat.widget.DecorToolbar
 AndroidX.AppCompat.Widget.IDecorToolbar;androidx.appcompat.widget.DecorToolbar
 androidx.appcompat.widget.DecorToolbar;androidx.appcompat.widget.DecorToolbar
+AndroidX.AppCompat.Widget.IEmojiCompatConfigurationView, Xamarin.AndroidX.AppCompat;androidx.appcompat.widget.EmojiCompatConfigurationView
+AndroidX.AppCompat.Widget.IEmojiCompatConfigurationView;androidx.appcompat.widget.EmojiCompatConfigurationView
+androidx.appcompat.widget.EmojiCompatConfigurationView;androidx.appcompat.widget.EmojiCompatConfigurationView
 AndroidX.AppCompat.Widget.IFitWindowsViewGroupOnFitSystemWindowsListener, Xamarin.AndroidX.AppCompat;androidx.appcompat.widget.FitWindowsViewGroup$OnFitSystemWindowsListener
 AndroidX.AppCompat.Widget.IFitWindowsViewGroupOnFitSystemWindowsListener;androidx.appcompat.widget.FitWindowsViewGroup$OnFitSystemWindowsListener
 androidx.appcompat.widget.FitWindowsViewGroup$OnFitSystemWindowsListener;androidx.appcompat.widget.FitWindowsViewGroup$OnFitSystemWindowsListener
@@ -487,9 +508,6 @@ androidx.coordinatorlayout.widget.CoordinatorLayout$DispatchChangeEvent;androidx
 Android.Support.V4.OS.IResultReceiver, Xamarin.AndroidX.Core;android.support.v4.os.IResultReceiver
 Android.Support.V4.OS.IResultReceiver;android.support.v4.os.IResultReceiver
 android.support.v4.os.IResultReceiver;android.support.v4.os.IResultReceiver
-Android.Support.V4.OS.IResultReceiver2, Xamarin.AndroidX.Core;android.support.v4.os.IResultReceiver2
-Android.Support.V4.OS.IResultReceiver2;android.support.v4.os.IResultReceiver2
-android.support.v4.os.IResultReceiver2;android.support.v4.os.IResultReceiver2
 Android.Support.V4.App.INotificationSideChannel, Xamarin.AndroidX.Core;android.support.v4.app.INotificationSideChannel
 Android.Support.V4.App.INotificationSideChannel;android.support.v4.app.INotificationSideChannel
 android.support.v4.app.INotificationSideChannel;android.support.v4.app.INotificationSideChannel
@@ -622,9 +640,6 @@ androidx.core.app.NotificationCompat$Action$SemanticAction;androidx.core.app.Not
 AndroidX.Core.App.NotificationCompat+IBadgeIconType, Xamarin.AndroidX.Core;androidx.core.app.NotificationCompat$BadgeIconType
 AndroidX.Core.App.NotificationCompat.IBadgeIconType;androidx.core.app.NotificationCompat$BadgeIconType
 androidx.core.app.NotificationCompat$BadgeIconType;androidx.core.app.NotificationCompat$BadgeIconType
-AndroidX.Core.App.NotificationCompat+CallStyle+ICallType, Xamarin.AndroidX.Core;androidx.core.app.NotificationCompat$CallStyle$CallType
-AndroidX.Core.App.NotificationCompat.CallStyle.ICallType;androidx.core.app.NotificationCompat$CallStyle$CallType
-androidx.core.app.NotificationCompat$CallStyle$CallType;androidx.core.app.NotificationCompat$CallStyle$CallType
 AndroidX.Core.App.NotificationCompat+IExtender, Xamarin.AndroidX.Core;androidx.core.app.NotificationCompat$Extender
 AndroidX.Core.App.NotificationCompat.IExtender;androidx.core.app.NotificationCompat$Extender
 androidx.core.app.NotificationCompat$Extender;androidx.core.app.NotificationCompat$Extender
@@ -640,9 +655,6 @@ androidx.core.app.NotificationCompat$ServiceNotificationBehavior;androidx.core.a
 AndroidX.Core.App.NotificationCompat+IStreamType, Xamarin.AndroidX.Core;androidx.core.app.NotificationCompat$StreamType
 AndroidX.Core.App.NotificationCompat.IStreamType;androidx.core.app.NotificationCompat$StreamType
 androidx.core.app.NotificationCompat$StreamType;androidx.core.app.NotificationCompat$StreamType
-AndroidX.Core.App.PendingIntentCompat+IFlags, Xamarin.AndroidX.Core;androidx.core.app.PendingIntentCompat$Flags
-AndroidX.Core.App.PendingIntentCompat.IFlags;androidx.core.app.PendingIntentCompat$Flags
-androidx.core.app.PendingIntentCompat$Flags;androidx.core.app.PendingIntentCompat$Flags
 AndroidX.Core.App.RemoteInput+IEditChoicesBeforeSending, Xamarin.AndroidX.Core;androidx.core.app.RemoteInput$EditChoicesBeforeSending
 AndroidX.Core.App.RemoteInput.IEditChoicesBeforeSending;androidx.core.app.RemoteInput$EditChoicesBeforeSending
 androidx.core.app.RemoteInput$EditChoicesBeforeSending;androidx.core.app.RemoteInput$EditChoicesBeforeSending
@@ -877,6 +889,24 @@ androidx.dynamicanimation.animation.DynamicAnimation$OnAnimationUpdateListener;a
 AndroidX.DynamicAnimation.DynamicAnimation+IOnAnimationUpdateListenerImplementor, Xamarin.AndroidX.DynamicAnimation;mono.androidx.dynamicanimation.animation.DynamicAnimation_OnAnimationUpdateListenerImplementor
 AndroidX.DynamicAnimation.DynamicAnimation.IOnAnimationUpdateListenerImplementor;mono.androidx.dynamicanimation.animation.DynamicAnimation_OnAnimationUpdateListenerImplementor
 mono.androidx.dynamicanimation.animation.DynamicAnimation_OnAnimationUpdateListenerImplementor;mono.androidx.dynamicanimation.animation.DynamicAnimation_OnAnimationUpdateListenerImplementor
+AndroidX.Emoji2.Text.EmojiCompat+ICodepointSequenceMatchResult, Xamarin.AndroidX.Emoji2;androidx.emoji2.text.EmojiCompat$CodepointSequenceMatchResult
+AndroidX.Emoji2.Text.EmojiCompat.ICodepointSequenceMatchResult;androidx.emoji2.text.EmojiCompat$CodepointSequenceMatchResult
+androidx.emoji2.text.EmojiCompat$CodepointSequenceMatchResult;androidx.emoji2.text.EmojiCompat$CodepointSequenceMatchResult
+AndroidX.Emoji2.Text.EmojiCompat+IGlyphChecker, Xamarin.AndroidX.Emoji2;androidx.emoji2.text.EmojiCompat$GlyphChecker
+AndroidX.Emoji2.Text.EmojiCompat.IGlyphChecker;androidx.emoji2.text.EmojiCompat$GlyphChecker
+androidx.emoji2.text.EmojiCompat$GlyphChecker;androidx.emoji2.text.EmojiCompat$GlyphChecker
+AndroidX.Emoji2.Text.EmojiCompat+ILoadStrategy, Xamarin.AndroidX.Emoji2;androidx.emoji2.text.EmojiCompat$LoadStrategy
+AndroidX.Emoji2.Text.EmojiCompat.ILoadStrategy;androidx.emoji2.text.EmojiCompat$LoadStrategy
+androidx.emoji2.text.EmojiCompat$LoadStrategy;androidx.emoji2.text.EmojiCompat$LoadStrategy
+AndroidX.Emoji2.Text.EmojiCompat+IMetadataRepoLoader, Xamarin.AndroidX.Emoji2;androidx.emoji2.text.EmojiCompat$MetadataRepoLoader
+AndroidX.Emoji2.Text.EmojiCompat.IMetadataRepoLoader;androidx.emoji2.text.EmojiCompat$MetadataRepoLoader
+androidx.emoji2.text.EmojiCompat$MetadataRepoLoader;androidx.emoji2.text.EmojiCompat$MetadataRepoLoader
+AndroidX.Emoji2.Text.EmojiCompat+IReplaceStrategy, Xamarin.AndroidX.Emoji2;androidx.emoji2.text.EmojiCompat$ReplaceStrategy
+AndroidX.Emoji2.Text.EmojiCompat.IReplaceStrategy;androidx.emoji2.text.EmojiCompat$ReplaceStrategy
+androidx.emoji2.text.EmojiCompat$ReplaceStrategy;androidx.emoji2.text.EmojiCompat$ReplaceStrategy
+AndroidX.Emoji2.Text.EmojiMetadata+IHasGlyph, Xamarin.AndroidX.Emoji2;androidx.emoji2.text.EmojiMetadata$HasGlyph
+AndroidX.Emoji2.Text.EmojiMetadata.IHasGlyph;androidx.emoji2.text.EmojiMetadata$HasGlyph
+androidx.emoji2.text.EmojiMetadata$HasGlyph;androidx.emoji2.text.EmojiMetadata$HasGlyph
 AndroidX.Fragment.App.FragmentManager+IBackStackEntry, Xamarin.AndroidX.Fragment;androidx.fragment.app.FragmentManager$BackStackEntry
 AndroidX.Fragment.App.FragmentManager.IBackStackEntry;androidx.fragment.app.FragmentManager$BackStackEntry
 androidx.fragment.app.FragmentManager$BackStackEntry;androidx.fragment.app.FragmentManager$BackStackEntry
@@ -1189,6 +1219,15 @@ mono.androidx.recyclerview.widget.RecyclerView_RecyclerListenerImplementor;mono.
 AndroidX.RecyclerView.Widget.RecyclerView+SmoothScroller+IScrollVectorProvider, Xamarin.AndroidX.RecyclerView;androidx.recyclerview.widget.RecyclerView$SmoothScroller$ScrollVectorProvider
 AndroidX.RecyclerView.Widget.RecyclerView.SmoothScroller.IScrollVectorProvider;androidx.recyclerview.widget.RecyclerView$SmoothScroller$ScrollVectorProvider
 androidx.recyclerview.widget.RecyclerView$SmoothScroller$ScrollVectorProvider;androidx.recyclerview.widget.RecyclerView$SmoothScroller$ScrollVectorProvider
+AndroidX.ResourceInspection.Annotation.IAppCompatShadowedAttributes, Xamarin.AndroidX.ResourceInspection.Annotation;androidx.resourceinspection.annotation.AppCompatShadowedAttributes
+AndroidX.ResourceInspection.Annotation.IAppCompatShadowedAttributes;androidx.resourceinspection.annotation.AppCompatShadowedAttributes
+androidx.resourceinspection.annotation.AppCompatShadowedAttributes;androidx.resourceinspection.annotation.AppCompatShadowedAttributes
+AndroidX.ResourceInspection.Annotation.IAttributeIntMap, Xamarin.AndroidX.ResourceInspection.Annotation;androidx.resourceinspection.annotation.Attribute$IntMap
+AndroidX.ResourceInspection.Annotation.IAttributeIntMap;androidx.resourceinspection.annotation.Attribute$IntMap
+androidx.resourceinspection.annotation.Attribute$IntMap;androidx.resourceinspection.annotation.Attribute$IntMap
+AndroidX.ResourceInspection.Annotation.IAttribute, Xamarin.AndroidX.ResourceInspection.Annotation;androidx.resourceinspection.annotation.Attribute
+AndroidX.ResourceInspection.Annotation.IAttribute;androidx.resourceinspection.annotation.Attribute
+androidx.resourceinspection.annotation.Attribute;androidx.resourceinspection.annotation.Attribute
 AndroidX.SavedState.ISavedStateRegistryOwner, Xamarin.AndroidX.SavedState;androidx.savedstate.SavedStateRegistryOwner
 AndroidX.SavedState.ISavedStateRegistryOwner;androidx.savedstate.SavedStateRegistryOwner
 androidx.savedstate.SavedStateRegistryOwner;androidx.savedstate.SavedStateRegistryOwner
@@ -1354,6 +1393,9 @@ xamarin.communitytoolkit.ui.views.SemanticOrderViewRenderer;crc642e1c7a98bdb5c44
 Xamarin.CommunityToolkit.UI.Views.TextSwitcherRenderer, Xamarin.CommunityToolkit;crc642e1c7a98bdb5c44a.TextSwitcherRenderer
 Xamarin.CommunityToolkit.UI.Views.TextSwitcherRenderer;crc642e1c7a98bdb5c44a.TextSwitcherRenderer
 xamarin.communitytoolkit.ui.views.TextSwitcherRenderer;crc642e1c7a98bdb5c44a.TextSwitcherRenderer
+Xamarin.Essentials.Connectivity+EssentialsNetworkCallback, Xamarin.Essentials;crc64a0e0a82d0db9a07d.Connectivity_EssentialsNetworkCallback
+Xamarin.Essentials.Connectivity.EssentialsNetworkCallback;crc64a0e0a82d0db9a07d.Connectivity_EssentialsNetworkCallback
+xamarin.essentials.Connectivity_EssentialsNetworkCallback;crc64a0e0a82d0db9a07d.Connectivity_EssentialsNetworkCallback
 Xamarin.Essentials.AccelerometerListener, Xamarin.Essentials;crc64a0e0a82d0db9a07d.AccelerometerListener
 Xamarin.Essentials.AccelerometerListener;crc64a0e0a82d0db9a07d.AccelerometerListener
 xamarin.essentials.AccelerometerListener;crc64a0e0a82d0db9a07d.AccelerometerListener
@@ -1447,21 +1489,36 @@ xamarin.forms.platform.android.RadioButtonRenderer;crc643f46942d9dd1fff9.RadioBu
 Xamarin.Forms.Platform.Android.CellAdapter, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.CellAdapter
 Xamarin.Forms.Platform.Android.CellAdapter;crc643f46942d9dd1fff9.CellAdapter
 xamarin.forms.platform.android.CellAdapter;crc643f46942d9dd1fff9.CellAdapter
+Xamarin.Forms.Platform.Android.BaseCellAppCompatView, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.BaseCellAppCompatView
+Xamarin.Forms.Platform.Android.BaseCellAppCompatView;crc643f46942d9dd1fff9.BaseCellAppCompatView
+xamarin.forms.platform.android.BaseCellAppCompatView;crc643f46942d9dd1fff9.BaseCellAppCompatView
 Xamarin.Forms.Platform.Android.BaseCellView, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.BaseCellView
 Xamarin.Forms.Platform.Android.BaseCellView;crc643f46942d9dd1fff9.BaseCellView
 xamarin.forms.platform.android.BaseCellView;crc643f46942d9dd1fff9.BaseCellView
 Xamarin.Forms.Platform.Android.CellRenderer+RendererHolder, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.CellRenderer_RendererHolder
 Xamarin.Forms.Platform.Android.CellRenderer.RendererHolder;crc643f46942d9dd1fff9.CellRenderer_RendererHolder
 xamarin.forms.platform.android.CellRenderer_RendererHolder;crc643f46942d9dd1fff9.CellRenderer_RendererHolder
+Xamarin.Forms.Platform.Android.EntryCellAppCompatEditText, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.EntryCellAppCompatEditText
+Xamarin.Forms.Platform.Android.EntryCellAppCompatEditText;crc643f46942d9dd1fff9.EntryCellAppCompatEditText
+xamarin.forms.platform.android.EntryCellAppCompatEditText;crc643f46942d9dd1fff9.EntryCellAppCompatEditText
+Xamarin.Forms.Platform.Android.EntryCellAppCompatView, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.EntryCellAppCompatView
+Xamarin.Forms.Platform.Android.EntryCellAppCompatView;crc643f46942d9dd1fff9.EntryCellAppCompatView
+xamarin.forms.platform.android.EntryCellAppCompatView;crc643f46942d9dd1fff9.EntryCellAppCompatView
 Xamarin.Forms.Platform.Android.EntryCellEditText, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.EntryCellEditText
 Xamarin.Forms.Platform.Android.EntryCellEditText;crc643f46942d9dd1fff9.EntryCellEditText
 xamarin.forms.platform.android.EntryCellEditText;crc643f46942d9dd1fff9.EntryCellEditText
 Xamarin.Forms.Platform.Android.EntryCellView, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.EntryCellView
 Xamarin.Forms.Platform.Android.EntryCellView;crc643f46942d9dd1fff9.EntryCellView
 xamarin.forms.platform.android.EntryCellView;crc643f46942d9dd1fff9.EntryCellView
+Xamarin.Forms.Platform.Android.SwitchCellAppCompatView, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.SwitchCellAppCompatView
+Xamarin.Forms.Platform.Android.SwitchCellAppCompatView;crc643f46942d9dd1fff9.SwitchCellAppCompatView
+xamarin.forms.platform.android.SwitchCellAppCompatView;crc643f46942d9dd1fff9.SwitchCellAppCompatView
 Xamarin.Forms.Platform.Android.SwitchCellView, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.SwitchCellView
 Xamarin.Forms.Platform.Android.SwitchCellView;crc643f46942d9dd1fff9.SwitchCellView
 xamarin.forms.platform.android.SwitchCellView;crc643f46942d9dd1fff9.SwitchCellView
+Xamarin.Forms.Platform.Android.TextCellAppCompatRenderer+TextCellAppCompatView, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.TextCellAppCompatRenderer_TextCellAppCompatView
+Xamarin.Forms.Platform.Android.TextCellAppCompatRenderer.TextCellAppCompatView;crc643f46942d9dd1fff9.TextCellAppCompatRenderer_TextCellAppCompatView
+xamarin.forms.platform.android.TextCellAppCompatRenderer_TextCellAppCompatView;crc643f46942d9dd1fff9.TextCellAppCompatRenderer_TextCellAppCompatView
 Xamarin.Forms.Platform.Android.TextCellRenderer+TextCellView, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.TextCellRenderer_TextCellView
 Xamarin.Forms.Platform.Android.TextCellRenderer.TextCellView;crc643f46942d9dd1fff9.TextCellRenderer_TextCellView
 xamarin.forms.platform.android.TextCellRenderer_TextCellView;crc643f46942d9dd1fff9.TextCellRenderer_TextCellView
@@ -1687,12 +1744,18 @@ xamarin.forms.platform.android.DatePickerRendererBase_1;crc643f46942d9dd1fff9.Da
 Xamarin.Forms.Platform.Android.DatePickerRenderer, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.DatePickerRenderer
 Xamarin.Forms.Platform.Android.DatePickerRenderer;crc643f46942d9dd1fff9.DatePickerRenderer
 xamarin.forms.platform.android.DatePickerRenderer;crc643f46942d9dd1fff9.DatePickerRenderer
+Xamarin.Forms.Platform.Android.EditorAppCompatRenderer, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.EditorAppCompatRenderer
+Xamarin.Forms.Platform.Android.EditorAppCompatRenderer;crc643f46942d9dd1fff9.EditorAppCompatRenderer
+xamarin.forms.platform.android.EditorAppCompatRenderer;crc643f46942d9dd1fff9.EditorAppCompatRenderer
 Xamarin.Forms.Platform.Android.EditorRenderer, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.EditorRenderer
 Xamarin.Forms.Platform.Android.EditorRenderer;crc643f46942d9dd1fff9.EditorRenderer
 xamarin.forms.platform.android.EditorRenderer;crc643f46942d9dd1fff9.EditorRenderer
 Xamarin.Forms.Platform.Android.EditorRendererBase`1, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.EditorRendererBase_1
 Xamarin.Forms.Platform.Android.EditorRendererBase`1;crc643f46942d9dd1fff9.EditorRendererBase_1
 xamarin.forms.platform.android.EditorRendererBase_1;crc643f46942d9dd1fff9.EditorRendererBase_1
+Xamarin.Forms.Platform.Android.EntryAppCompatRenderer, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.EntryAppCompatRenderer
+Xamarin.Forms.Platform.Android.EntryAppCompatRenderer;crc643f46942d9dd1fff9.EntryAppCompatRenderer
+xamarin.forms.platform.android.EntryAppCompatRenderer;crc643f46942d9dd1fff9.EntryAppCompatRenderer
 Xamarin.Forms.Platform.Android.EntryRenderer, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.EntryRenderer
 Xamarin.Forms.Platform.Android.EntryRenderer;crc643f46942d9dd1fff9.EntryRenderer
 xamarin.forms.platform.android.EntryRenderer;crc643f46942d9dd1fff9.EntryRenderer
@@ -1711,6 +1774,21 @@ xamarin.forms.platform.android.FormattedStringExtensions_TextDecorationSpan;crc6
 Xamarin.Forms.Platform.Android.FormattedStringExtensions+LineHeightSpan, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.FormattedStringExtensions_LineHeightSpan
 Xamarin.Forms.Platform.Android.FormattedStringExtensions.LineHeightSpan;crc643f46942d9dd1fff9.FormattedStringExtensions_LineHeightSpan
 xamarin.forms.platform.android.FormattedStringExtensions_LineHeightSpan;crc643f46942d9dd1fff9.FormattedStringExtensions_LineHeightSpan
+Xamarin.Forms.Platform.Android.FormsAppCompatEditText, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.FormsAppCompatEditText
+Xamarin.Forms.Platform.Android.FormsAppCompatEditText;crc643f46942d9dd1fff9.FormsAppCompatEditText
+xamarin.forms.platform.android.FormsAppCompatEditText;crc643f46942d9dd1fff9.FormsAppCompatEditText
+Xamarin.Forms.Platform.Android.FormsAppCompatEditTextBase, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.FormsAppCompatEditTextBase
+Xamarin.Forms.Platform.Android.FormsAppCompatEditTextBase;crc643f46942d9dd1fff9.FormsAppCompatEditTextBase
+xamarin.forms.platform.android.FormsAppCompatEditTextBase;crc643f46942d9dd1fff9.FormsAppCompatEditTextBase
+Xamarin.Forms.Platform.Android.EntryAppCompatEditText, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.EntryAppCompatEditText
+Xamarin.Forms.Platform.Android.EntryAppCompatEditText;crc643f46942d9dd1fff9.EntryAppCompatEditText
+xamarin.forms.platform.android.EntryAppCompatEditText;crc643f46942d9dd1fff9.EntryAppCompatEditText
+Xamarin.Forms.Platform.Android.EditorAppCompatEditText, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.EditorAppCompatEditText
+Xamarin.Forms.Platform.Android.EditorAppCompatEditText;crc643f46942d9dd1fff9.EditorAppCompatEditText
+xamarin.forms.platform.android.EditorAppCompatEditText;crc643f46942d9dd1fff9.EditorAppCompatEditText
+Xamarin.Forms.Platform.Android.FormsAppCompatTextView, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.FormsAppCompatTextView
+Xamarin.Forms.Platform.Android.FormsAppCompatTextView;crc643f46942d9dd1fff9.FormsAppCompatTextView
+xamarin.forms.platform.android.FormsAppCompatTextView;crc643f46942d9dd1fff9.FormsAppCompatTextView
 Xamarin.Forms.Platform.Android.FormsEditText, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.FormsEditText
 Xamarin.Forms.Platform.Android.FormsEditText;crc643f46942d9dd1fff9.FormsEditText
 xamarin.forms.platform.android.FormsEditText;crc643f46942d9dd1fff9.FormsEditText
@@ -1801,6 +1879,9 @@ xamarin.forms.platform.android.PageContainer;crc643f46942d9dd1fff9.PageContainer
 Xamarin.Forms.Platform.Android.PageRenderer, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.PageRenderer
 Xamarin.Forms.Platform.Android.PageRenderer;crc643f46942d9dd1fff9.PageRenderer
 xamarin.forms.platform.android.PageRenderer;crc643f46942d9dd1fff9.PageRenderer
+Xamarin.Forms.Platform.Android.PickerAppCompatEditText, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.PickerAppCompatEditText
+Xamarin.Forms.Platform.Android.PickerAppCompatEditText;crc643f46942d9dd1fff9.PickerAppCompatEditText
+xamarin.forms.platform.android.PickerAppCompatEditText;crc643f46942d9dd1fff9.PickerAppCompatEditText
 Xamarin.Forms.Platform.Android.PickerEditText, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.PickerEditText
 Xamarin.Forms.Platform.Android.PickerEditText;crc643f46942d9dd1fff9.PickerEditText
 xamarin.forms.platform.android.PickerEditText;crc643f46942d9dd1fff9.PickerEditText
@@ -1819,6 +1900,9 @@ xamarin.forms.platform.android.ScrollViewContainer;crc643f46942d9dd1fff9.ScrollV
 Xamarin.Forms.Platform.Android.ScrollViewRenderer, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.ScrollViewRenderer
 Xamarin.Forms.Platform.Android.ScrollViewRenderer;crc643f46942d9dd1fff9.ScrollViewRenderer
 xamarin.forms.platform.android.ScrollViewRenderer;crc643f46942d9dd1fff9.ScrollViewRenderer
+Xamarin.Forms.Platform.Android.SearchBarAppCompatRenderer, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.SearchBarAppCompatRenderer
+Xamarin.Forms.Platform.Android.SearchBarAppCompatRenderer;crc643f46942d9dd1fff9.SearchBarAppCompatRenderer
+xamarin.forms.platform.android.SearchBarAppCompatRenderer;crc643f46942d9dd1fff9.SearchBarAppCompatRenderer
 Xamarin.Forms.Platform.Android.SearchBarRenderer, Xamarin.Forms.Platform.Android;crc643f46942d9dd1fff9.SearchBarRenderer
 Xamarin.Forms.Platform.Android.SearchBarRenderer;crc643f46942d9dd1fff9.SearchBarRenderer
 xamarin.forms.platform.android.SearchBarRenderer;crc643f46942d9dd1fff9.SearchBarRenderer
@@ -1990,6 +2074,9 @@ xamarin.forms.platform.android.fastrenderers.FrameRenderer;crc64ee486da937c010f4
 Xamarin.Forms.Platform.Android.FastRenderers.ImageRenderer, Xamarin.Forms.Platform.Android;crc64ee486da937c010f4.ImageRenderer
 Xamarin.Forms.Platform.Android.FastRenderers.ImageRenderer;crc64ee486da937c010f4.ImageRenderer
 xamarin.forms.platform.android.fastrenderers.ImageRenderer;crc64ee486da937c010f4.ImageRenderer
+Xamarin.Forms.Platform.Android.FastRenderers.LabelAppCompatRenderer, Xamarin.Forms.Platform.Android;crc64ee486da937c010f4.LabelAppCompatRenderer
+Xamarin.Forms.Platform.Android.FastRenderers.LabelAppCompatRenderer;crc64ee486da937c010f4.LabelAppCompatRenderer
+xamarin.forms.platform.android.fastrenderers.LabelAppCompatRenderer;crc64ee486da937c010f4.LabelAppCompatRenderer
 Xamarin.Forms.Platform.Android.FastRenderers.LabelRenderer, Xamarin.Forms.Platform.Android;crc64ee486da937c010f4.LabelRenderer
 Xamarin.Forms.Platform.Android.FastRenderers.LabelRenderer;crc64ee486da937c010f4.LabelRenderer
 xamarin.forms.platform.android.fastrenderers.LabelRenderer;crc64ee486da937c010f4.LabelRenderer
@@ -2032,6 +2119,12 @@ xamarin.forms.platform.android.appcompat.NavigationPageRenderer_Container;crc647
 Xamarin.Forms.Platform.Android.AppCompat.NavigationPageRenderer+DrawerMultiplexedListener, Xamarin.Forms.Platform.Android;crc64720bb2db43a66fe9.NavigationPageRenderer_DrawerMultiplexedListener
 Xamarin.Forms.Platform.Android.AppCompat.NavigationPageRenderer.DrawerMultiplexedListener;crc64720bb2db43a66fe9.NavigationPageRenderer_DrawerMultiplexedListener
 xamarin.forms.platform.android.appcompat.NavigationPageRenderer_DrawerMultiplexedListener;crc64720bb2db43a66fe9.NavigationPageRenderer_DrawerMultiplexedListener
+Xamarin.Forms.Platform.Android.AppCompat.PickerAppCompatRendererBase`1, Xamarin.Forms.Platform.Android;crc64720bb2db43a66fe9.PickerAppCompatRendererBase_1
+Xamarin.Forms.Platform.Android.AppCompat.PickerAppCompatRendererBase`1;crc64720bb2db43a66fe9.PickerAppCompatRendererBase_1
+xamarin.forms.platform.android.appcompat.PickerAppCompatRendererBase_1;crc64720bb2db43a66fe9.PickerAppCompatRendererBase_1
+Xamarin.Forms.Platform.Android.AppCompat.PickerAppCompatRenderer, Xamarin.Forms.Platform.Android;crc64720bb2db43a66fe9.PickerAppCompatRenderer
+Xamarin.Forms.Platform.Android.AppCompat.PickerAppCompatRenderer;crc64720bb2db43a66fe9.PickerAppCompatRenderer
+xamarin.forms.platform.android.appcompat.PickerAppCompatRenderer;crc64720bb2db43a66fe9.PickerAppCompatRenderer
 Xamarin.Forms.Platform.Android.AppCompat.PickerRendererBase`1, Xamarin.Forms.Platform.Android;crc64720bb2db43a66fe9.PickerRendererBase_1
 Xamarin.Forms.Platform.Android.AppCompat.PickerRendererBase`1;crc64720bb2db43a66fe9.PickerRendererBase_1
 xamarin.forms.platform.android.appcompat.PickerRendererBase_1;crc64720bb2db43a66fe9.PickerRendererBase_1
@@ -3367,18 +3460,6 @@ kotlin.collections.Grouping;kotlin.collections.Grouping
 Xamarin.KotlinX.Coroutines.ICancellableContinuation, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.CancellableContinuation
 Xamarin.KotlinX.Coroutines.ICancellableContinuation;kotlinx.coroutines.CancellableContinuation
 kotlinx.coroutines.CancellableContinuation;kotlinx.coroutines.CancellableContinuation
-Xamarin.KotlinX.Coroutines.IChildHandle, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.ChildHandle
-Xamarin.KotlinX.Coroutines.IChildHandle;kotlinx.coroutines.ChildHandle
-kotlinx.coroutines.ChildHandle;kotlinx.coroutines.ChildHandle
-Xamarin.KotlinX.Coroutines.IChildJob, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.ChildJob
-Xamarin.KotlinX.Coroutines.IChildJob;kotlinx.coroutines.ChildJob
-kotlinx.coroutines.ChildJob;kotlinx.coroutines.ChildJob
-Xamarin.KotlinX.Coroutines.ICompletableDeferred, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.CompletableDeferred
-Xamarin.KotlinX.Coroutines.ICompletableDeferred;kotlinx.coroutines.CompletableDeferred
-kotlinx.coroutines.CompletableDeferred;kotlinx.coroutines.CompletableDeferred
-Xamarin.KotlinX.Coroutines.ICompletableJob, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.CompletableJob
-Xamarin.KotlinX.Coroutines.ICompletableJob;kotlinx.coroutines.CompletableJob
-kotlinx.coroutines.CompletableJob;kotlinx.coroutines.CompletableJob
 Xamarin.KotlinX.Coroutines.ICopyableThreadContextElement, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.CopyableThreadContextElement
 Xamarin.KotlinX.Coroutines.ICopyableThreadContextElement;kotlinx.coroutines.CopyableThreadContextElement
 kotlinx.coroutines.CopyableThreadContextElement;kotlinx.coroutines.CopyableThreadContextElement
@@ -3391,9 +3472,6 @@ kotlinx.coroutines.CoroutineExceptionHandler;kotlinx.coroutines.CoroutineExcepti
 Xamarin.KotlinX.Coroutines.ICoroutineScope, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.CoroutineScope
 Xamarin.KotlinX.Coroutines.ICoroutineScope;kotlinx.coroutines.CoroutineScope
 kotlinx.coroutines.CoroutineScope;kotlinx.coroutines.CoroutineScope
-Xamarin.KotlinX.Coroutines.IDeferred, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.Deferred
-Xamarin.KotlinX.Coroutines.IDeferred;kotlinx.coroutines.Deferred
-kotlinx.coroutines.Deferred;kotlinx.coroutines.Deferred
 Xamarin.KotlinX.Coroutines.IDelay, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.Delay
 Xamarin.KotlinX.Coroutines.IDelay;kotlinx.coroutines.Delay
 kotlinx.coroutines.Delay;kotlinx.coroutines.Delay
@@ -3412,42 +3490,15 @@ kotlinx.coroutines.FlowPreview;kotlinx.coroutines.FlowPreview
 Xamarin.KotlinX.Coroutines.IInternalCoroutinesApi, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.InternalCoroutinesApi
 Xamarin.KotlinX.Coroutines.IInternalCoroutinesApi;kotlinx.coroutines.InternalCoroutinesApi
 kotlinx.coroutines.InternalCoroutinesApi;kotlinx.coroutines.InternalCoroutinesApi
-Xamarin.KotlinX.Coroutines.IJob, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.Job
-Xamarin.KotlinX.Coroutines.IJob;kotlinx.coroutines.Job
-kotlinx.coroutines.Job;kotlinx.coroutines.Job
 Xamarin.KotlinX.Coroutines.IObsoleteCoroutinesApi, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.ObsoleteCoroutinesApi
 Xamarin.KotlinX.Coroutines.IObsoleteCoroutinesApi;kotlinx.coroutines.ObsoleteCoroutinesApi
 kotlinx.coroutines.ObsoleteCoroutinesApi;kotlinx.coroutines.ObsoleteCoroutinesApi
-Xamarin.KotlinX.Coroutines.IParentJob, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.ParentJob
-Xamarin.KotlinX.Coroutines.IParentJob;kotlinx.coroutines.ParentJob
-kotlinx.coroutines.ParentJob;kotlinx.coroutines.ParentJob
 Xamarin.KotlinX.Coroutines.IThreadContextElement, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.ThreadContextElement
 Xamarin.KotlinX.Coroutines.IThreadContextElement;kotlinx.coroutines.ThreadContextElement
 kotlinx.coroutines.ThreadContextElement;kotlinx.coroutines.ThreadContextElement
-Xamarin.KotlinX.Coroutines.Sync.IMutex, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.sync.Mutex
-Xamarin.KotlinX.Coroutines.Sync.IMutex;kotlinx.coroutines.sync.Mutex
-kotlinx.coroutines.sync.Mutex;kotlinx.coroutines.sync.Mutex
 Xamarin.KotlinX.Coroutines.Sync.ISemaphore, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.sync.Semaphore
 Xamarin.KotlinX.Coroutines.Sync.ISemaphore;kotlinx.coroutines.sync.Semaphore
 kotlinx.coroutines.sync.Semaphore;kotlinx.coroutines.sync.Semaphore
-Xamarin.KotlinX.Coroutines.Selects.ISelectBuilder, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.selects.SelectBuilder
-Xamarin.KotlinX.Coroutines.Selects.ISelectBuilder;kotlinx.coroutines.selects.SelectBuilder
-kotlinx.coroutines.selects.SelectBuilder;kotlinx.coroutines.selects.SelectBuilder
-Xamarin.KotlinX.Coroutines.Selects.ISelectClause, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.selects.SelectClause
-Xamarin.KotlinX.Coroutines.Selects.ISelectClause;kotlinx.coroutines.selects.SelectClause
-kotlinx.coroutines.selects.SelectClause;kotlinx.coroutines.selects.SelectClause
-Xamarin.KotlinX.Coroutines.Selects.ISelectClause0, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.selects.SelectClause0
-Xamarin.KotlinX.Coroutines.Selects.ISelectClause0;kotlinx.coroutines.selects.SelectClause0
-kotlinx.coroutines.selects.SelectClause0;kotlinx.coroutines.selects.SelectClause0
-Xamarin.KotlinX.Coroutines.Selects.ISelectClause1, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.selects.SelectClause1
-Xamarin.KotlinX.Coroutines.Selects.ISelectClause1;kotlinx.coroutines.selects.SelectClause1
-kotlinx.coroutines.selects.SelectClause1;kotlinx.coroutines.selects.SelectClause1
-Xamarin.KotlinX.Coroutines.Selects.ISelectClause2, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.selects.SelectClause2
-Xamarin.KotlinX.Coroutines.Selects.ISelectClause2;kotlinx.coroutines.selects.SelectClause2
-kotlinx.coroutines.selects.SelectClause2;kotlinx.coroutines.selects.SelectClause2
-Xamarin.KotlinX.Coroutines.Selects.ISelectInstance, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.selects.SelectInstance
-Xamarin.KotlinX.Coroutines.Selects.ISelectInstance;kotlinx.coroutines.selects.SelectInstance
-kotlinx.coroutines.selects.SelectInstance;kotlinx.coroutines.selects.SelectInstance
 Xamarin.KotlinX.Coroutines.Flow.IFlow, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.flow.Flow
 Xamarin.KotlinX.Coroutines.Flow.IFlow;kotlinx.coroutines.flow.Flow
 kotlinx.coroutines.flow.Flow;kotlinx.coroutines.flow.Flow
@@ -3469,24 +3520,6 @@ kotlinx.coroutines.flow.SharingStarted;kotlinx.coroutines.flow.SharingStarted
 Xamarin.KotlinX.Coroutines.Flow.IStateFlow, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.flow.StateFlow
 Xamarin.KotlinX.Coroutines.Flow.IStateFlow;kotlinx.coroutines.flow.StateFlow
 kotlinx.coroutines.flow.StateFlow;kotlinx.coroutines.flow.StateFlow
-Xamarin.KotlinX.Coroutines.Channels.IActorScope, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.channels.ActorScope
-Xamarin.KotlinX.Coroutines.Channels.IActorScope;kotlinx.coroutines.channels.ActorScope
-kotlinx.coroutines.channels.ActorScope;kotlinx.coroutines.channels.ActorScope
-Xamarin.KotlinX.Coroutines.Channels.IBroadcastChannel, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.channels.BroadcastChannel
-Xamarin.KotlinX.Coroutines.Channels.IBroadcastChannel;kotlinx.coroutines.channels.BroadcastChannel
-kotlinx.coroutines.channels.BroadcastChannel;kotlinx.coroutines.channels.BroadcastChannel
-Xamarin.KotlinX.Coroutines.Channels.IChannel, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.channels.Channel
-Xamarin.KotlinX.Coroutines.Channels.IChannel;kotlinx.coroutines.channels.Channel
-kotlinx.coroutines.channels.Channel;kotlinx.coroutines.channels.Channel
 Xamarin.KotlinX.Coroutines.Channels.IChannelIterator, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.channels.ChannelIterator
 Xamarin.KotlinX.Coroutines.Channels.IChannelIterator;kotlinx.coroutines.channels.ChannelIterator
 kotlinx.coroutines.channels.ChannelIterator;kotlinx.coroutines.channels.ChannelIterator
-Xamarin.KotlinX.Coroutines.Channels.IProducerScope, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.channels.ProducerScope
-Xamarin.KotlinX.Coroutines.Channels.IProducerScope;kotlinx.coroutines.channels.ProducerScope
-kotlinx.coroutines.channels.ProducerScope;kotlinx.coroutines.channels.ProducerScope
-Xamarin.KotlinX.Coroutines.Channels.IReceiveChannel, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.channels.ReceiveChannel
-Xamarin.KotlinX.Coroutines.Channels.IReceiveChannel;kotlinx.coroutines.channels.ReceiveChannel
-kotlinx.coroutines.channels.ReceiveChannel;kotlinx.coroutines.channels.ReceiveChannel
-Xamarin.KotlinX.Coroutines.Channels.ISendChannel, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.channels.SendChannel
-Xamarin.KotlinX.Coroutines.Channels.ISendChannel;kotlinx.coroutines.channels.SendChannel
-kotlinx.coroutines.channels.SendChannel;kotlinx.coroutines.channels.SendChannel

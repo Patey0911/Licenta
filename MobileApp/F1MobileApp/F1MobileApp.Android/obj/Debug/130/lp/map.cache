@@ -3,6 +3,7 @@ BottomNavigationBar.dll
 FormsViewGroup.dll
 Microcharts.Droid.dll
 Plugin.Fingerprint.dll
+Plugin.InputKit.dll
 Plugin.LocalNotification.dll
 SkiaSharp.dll
 SkiaSharp.Views.Android.dll
@@ -30,6 +31,8 @@ Xamarin.AndroidX.CustomView.dll
 Xamarin.AndroidX.DocumentFile.dll
 Xamarin.AndroidX.DrawerLayout.dll
 Xamarin.AndroidX.DynamicAnimation.dll
+Xamarin.AndroidX.Emoji2.dll
+Xamarin.AndroidX.Emoji2.ViewsHelper.dll
 Xamarin.AndroidX.Fragment.dll
 Xamarin.AndroidX.Interpolator.dll
 Xamarin.AndroidX.Legacy.Support.Core.UI.dll
@@ -38,6 +41,7 @@ Xamarin.AndroidX.Legacy.Support.V4.dll
 Xamarin.AndroidX.Lifecycle.Common.dll
 Xamarin.AndroidX.Lifecycle.LiveData.Core.dll
 Xamarin.AndroidX.Lifecycle.LiveData.dll
+Xamarin.AndroidX.Lifecycle.Process.dll
 Xamarin.AndroidX.Lifecycle.Runtime.dll
 Xamarin.AndroidX.Lifecycle.ViewModel.dll
 Xamarin.AndroidX.Lifecycle.ViewModelSavedState.dll
@@ -52,6 +56,7 @@ Xamarin.AndroidX.Preference.dll
 Xamarin.AndroidX.Print.dll
 Xamarin.AndroidX.ProfileInstaller.ProfileInstaller.dll
 Xamarin.AndroidX.RecyclerView.dll
+Xamarin.AndroidX.ResourceInspection.Annotation.dll
 Xamarin.AndroidX.SavedState.dll
 Xamarin.AndroidX.SlidingPaneLayout.dll
 Xamarin.AndroidX.Startup.StartupRuntime.dll
@@ -83,7 +88,6 @@ androidx.startup.startup-runtime.aar
 androidx.profileinstaller.profileinstaller.aar
 androidx.arch.core.core-runtime.aar
 androidx.lifecycle.lifecycle-runtime.aar
-androidx.interpolator.interpolator.aar
 androidx.annotation.annotation-experimental.aar
 androidx.core.core.aar
 androidx.customview.customview.aar
@@ -99,12 +103,16 @@ androidx.fragment.fragment.aar
 androidx.recyclerview.recyclerview.aar
 androidx.viewpager2.viewpager2.aar
 androidx.vectordrawable.vectordrawable.aar
+androidx.interpolator.interpolator.aar
 androidx.vectordrawable.vectordrawable-animated.aar
 androidx.transition.transition.aar
 androidx.print.print.aar
 androidx.localbroadcastmanager.localbroadcastmanager.aar
+androidx.lifecycle.lifecycle-process.aar
 androidx.documentfile.documentfile.aar
 androidx.legacy.legacy-support-core-utils.aar
+androidx.emoji2.emoji2.aar
+androidx.emoji2.emoji2-views-helper.aar
 androidx.dynamicanimation.dynamicanimation.aar
 androidx.drawerlayout.drawerlayout.aar
 androidx.cursoradapter.cursoradapter.aar

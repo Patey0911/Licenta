@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestPlatform.ObjectModel.Client;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,6 +34,23 @@ namespace F1MobileApp
                 WorldChampionships = item.Object.WorldChampionships
             }).ToList();
             return driverslist;
+        }
+
+        public static async Task<DriverModel> GetByName(string name)
+        {
+            try
+            {
+                var allDrivers = await GetAllDrivers();
+                await firebaseClient
+                .Child("Drivers")
+                .OnceAsync<DriverModel>();
+                return allDrivers.Where(a => a.LastName == name).FirstOrDefault();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine($"Error:{e}");
+                return null;
+            }
         }
     }
 }

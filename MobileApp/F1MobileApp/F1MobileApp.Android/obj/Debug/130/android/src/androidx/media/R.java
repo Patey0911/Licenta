@@ -8,9 +8,9 @@ package androidx.media;
 
 public final class R {
 	public static final class color {
-		public static final int notification_material_background_media_default_color = 0x7f0600ce;
-		public static final int primary_text_default_material_dark = 0x7f0600d4;
-		public static final int secondary_text_default_material_dark = 0x7f0600db;
+		public static final int notification_material_background_media_default_color = 0x7f0600cc;
+		public static final int primary_text_default_material_dark = 0x7f0600d2;
+		public static final int secondary_text_default_material_dark = 0x7f0600d9;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f090030;
@@ -48,10 +48,10 @@ public final class R {
 		public static final int notification_template_media_custom = 0x7f0c0072;
 	}
 	public static final class style {
-		public static final int TextAppearance_Compat_Notification_Info_Media = 0x7f10018e;
-		public static final int TextAppearance_Compat_Notification_Line2_Media = 0x7f100190;
-		public static final int TextAppearance_Compat_Notification_Media = 0x7f100191;
-		public static final int TextAppearance_Compat_Notification_Time_Media = 0x7f100193;
-		public static final int TextAppearance_Compat_Notification_Title_Media = 0x7f100195;
+		public static final int TextAppearance_Compat_Notification_Info_Media = 0x7f10018f;
+		public static final int TextAppearance_Compat_Notification_Line2_Media = 0x7f100191;
+		public static final int TextAppearance_Compat_Notification_Media = 0x7f100192;
+		public static final int TextAppearance_Compat_Notification_Time_Media = 0x7f100194;
+		public static final int TextAppearance_Compat_Notification_Title_Media = 0x7f100196;
 	}
 }

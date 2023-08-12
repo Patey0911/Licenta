@@ -153,7 +153,7 @@ namespace F1MobileApp
         private async void txtDriver_Focused(object sender, FocusEventArgs e)
         {
             //Get all drivers from firebase to show for registration
-            var drivers_list = await TeamRepository.GetByTeam(txtTeam.Text);
+            var drivers_list = await TeamRepository.GetByTeamName(txtTeam.Text);
             String[] drivers_names = new string[2];
 
             int poz = 0;

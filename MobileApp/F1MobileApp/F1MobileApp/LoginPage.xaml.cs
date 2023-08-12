@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,6 +14,7 @@ namespace F1MobileApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
+        public static UserModel user;
         public LoginPage()
         {
             InitializeComponent();
@@ -54,7 +56,8 @@ namespace F1MobileApp
             password = txtPassword.Text;
 
             //Searching the user with that email
-            var user = await UserRepository.GetByEmail(email);
+            user = await UserRepository.GetByEmail(email);
+            
 
             switch (LoginValidation(email, password,user)) 
             {
@@ -62,7 +65,7 @@ namespace F1MobileApp
                     await DisplayAlert("Alert", "User with this email doesn't exist", "OK");
                     break;
                 case 1:
-                    Navigation.PushAsync(new MainPage());
+                    await Navigation.PushAsync(new MainPage(user));
                     break;
                 case 2:
                     await DisplayAlert("Failed", "Login failed", "OK");

@@ -2,6 +2,7 @@
 using Firebase.Database.Query;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,7 +27,24 @@ namespace F1MobileApp
             return teamslist;
         }
 
-        public static async Task<List<TeamModel>> GetByTeam(string team)
+        public static async Task<TeamModel> GetByTeam(string TeamName)
+        {
+            try
+            {
+                var allTeams = await GetAllTeams();
+                await firebaseClient
+                .Child("Teams")
+                .OnceAsync<TeamModel>();
+                return allTeams.Where(a => a.Team == TeamName).FirstOrDefault();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine($"Error:{e}");
+                return null;
+            }
+        }
+
+        public static async Task<List<TeamModel>> GetByTeamName(string team)
         {
             var Team = (await firebaseClient
             .Child("Teams")
@@ -35,13 +53,13 @@ namespace F1MobileApp
             .OnceAsync<TeamModel>())
             .Select(item =>
             new TeamModel
-            { 
-            Driver1= item.Object.Driver1,
-            Driver2= item.Object.Driver2,
-            Points = item.Object.Points,
-            Team = item.Object.Team
+            {
+                Driver1 = item.Object.Driver1,
+                Driver2 = item.Object.Driver2,
+                Points = item.Object.Points,
+                Team = item.Object.Team
             }).ToList();
-        return Team;
+            return Team;
         }
     }
 }

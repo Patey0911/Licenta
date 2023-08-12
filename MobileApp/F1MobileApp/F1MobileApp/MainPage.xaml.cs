@@ -12,9 +12,17 @@ namespace F1MobileApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : TabbedPage
     {
-        public MainPage()
+        public MainPage(UserModel user)
         {
             InitializeComponent();
         }
+
+        protected override async void OnAppearing()
+        {
+            var AllDrivers = DriverRepository.GetAllDrivers();
+            var AllTeams = TeamRepository.GetAllTeams();
+        }
+
+        
     }
 }
