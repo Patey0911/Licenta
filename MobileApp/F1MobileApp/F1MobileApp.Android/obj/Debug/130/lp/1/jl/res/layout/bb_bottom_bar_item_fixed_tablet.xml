@@ -1,1 +1,3 @@
-<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingTop="16dp" android:paddingBottom="16dp" xmlns:android="http://schemas.android.com/apk/res/android"><ImageView android:id="@+id/bb_bottom_bar_icon" style="@style/BB_BottomBarItem_Tablet" /></FrameLayout>
+version https://git-lfs.github.com/spec/v1
+oid sha256:e6c04fd341c006a54c528ccf6f7b97e1754c6a83bad1f61eef09d8df54179979
+size 358

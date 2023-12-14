@@ -1,28 +1,3 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<resources>
-
-  <style name="MainTheme" parent="MainTheme.Base">
-    <!-- As of Xamarin.Forms 4.6 the theme has moved into the Forms binary -->
-    <!-- If you want to override anything you can do that here. -->
-    <!-- Underneath are a couple of entries to get you started. -->
-
-    <!-- Set theme colors from https://aka.ms/material-colors -->
-    <!-- colorPrimary is used for the default action bar background -->
-    <!--<item name="colorPrimary">#2196F3</item>-->
-    <!-- colorPrimaryDark is used for the status bar -->
-    <!--<item name="colorPrimaryDark">#1976D2</item>-->
-    <!-- colorAccent is used as the default value for colorControlActivated
-         which is used to tint widgets -->
-    <!--<item name="colorAccent">#FF4081</item>-->
-  </style>
-
-	<style name="SplashTheme" parent ="Theme.AppCompat.Light.NoActionBar">
-		<item name="android:windowBackground">@drawable/logof1</item>
-		<item name="android:windowNoTitle">true</item>
-		<item name="android:windowFullscreen">true</item>
-		<item name="android:windowContentOverlay">@null</item>
-		<item name="android:windowActionBar">false</item>
-		<item name="android:statusBarColor">@color/splash_background</item>
-		<item name="android:navigationBarColor">@color/splash_navigationbar</item>
-	</style>
-</resources>
+version https://git-lfs.github.com/spec/v1
+oid sha256:513cbe823b12700a1e3ce246203279dbae5ae14bf4628717c293c798e8665e5b
+size 1347

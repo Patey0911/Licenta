@@ -1,1 +1,3 @@
-<FrameLayout style="@style/BB_BottomBarItem_Fixed" xmlns:android="http://schemas.android.com/apk/res/android"><ImageView android:id="@+id/bb_bottom_bar_icon" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="top|center_horizontal" /><TextView android:id="@+id/bb_bottom_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|center_horizontal" android:textAppearance="@style/BB_BottomBarItem_Fixed.TitleAppearance" style="@style/BB_BottomBarItem_TitleStyle" /></FrameLayout>
+version https://git-lfs.github.com/spec/v1
+oid sha256:b540d6670399eaa976f2db678c2696b0a0ac619dc0039708090e75b8ff34ea9b
+size 606

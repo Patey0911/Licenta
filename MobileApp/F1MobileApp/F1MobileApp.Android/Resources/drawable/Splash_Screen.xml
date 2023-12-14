@@ -1,12 +1,3 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-	<item>
-		<color android:color="@color/splash_background"/>
-	</item>
-	<item>
-		<bitmap
-			android:src="@drawable/splash_logo"   
-			android:tileMode="disabled"
-			android:gravity="center"/>
-	</item>
-</layer-list>
+version https://git-lfs.github.com/spec/v1
+oid sha256:a86a1a26d629a398ba3ec1490f6d5256d47d4a3196ef0ce70bcd283549248d37
+size 337
