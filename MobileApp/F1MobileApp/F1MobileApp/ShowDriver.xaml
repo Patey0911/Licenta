@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="F1MobileApp.ShowDriver"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="150" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="ImageDriver" Grid.Row="0" Grid.ColumnSpan="2" />
+        
+        <Label x:Name="Label00" Text="Position" Grid.Row="1" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label01" Grid.Row="1" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+        <Label x:Name="Label10" Text="Team" Grid.Row="2" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label11" Grid.Row="2" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+        <Label x:Name="Label20" Text="Country" Grid.Row="3" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label21" Grid.Row="3" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+        <Label x:Name="Label30" Text="World Titles" Grid.Row="4" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label31" Grid.Row="4" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+        <Label x:Name="Label40" Text="Points" Grid.Row="5" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label41" Grid.Row="5" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+        <Label x:Name="Label50" Text="Points in Career" Grid.Row="6" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label51" Grid.Row="6" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+        <Label x:Name="Label60" Text="Grand Prix Entered" Grid.Row="7" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label61" Grid.Row="7" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+        <Label x:Name="Label70" Text="Highest Race Finish" Grid.Row="8" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label71" Grid.Row="8" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+        <Label x:Name="Label80" Text="Highest Grid Pos" Grid.Row="9" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label81" Grid.Row="9" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+        <Label x:Name="Label90" Text="Avg Points Season" Grid.Row="10" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label91" Grid.Row="10" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+        <Label x:Name="Label100" Text="Avg Grid Position" Grid.Row="11" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label101" Grid.Row="11" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+        <Image x:Name="ImageCar" Grid.Row="13" Grid.ColumnSpan="2" />
+    </Grid>
+</ContentPage>
+    
+    

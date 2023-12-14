@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eOjpcsFjTl1Nyh1ksdrCbiEmGTfYVMQVByeL5xWHU+gKTsFkX/VPYC7oqXANVoB7xsgvFoIavfBt/ad5jc6Xhg==",
+  "dgSpecHash": "vJFOqD9EmZT/EtyadA/BvKjmaUWFFwF5mzvEl1iDIZ9K4cOlkMptzHXjpFQ7cYpv/7U576ZYHlF7ITWZpfm0jQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ok\\Desktop\\Licenta\\MobileApp\\F1MobileApp\\F1MobileApp\\F1MobileApp.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\ok\\.nuget\\packages\\google.apis.auth\\1.49.0\\google.apis.auth.1.49.0.nupkg.sha512",
     "C:\\Users\\ok\\.nuget\\packages\\google.apis.core\\1.49.0\\google.apis.core.1.49.0.nupkg.sha512",
     "C:\\Users\\ok\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",
+    "C:\\Users\\ok\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\ok\\.nuget\\packages\\microcharts\\0.9.5.9\\microcharts.0.9.5.9.nupkg.sha512",
     "C:\\Users\\ok\\.nuget\\packages\\microcharts.forms\\0.9.5.9\\microcharts.forms.0.9.5.9.nupkg.sha512",
     "C:\\Users\\ok\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
@@ -31,8 +32,14 @@
     "C:\\Users\\ok\\.nuget\\packages\\nuget.frameworks\\6.5.0\\nuget.frameworks.6.5.0.nupkg.sha512",
     "C:\\Users\\ok\\.nuget\\packages\\plugin.fingerprint\\2.1.5\\plugin.fingerprint.2.1.5.nupkg.sha512",
     "C:\\Users\\ok\\.nuget\\packages\\plugin.localnotification\\10.1.8\\plugin.localnotification.10.1.8.nupkg.sha512",
-    "C:\\Users\\ok\\.nuget\\packages\\skiasharp\\2.80.2\\skiasharp.2.80.2.nupkg.sha512",
+    "C:\\Users\\ok\\.nuget\\packages\\skiasharp\\2.88.6\\skiasharp.2.88.6.nupkg.sha512",
+    "C:\\Users\\ok\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.6\\skiasharp.nativeassets.macos.2.88.6.nupkg.sha512",
+    "C:\\Users\\ok\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.6\\skiasharp.nativeassets.win32.2.88.6.nupkg.sha512",
     "C:\\Users\\ok\\.nuget\\packages\\skiasharp.views.forms\\2.80.2\\skiasharp.views.forms.2.80.2.nupkg.sha512",
+    "C:\\Users\\ok\\.nuget\\packages\\syncfusion.licensing\\23.1.44\\syncfusion.licensing.23.1.44.nupkg.sha512",
+    "C:\\Users\\ok\\.nuget\\packages\\syncfusion.xamarin.buttons\\23.1.44\\syncfusion.xamarin.buttons.23.1.44.nupkg.sha512",
+    "C:\\Users\\ok\\.nuget\\packages\\syncfusion.xamarin.core\\23.1.44\\syncfusion.xamarin.core.23.1.44.nupkg.sha512",
+    "C:\\Users\\ok\\.nuget\\packages\\syncfusion.xamarin.sfchart\\23.1.44\\syncfusion.xamarin.sfchart.23.1.44.nupkg.sha512",
     "C:\\Users\\ok\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\ok\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
     "C:\\Users\\ok\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
@@ -61,6 +68,16 @@
     "C:\\Users\\ok\\.nuget\\packages\\xamarin.forms.inputkit\\4.1.6\\xamarin.forms.inputkit.4.1.6.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'LiveCharts 0.9.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "LiveCharts",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

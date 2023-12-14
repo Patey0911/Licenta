@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="F1MobileApp.ShowCircuit"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="White">
+    <StackLayout>
+        <Label x:Name="LabelRaceName" 
+               FontSize="40" 
+               TextColor="Black" 
+               FontAttributes="Bold" 
+               VerticalOptions="Start" 
+               HorizontalOptions="CenterAndExpand" />
+        
+        <Button x:Name="InfoBtn"                 
+                Text="Circuit Info" 
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="Black" 
+                BackgroundColor="#e10701" 
+                BorderWidth="1"
+                BorderColor="Black"
+                CornerRadius="50"
+                Clicked="InfoBtn_Clicked"
+                VerticalOptions="Start"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="500">
+        </Button>
+
+        <Button x:Name="ResultsBtn"                 
+                Text="Show Race Results" 
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="Black" 
+                BackgroundColor="#e10701" 
+                BorderWidth="1"
+                BorderColor="Black"
+                CornerRadius="50"
+                Clicked="ResultsBtn_Clicked"
+                VerticalOptions="Start"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="500">
+        </Button>
+
+        <Button x:Name="ResultQualiBtn"                 
+                Text="Show Qualifying Results" 
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="Black" 
+                BackgroundColor="#e10701" 
+                BorderWidth="1"
+                BorderColor="Black"
+                CornerRadius="50"
+                Clicked="QualiBtn_Clicked"
+                VerticalOptions="Start"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="500">
+        </Button>
+
+        <Button x:Name="ResultsSprintBtn"                 
+                Text="Show Sprint Results" 
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="Black" 
+                BackgroundColor="#e10701" 
+                BorderWidth="1"
+                BorderColor="Black"
+                CornerRadius="50"
+                Clicked="ResultsSprintBtn_Clicked"
+                VerticalOptions="Start"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="500">
+        </Button>
+
+        <Button x:Name="ResultSprintQualiBtn"                 
+                Text="Show Sprint Shootout Results" 
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="Black" 
+                BackgroundColor="#e10701" 
+                BorderWidth="1"
+                BorderColor="Black"
+                CornerRadius="50"
+                Clicked="ResultSprintQualiBtn_Clicked"
+                VerticalOptions="Start"
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="500">
+        </Button>
+    </StackLayout>
+</ContentPage>
+    
+    

@@ -19,10 +19,20 @@ namespace F1MobileApp
             .OnceAsync<TeamModel>()).Select(item =>
             new TeamModel
             {
+                Base = item.Object.Base,
+                Chassis = item.Object.Chassis,
                 Driver1 = item.Object.Driver1,
                 Driver2 = item.Object.Driver2,
+                FastestLaps = item.Object.FastestLaps,
+                FirstTeamEntry = item.Object.FirstTeamEntry,
+                HighestRaceFinish = item.Object.HighestRaceFinish,
                 Points = item.Object.Points,
-                Team = item.Object.Team
+                PolePositions = item.Object.PolePositions,
+                PowerUnit = item.Object.PowerUnit,
+                Team = item.Object.Team,
+                TeamChief = item.Object.TeamChief,
+                TechnicalChief = item.Object.TechnicalChief,
+                WorldChampionships = item.Object.WorldChampionships
             }).ToList();
             return teamslist;
         }

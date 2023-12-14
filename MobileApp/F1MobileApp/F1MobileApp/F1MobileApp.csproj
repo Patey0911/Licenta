@@ -14,12 +14,16 @@
     <PackageReference Include="FirebaseAdmin" Version="2.4.0" />
     <PackageReference Include="FirebaseAuthentication.net" Version="4.0.2" />
     <PackageReference Include="FirebaseDatabase.net" Version="4.2.0" />
+    <PackageReference Include="LiveCharts" Version="0.9.7" />
     <PackageReference Include="Microcharts" Version="0.9.5.9" />
     <PackageReference Include="Microcharts.Forms" Version="0.9.5.9" />
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.14" />
     <PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="17.7.0" />
     <PackageReference Include="Plugin.Fingerprint" Version="2.1.5" />
     <PackageReference Include="Plugin.LocalNotification" Version="10.1.8" />
+    <PackageReference Include="SkiaSharp" Version="2.88.6" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="23.1.44" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="23.1.44" />
     <PackageReference Include="ThriveGmbH.BottomNavigationBar.XF" Version="1.0.2" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.6" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2612" />
@@ -28,6 +32,46 @@
   </ItemGroup>
 
   <ItemGroup>
+	  <EmbeddedResource Update="StatisticsPage.xaml">
+	    <SubType>Designer</SubType>
+	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="ShowTeam.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="ShowCircuitInfo.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="ShowQualifyingResults.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="ShowSprintQualifyingResults.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>	  
+	  <EmbeddedResource Update="ShowSprintResults.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="ShowResults.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="ShowCircuit.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="PredictionPage.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="ShowDriver.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="SchedulePage.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="TeamsPage.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="DriversPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="FavoritePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -43,15 +87,61 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\" />
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v13.0\Mono.Android.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="StatisticsPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>StatisticsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ShowCircuitInfo.xaml.cs">
+      <DependentUpon>ShowCircuitInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ShowTeam.xaml.cs">
+      <DependentUpon>ShowTeam.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ShowQualifyingResults.xaml.cs">
+      <DependentUpon>ShowQualifyingResults.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ShowSprintQualifyingResults.xaml.cs">
+      <DependentUpon>ShowSprintQualifyingResults.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ShowSprintResults.xaml.cs">
+      <DependentUpon>ShowSprintResults.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ShowResults.xaml.cs">
+      <DependentUpon>ShowResults.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="PredictionPage.xaml.cs">
+      <DependentUpon>PredictionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ShowCircuit.xaml.cs">
+      <DependentUpon>ShowCircuit.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ShowDriver.xaml.cs">
+      <DependentUpon>ShowDriver.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="SchedulePage.xaml.cs">
+      <DependentUpon>SchedulePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="TeamsPage.xaml.cs">
+      <DependentUpon>TeamsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="DriversPage.xaml.cs">
+      <DependentUpon>DriversPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="FavoritePage.xaml.cs">
       <DependentUpon>FavoritePage.xaml</DependentUpon>
     </Compile>
     <Compile Update="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\" />
   </ItemGroup>
 </Project>

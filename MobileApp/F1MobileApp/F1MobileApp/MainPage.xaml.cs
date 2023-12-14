@@ -12,6 +12,7 @@ namespace F1MobileApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : TabbedPage
     {
+        public static List<DriverModel> DriversList;
         public MainPage(UserModel user)
         {
             InitializeComponent();
@@ -19,8 +20,7 @@ namespace F1MobileApp
 
         protected override async void OnAppearing()
         {
-            var AllDrivers = DriverRepository.GetAllDrivers();
-            var AllTeams = TeamRepository.GetAllTeams();
+            DriversList = await DriverRepository.GetAllDrivers();
         }
 
         

@@ -111,6 +111,10 @@
               "target": "Package",
               "version": "[4.2.0, )"
             },
+            "LiveCharts": {
+              "target": "Package",
+              "version": "[0.9.7, )"
+            },
             "Microcharts": {
               "target": "Package",
               "version": "[0.9.5.9, )"
@@ -140,6 +144,18 @@
             "Plugin.LocalNotification": {
               "target": "Package",
               "version": "[10.1.8, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.6, )"
+            },
+            "Syncfusion.Xamarin.Buttons": {
+              "target": "Package",
+              "version": "[23.1.44, )"
+            },
+            "Syncfusion.Xamarin.SfChart": {
+              "target": "Package",
+              "version": "[23.1.44, )"
             },
             "ThriveGmbH.BottomNavigationBar.XF": {
               "target": "Package",
@@ -173,7 +189,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

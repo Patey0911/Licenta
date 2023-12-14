@@ -1,9 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.gms.location" >
-
-    <uses-sdk android:minSdkVersion="14" />
-
-    <application />
-
-</manifest>
+version https://git-lfs.github.com/spec/v1
+oid sha256:7886f12d270750806e473a28d2f6f9ea69ab3a704ca8779c524ff14cb5148502
+size 1079

@@ -20,16 +20,23 @@ namespace F1MobileApp
             .OnceAsync<DriverModel>()).Select(item =>
             new DriverModel
             {
+                AccumulatedPos = item.Object.AccumulatedPos,
+                AccumulatedPosSprint = item.Object.AccumulatedPosSprint,
                 Country = item.Object.Country,
                 DateOfBirth = item.Object.DateOfBirth,
                 FirstName = item.Object.FirstName,
-                GrandPrixEntered = item.Object.GrandPrixEntered,
+                GrandsPrixEntered = item.Object.GrandsPrixEntered,
                 HighestGridPosition = item.Object.HighestGridPosition,
                 HighestRaceFinish = item.Object.HighestRaceFinish,
                 LastName = item.Object.LastName,
+                No = item.Object.No,
+                NoApp = item.Object.NoApp,
+                NoAppSprint = item.Object.NoAppSprint,  
                 PlaceOfBirth = item.Object.PlaceOfBirth,
                 Podiums = item.Object.Podiums,
                 Points = item.Object.Points,
+                PointsSeason = item.Object.PointsSeason,
+                Position = item.Object.Position,
                 Team = item.Object.Team,
                 WorldChampionships = item.Object.WorldChampionships
             }).ToList();
@@ -45,6 +52,23 @@ namespace F1MobileApp
                 .Child("Drivers")
                 .OnceAsync<DriverModel>();
                 return allDrivers.Where(a => a.LastName == name).FirstOrDefault();
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine($"Error:{e}");
+                return null;
+            }
+        }
+
+        public static async Task<DriverModel> GetByNo(string no)
+        {
+            try
+            {
+                var allDrivers = await GetAllDrivers();
+                await firebaseClient
+                .Child("Drivers")
+                .OnceAsync<DriverModel>();
+                return allDrivers.Where(a => a.No == no).FirstOrDefault();
             }
             catch (Exception e)
             {

@@ -1,30 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="F1MobileApp.MainPage"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="F1MobileApp.MainPage"
             BarBackgroundColor="Transparent"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             xmlns:local="clr-namespace:F1MobileApp;assembly=F1MobileApp"
             android:TabbedPage.ToolbarPlacement ="Bottom"
-             android:TabbedPage.BarItemColor="#999999"
-            android:TabbedPage.BarSelectedItemColor="Black">
-  <!--Pages can be added as references or inline-->
+            TabbedPage.UnselectedTabColor ="White"
+            TabbedPage.SelectedTabColor ="Black"
+>
+    <!--Pages can be added as references or inline-->
     <TabbedPage.Children>
-        <NavigationPage Title="Favorite" Icon="Favorite.png">
+        <NavigationPage Title="Favourite" Icon="Favourite.png">
             <x:Arguments>
                 <local:FavoritePage/>
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage Title="Pirate2" Icon="HidePassword.png">
+        <NavigationPage Title="Driver" Icon="Driver.png">
             <x:Arguments>
-                <local:LoginPage/>
+                <local:DriversPage/>
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage Title="Pirate3" Icon="LogoF1.png">
+        <NavigationPage Title="Teams" Icon="Teams.png">
             <x:Arguments>
-                <local:LoginPage/>
+                <local:TeamsPage/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Schedule" Icon="Schedule.png">
+            <x:Arguments>
+                <local:SchedulePage/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Statistics" Icon="Statistics.png">
+            <x:Arguments>
+                <local:StatisticPage/>
             </x:Arguments>
         </NavigationPage>
     </TabbedPage.Children>
-
 </TabbedPage>

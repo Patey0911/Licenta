@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="F1MobileApp.PredictionPage"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0">
+                <StackLayout VerticalOptions="End">
+                    <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout1" Orientation="Horizontal" Padding="2,2,2,2">
+                        <StackLayout HeightRequest="60"></StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="70"/>
+                                <ColumnDefinition Width="190"/>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Grid.ColumnSpan="4" x:Name="RaceName" FontSize="40" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        
+            <StackLayout Grid.Row="1">
+                <StackLayout VerticalOptions="End">
+                    <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout2" Orientation="Horizontal" Padding="2,2,2,2">
+                        <StackLayout HeightRequest="50"></StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="70"/>
+                                <ColumnDefinition Width="190"/>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="1" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                            <Image Grid.Column="1" x:Name="ImageDriver1" VerticalOptions="Start" HorizontalOptions="Center" />
+                            <Label Grid.Column="2" x:Name="Driver1" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                            <Image Grid.Column="3" x:Name="ImageTeam1" VerticalOptions="Start" HorizontalOptions="Center" />
+                            <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2">
+                <StackLayout VerticalOptions="End">
+                    <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout3" Orientation="Horizontal" Padding="2,2,2,2">
+                        <StackLayout HeightRequest="50"></StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="70"/>
+                                <ColumnDefinition Width="190"/>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="2" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                            <Image Grid.Column="1" x:Name="ImageDriver2" VerticalOptions="Start" HorizontalOptions="Center" />
+                            <Label Grid.Column="2" x:Name="Driver2" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                            <Image Grid.Column="3" x:Name="ImageTeam2" VerticalOptions="Start" HorizontalOptions="Center" />
+                            <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3">
+                <StackLayout VerticalOptions="End">
+                    <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout4" Orientation="Horizontal" Padding="2,2,2,2">
+                        <StackLayout HeightRequest="50"></StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="70"/>
+                                <ColumnDefinition Width="190"/>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="3" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                            <Image Grid.Column="1" x:Name="ImageDriver3" VerticalOptions="Start" HorizontalOptions="Center" />
+                            <Label Grid.Column="2" x:Name="Driver3" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                            <Image Grid.Column="3" x:Name="ImageTeam3" VerticalOptions="Start" HorizontalOptions="Center" />
+                            <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="4">
+                <StackLayout VerticalOptions="End">
+                    <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout5" Orientation="Horizontal" Padding="2,2,2,2">
+                        <StackLayout HeightRequest="50"></StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="70"/>
+                                <ColumnDefinition Width="190"/>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="4" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                            <Image Grid.Column="1" x:Name="ImageDriver4" VerticalOptions="Start" HorizontalOptions="Center" />
+                            <Label Grid.Column="2" x:Name="Driver4" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                            <Image Grid.Column="3" x:Name="ImageTeam4" VerticalOptions="Start" HorizontalOptions="Center" />
+                            <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="5">
+                <StackLayout VerticalOptions="End">
+                    <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout6" Orientation="Horizontal" Padding="2,2,2,2">
+                        <StackLayout HeightRequest="50"></StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="70"/>
+                                <ColumnDefinition Width="190"/>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="5" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                            <Image Grid.Column="1" x:Name="ImageDriver5" VerticalOptions="Start" HorizontalOptions="Center" />
+                            <Label Grid.Column="2" x:Name="Driver5" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                            <Image Grid.Column="3" x:Name="ImageTeam5" VerticalOptions="Start" HorizontalOptions="Center" />
+                            <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="6">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout7" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="6" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver6" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver6" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam6" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="7">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout8" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="7" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver7" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver7" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam7" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="8">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout9" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="8" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver8" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver8" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam8" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="9">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout10" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="9" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver9" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver9" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam9" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="10">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout11" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="10" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver10" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver10" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam10" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="11">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout12" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="11" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver11" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver11" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam11" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="12">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout13" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="12" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver12" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver12" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam12" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="13">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout14" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="13" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver13" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver13" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam13" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="14">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout15" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="14" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver14" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver14" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam14" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="15">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout16" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="15" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver15" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver15" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam15" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="16">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout17" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="16" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver16" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver16" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam16" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="17">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout18" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="17" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver17" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver17" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam17" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="18">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout19" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="18" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver18" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver18" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam18" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="19">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout20" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="19" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver19" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver19" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam19" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="20">
+                    <StackLayout VerticalOptions="End">
+                        <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout21" Orientation="Horizontal" Padding="2,2,2,2">
+                            <StackLayout HeightRequest="50"></StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="190"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="20" FontSize="40" FontAttributes="Bold" WidthRequest="50" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bahnschrift"/>
+                                <Image Grid.Column="1" x:Name="ImageDriver20" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <Label Grid.Column="2" x:Name="Driver20" FontSize="20" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                                <Image Grid.Column="3" x:Name="ImageTeam20" VerticalOptions="Start" HorizontalOptions="Center" />
+                                <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
+    
+    

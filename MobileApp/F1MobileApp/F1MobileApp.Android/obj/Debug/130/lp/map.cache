@@ -1,5 +1,6 @@
 BottomBar.Droid.dll
 BottomNavigationBar.dll
+F1MobileApp.dll
 FormsViewGroup.dll
 Microcharts.Droid.dll
 Plugin.Fingerprint.dll
@@ -8,6 +9,9 @@ Plugin.LocalNotification.dll
 SkiaSharp.dll
 SkiaSharp.Views.Android.dll
 SkiaSharp.Views.Forms.dll
+Syncfusion.Buttons.XForms.Android.dll
+Syncfusion.Core.XForms.Android.dll
+Syncfusion.SfChart.XForms.Android.dll
 Xamarin.AndroidX.Activity.dll
 Xamarin.AndroidX.Annotation.dll
 Xamarin.AndroidX.Annotation.Experimental.dll

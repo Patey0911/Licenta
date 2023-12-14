@@ -1,7 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="androidx.emoji2.viewsintegration" >
-
-    <uses-sdk android:minSdkVersion="14" />
-
-</manifest>
+version https://git-lfs.github.com/spec/v1
+oid sha256:0f03ececda525a54d4f4f8e2051759b397eb950d3706d4c8558ee5b50ac7f858
+size 1370

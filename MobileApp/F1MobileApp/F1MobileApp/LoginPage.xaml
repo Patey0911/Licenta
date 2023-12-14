@@ -2,22 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="F1MobileApp.LoginPage"
-             BackgroundColor="#e10701">
-    
-    <ContentPage.Content>
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="wallpaper.jpg">
 
+    <ContentPage.Content>
         <StackLayout 
-            
+
             Padding="30" 
-            VerticalOptions="Center"
-            BackgroundColor="#e10701"
+            VerticalOptions="Start"
             HorizontalOptions="FillAndExpand">
+            <Label FontSize="70"></Label>
 
             <Image 
-                Source="LogoF1.png" 
+                Source="LogoF1White.png" 
                 HeightRequest="200"
                 WidthRequest="200">
             </Image>
+
+            <Label FontSize="100"></Label>
 
             <Entry
                 x:Name="txtUsername"
@@ -62,7 +64,7 @@
                 FontSize="20"
                 FontAttributes="Bold"
                 TextColor="Black" 
-                BackgroundColor="White" 
+                BackgroundColor="Red" 
                 BorderWidth="1"
                 BorderColor="Black"
                 CornerRadius="50"
@@ -72,8 +74,8 @@
             <Label HorizontalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="Don't have an account? " TextColor="Black"></Span>
-                        <Span Text="Register" TextColor="Black" FontAttributes="Bold" TextDecorations="Underline"></Span>
+                        <Span Text="Don't have an account? " TextColor="White"></Span>
+                        <Span Text="Register" TextColor="White" FontAttributes="Bold" TextDecorations="Underline"></Span>
                     </FormattedString>
                 </Label.FormattedText>
                 <Label.GestureRecognizers>

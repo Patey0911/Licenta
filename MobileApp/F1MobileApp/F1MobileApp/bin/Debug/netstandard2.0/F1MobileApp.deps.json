@@ -12,6 +12,7 @@
           "FirebaseAdmin": "2.4.0",
           "FirebaseAuthentication.net": "4.0.2",
           "FirebaseDatabase.net": "4.2.0",
+          "LiveCharts": "0.9.7",
           "Microcharts": "0.9.5.9",
           "Microcharts.Forms": "0.9.5.9",
           "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14",
@@ -19,11 +20,15 @@
           "NETStandard.Library": "2.0.3",
           "Plugin.Fingerprint": "2.1.5",
           "Plugin.LocalNotification": "10.1.8",
+          "SkiaSharp": "2.88.6",
+          "Syncfusion.Xamarin.Buttons": "23.1.44",
+          "Syncfusion.Xamarin.SfChart": "23.1.44",
           "ThriveGmbH.BottomNavigationBar.XF": "1.0.2",
           "Xamarin.CommunityToolkit": "2.0.6",
           "Xamarin.Essentials": "1.8.0",
           "Xamarin.Forms": "5.0.0.2612",
-          "Xamarin.Forms.InputKit": "4.1.6"
+          "Xamarin.Forms.InputKit": "4.1.6",
+          "Mono.Android": "0.0.0.0"
         },
         "runtime": {
           "F1MobileApp.dll": {}
@@ -140,9 +145,17 @@
           }
         }
       },
+      "LiveCharts/0.9.7": {
+        "runtime": {
+          "lib/net45/LiveCharts.dll": {
+            "assemblyVersion": "0.9.7.0",
+            "fileVersion": "0.9.7.0"
+          }
+        }
+      },
       "Microcharts/0.9.5.9": {
         "dependencies": {
-          "SkiaSharp": "2.80.2",
+          "SkiaSharp": "2.88.6",
           "System.ValueTuple": "4.5.0"
         },
         "runtime": {
@@ -155,7 +168,7 @@
       "Microcharts.Forms/0.9.5.9": {
         "dependencies": {
           "Microcharts": "0.9.5.9",
-          "SkiaSharp": "2.80.2",
+          "SkiaSharp": "2.88.6",
           "SkiaSharp.Views.Forms": "2.80.2",
           "System.ValueTuple": "4.5.0",
           "Xamarin.Forms": "5.0.0.2612"
@@ -404,21 +417,69 @@
           }
         }
       },
-      "SkiaSharp/2.80.2": {
+      "SkiaSharp/2.88.6": {
         "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "2.88.6",
+          "SkiaSharp.NativeAssets.macOS": "2.88.6",
           "System.Memory": "4.5.5"
         },
         "runtime": {
           "lib/netstandard2.0/SkiaSharp.dll": {
-            "assemblyVersion": "2.80.0.0",
-            "fileVersion": "2.80.2.0"
+            "assemblyVersion": "2.88.0.0",
+            "fileVersion": "2.88.6.0"
           }
         }
       },
+      "SkiaSharp.NativeAssets.macOS/2.88.6": {},
+      "SkiaSharp.NativeAssets.Win32/2.88.6": {},
       "SkiaSharp.Views.Forms/2.80.2": {
         "dependencies": {
-          "SkiaSharp": "2.80.2",
+          "SkiaSharp": "2.88.6",
           "Xamarin.Forms": "5.0.0.2612"
+        }
+      },
+      "Syncfusion.Licensing/23.1.44": {
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "23.1.44.0",
+            "fileVersion": "23.1.44.0"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Buttons/23.1.44": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "23.1.44",
+          "Xamarin.Forms": "5.0.0.2612"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Buttons.XForms.dll": {
+            "assemblyVersion": "23.1.44.0",
+            "fileVersion": "23.1.44.0"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Core/23.1.44": {
+        "dependencies": {
+          "Syncfusion.Licensing": "23.1.44",
+          "Xamarin.Forms": "5.0.0.2612"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
+            "assemblyVersion": "23.1.44.0",
+            "fileVersion": "23.1.44.0"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfChart/23.1.44": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "23.1.44",
+          "Xamarin.Forms": "5.0.0.2612"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfChart.XForms.dll": {
+            "assemblyVersion": "23.1.44.0",
+            "fileVersion": "23.1.44.0"
+          }
         }
       },
       "System.Buffers/4.5.1": {
@@ -665,6 +726,14 @@
             "fileVersion": "4.1.6.0"
           }
         }
+      },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
       }
     }
   },
@@ -736,6 +805,13 @@
       "sha512": "sha512-g4g9JlHzRBZl+Gd2UbiRdszZ7t8wozU2wX7+5xY5uE79tmcgcDhha+ubAP84G1VLbwQmhBGCzRfIx+epLmJciQ==",
       "path": "litedb/4.1.4",
       "hashPath": "litedb.4.1.4.nupkg.sha512"
+    },
+    "LiveCharts/0.9.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p4xyBrUaNNfkWZSNsIle0r51cyVyFg0Yi0uBRZM5GQtdFiA/7guZHlffFyNUILIdux10Ch2hUaJpcZENVU9aaQ==",
+      "path": "livecharts/0.9.7",
+      "hashPath": "livecharts.0.9.7.nupkg.sha512"
     },
     "Microcharts/0.9.5.9": {
       "type": "package",
@@ -863,12 +939,26 @@
       "path": "plugin.localnotification/10.1.8",
       "hashPath": "plugin.localnotification.10.1.8.nupkg.sha512"
     },
-    "SkiaSharp/2.80.2": {
+    "SkiaSharp/2.88.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-D25rzdCwh+3L+XyXqpNa+H/yiLJbE3/R3K/XexwHyQjGdzZvSufFW3oqf3En7hhqSIsxsJ8f5NEZ0J5W5wlGBg==",
-      "path": "skiasharp/2.80.2",
-      "hashPath": "skiasharp.2.80.2.nupkg.sha512"
+      "sha512": "sha512-wdfeBAQrEQCbJIRgAiargzP1Uy+0grZiG4CSgBnhAgcJTsPzlifIaO73JRdwIlT3TyBoeU9jEqzwFUhl4hTYnQ==",
+      "path": "skiasharp/2.88.6",
+      "hashPath": "skiasharp.2.88.6.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.macOS/2.88.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Sko9LFxRXSjb3OGh5/RxrVRXxYo48tr5NKuuSy6jB85GrYt8WRqVY1iLOLwtjPiVAt4cp+pyD4i30azanS64dw==",
+      "path": "skiasharp.nativeassets.macos/2.88.6",
+      "hashPath": "skiasharp.nativeassets.macos.2.88.6.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.Win32/2.88.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7TzFO0u/g2MpQsTty4fyCDdMcfcWI+aLswwfnYXr3gtNS6VLKdMXPMeKpJa3pJSLnUBN6wD0JjuCe8OoLBQ6cQ==",
+      "path": "skiasharp.nativeassets.win32/2.88.6",
+      "hashPath": "skiasharp.nativeassets.win32.2.88.6.nupkg.sha512"
     },
     "SkiaSharp.Views.Forms/2.80.2": {
       "type": "package",
@@ -876,6 +966,34 @@
       "sha512": "sha512-8aRDb98O2cHymB94O8FBj85qMC+MYEY6591wBpHcwgfz4HMo4orSMApD5y8VDmHpA5KR0Yh2ija+HTylz/9CgA==",
       "path": "skiasharp.views.forms/2.80.2",
       "hashPath": "skiasharp.views.forms.2.80.2.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/23.1.44": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-83M4d0oPKjTK9PYN4a2OTzqOHUmkZ7YaGlnnTZ5UIx5u5dNM8DEl37NJQBWt1FSDFUf3kXqJTrZcu6h2ClJ/2w==",
+      "path": "syncfusion.licensing/23.1.44",
+      "hashPath": "syncfusion.licensing.23.1.44.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Buttons/23.1.44": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PfutM/woL0kcJXBIetDf7qOVNvdS09Z7QQDdhisssG+2aKBpJi8+AxY7iFVjRZyh1bcavur4BFy8skByqwCAXw==",
+      "path": "syncfusion.xamarin.buttons/23.1.44",
+      "hashPath": "syncfusion.xamarin.buttons.23.1.44.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Core/23.1.44": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t5G6YWF/iW6ofz5E6f4dD6hQ/Na7enyioJo/eae8xcGpzF9J3vzdsZ21RGCTVHEsuA04MyJ2Pwhbwb27jTTgOw==",
+      "path": "syncfusion.xamarin.core/23.1.44",
+      "hashPath": "syncfusion.xamarin.core.23.1.44.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfChart/23.1.44": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6Lewoi8B/vHAAx7HLqPErLcs8cuSnz/RYNwQPk3lO26hwIZJaxPsj/xz7DRDfbBBk1q6v+uiNax3bfsOg4GESw==",
+      "path": "syncfusion.xamarin.sfchart/23.1.44",
+      "hashPath": "syncfusion.xamarin.sfchart.23.1.44.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",
@@ -1058,6 +1176,11 @@
       "sha512": "sha512-QPtnR1z+oCWAPHJIc1DPZ3k1MBGLGdldwx5KgAsRhip40dePaZECTPPSA72kptlRokUaeWPpl3sWY3inTWXOAA==",
       "path": "xamarin.forms.inputkit/4.1.6",
       "hashPath": "xamarin.forms.inputkit.4.1.6.nupkg.sha512"
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
