@@ -623,7 +623,7 @@ namespace F1MobileApp
                     Entries = entries,
                     LabelTextSize = 30,
                     AnimationDuration = TimeSpan.FromSeconds(2),
-                    BackgroundColor = SKColors.White,
+                    BackgroundColor = SKColors.DarkGray,
                 };
                 ChartView1.Chart = null;
             }

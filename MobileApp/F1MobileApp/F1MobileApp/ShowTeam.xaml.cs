@@ -45,8 +45,6 @@ namespace F1MobileApp
             Label21.Text = position.ToString();
             Label31.Text = Team.Points.ToString();
             Label41.Text = Team.TeamChief.ToString();
-            Label51.Text = Team.Driver1.ToString();
-            Label61.Text = Team.Driver2.ToString();
             Label71.Text = Team.FastestLaps.ToString();
             Label81.Text = Team.FirstTeamEntry.ToString();
             Label91.Text = Team.HighestRaceFinish.ToString();
@@ -54,7 +52,12 @@ namespace F1MobileApp
             Label111.Text = Team.WorldChampionships.ToString();
             Label121.Text = Team.PowerUnit.ToString();
 
+            LabelDriver1.Text = Team.Driver1.ToString();
+            LabelDriver2.Text = Team.Driver2.ToString();
+
             ImageCar.Source = Team.Team.ToString().Replace(" ", "") + "Car.png";
+            ImageDriver1.Source = Team.Driver1.ToString() + ".png";
+            ImageDriver2.Source = Team.Driver2.ToString() + ".png";
         }
         private string ChangeBackroundColor(string FavTeam)
 		{
