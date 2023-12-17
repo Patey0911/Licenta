@@ -485,7 +485,10 @@ def GetResults2023(index, name):
 
 def GetResults2024(index, name):
     #Result
+    if(name == "emiliaRomgna"):
+        name = "italy"
     url = 'https://www.formula1.com/en/results.html/2024/races/'+index+'/'+name+'/race-result.html'
+    print(url)
     response = requests.get(url)
     posDQ = 20
     if response.status_code != 200:
@@ -1248,7 +1251,7 @@ circuits2022 = ["bahrain", "saudi-arabia", "australia", "miami", "spain", "monac
 indexes2022 = ["1124", "1125", "1108", "1110", "1111", "1112", "1126", "1113", "1114", "1115", "1116", "1117", "1118", "1119", "1120", "1133", "1134", "1135", "1136", "1137", "1138"]
 circuits2023 = ["bahrain", "saudi-arabia", "australia", "azerbaijan", "miami", "monaco", "spain", "canada", "austria", "great_britain", "hungary", "belgium", "netherlands", "italy", "singapore", "japan", "qatar", "united_States", "mexico", "brazil", "las_vegas", "abu_dhabi"]
 indexes2023 = ["1141", "1142", "1143", "1207", "1208", "1210", "1211", "1212", "1213", "1214", "1215", "1216", "1217", "1218", "1219", "1220", "1221", "1222", "1223", "1224", "1225", "1226"]
-circuits2024 = ["bahrain", "saudi-arabia", "australia", "japan", "china", "miami", "emiliaRomagna", "canada", "spain", "austria", "great_britain", "hungary", "belgium", "netherlands", "italy", "azerbaijan", "singapore", "united_States", "mexico", "brazil", "las_vegas", "qatar", "abu_dhabi"]
+circuits2024 = ["bahrain", "saudi-arabia", "australia", "japan", "china", "miami", "emiliaRomagna", "monaco", "canada", "spain", "austria", "great_britain", "hungary", "belgium", "netherlands", "italy", "azerbaijan", "singapore", "united_States", "mexico", "brazil", "las_vegas", "qatar", "abu_dhabi"]
 indexes2024 = ["1229", "1230", "1231", "1232", "1233", "1234", "1235", "1236", "1237", "1238", "1239", "1240", "1241", "1242", "1243", "1244", "1245", "1246", "1247", "1248", "1249", "1250", "1251", "1252"]
 
 #Url for teams details
@@ -1284,8 +1287,8 @@ for pos, element in enumerate(indexes2024):
 
 
 #Everytime run this 2 with GetResults2023
-DriversDetails()
+#DriversDetails()
 
-TeamsDetails()
+#TeamsDetails()
 
 

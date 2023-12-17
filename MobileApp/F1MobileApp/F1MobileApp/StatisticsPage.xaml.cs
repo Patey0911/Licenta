@@ -256,7 +256,7 @@ namespace F1MobileApp
                     Entries = entries,
                     LabelTextSize = 30,
                     AnimationDuration = TimeSpan.FromSeconds(2),
-                    BackgroundColor = SKColors.White,
+                    BackgroundColor = SKColors.Black,
                 };
                 ChartView1.Chart = null;
             }
@@ -289,7 +289,7 @@ namespace F1MobileApp
                     Entries = entries,
                     LabelTextSize = 30,
                     AnimationDuration = TimeSpan.FromSeconds(2),
-                    BackgroundColor = SKColors.White,
+                    BackgroundColor = SKColors.Black,
                 };
                 ChartView1.Chart = null;
             }
@@ -391,7 +391,7 @@ namespace F1MobileApp
                     Entries = entries,
                     LabelTextSize = 30,
                     AnimationDuration = TimeSpan.FromSeconds(2),
-                    BackgroundColor = SKColors.Empty,
+                    BackgroundColor = SKColors.Black,
                     ValueLabelOrientation = Orientation.Horizontal,
                     LabelOrientation = Orientation.Horizontal
 
@@ -564,7 +564,7 @@ namespace F1MobileApp
                     Entries = entries,
                     LabelTextSize = 30,
                     AnimationDuration = TimeSpan.FromSeconds(2),
-                    BackgroundColor = SKColors.Empty,
+                    BackgroundColor = SKColors.Black,
                     ValueLabelOrientation = Orientation.Horizontal,
                     LabelOrientation = Orientation.Horizontal,
                     LineMode = LineMode.Straight
@@ -623,7 +623,7 @@ namespace F1MobileApp
                     Entries = entries,
                     LabelTextSize = 30,
                     AnimationDuration = TimeSpan.FromSeconds(2),
-                    BackgroundColor = SKColors.DarkGray,
+                    BackgroundColor = SKColors.Black,
                 };
                 ChartView1.Chart = null;
             }
@@ -814,7 +814,7 @@ namespace F1MobileApp
                     Entries = entries,
                     LabelTextSize = 30,
                     AnimationDuration = TimeSpan.FromSeconds(2),
-                    BackgroundColor = SKColors.Empty,
+                    BackgroundColor = SKColors.Black,
                     ValueLabelOrientation = Orientation.Horizontal,
                     LabelOrientation = Orientation.Horizontal,
                     LineMode = LineMode.Straight

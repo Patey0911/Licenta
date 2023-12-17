@@ -44,7 +44,7 @@
 
         <microcharts:ChartView x:Name="ChartView" Chart="{Binding BarChartSample}" HeightRequest="250" WidthRequest="550" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
         <microcharts:ChartView x:Name="ChartView1" Chart="{Binding BarChartSample}" HeightRequest="250" WidthRequest="550" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="10" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-
+        
         <Button x:Name="ButtonMode" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="10" Clicked="ButtonMode_Clicked" BackgroundColor="#e10701" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" FontSize="25" BorderWidth="1" BorderColor="Black" CornerRadius="50"></Button>
 
     </Grid>
