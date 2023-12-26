@@ -7,6 +7,7 @@
              BackgroundColor="White">
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" RowSpacing="0">
         <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
             <RowDefinition Height="250" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -17,22 +18,24 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Image x:Name="ImageCircuit" Grid.Row="0" Grid.ColumnSpan="2" />
+        <Label x:Name="LabelTitle" Grid.Row="0" Grid.ColumnSpan="2" FontSize="40" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"></Label>
         
-        <Label x:Name="Label00" Text="Circuit Length" Grid.Row="1" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
-        <Label x:Name="Label01" Grid.Row="1" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Image x:Name="ImageCircuit" Grid.Row="1" Grid.ColumnSpan="2" />
+        
+        <Label x:Name="Label00" Text="Circuit Length" Grid.Row="2" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label01" Grid.Row="2" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
 
-        <Label x:Name="Label10" Text="No Laps" Grid.Row="2" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
-        <Label x:Name="Label11" Grid.Row="2" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label10" Text="No Laps" Grid.Row="3" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label11" Grid.Row="3" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
 
-        <Label x:Name="Label20" Text="First Gp" Grid.Row="3" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
-        <Label x:Name="Label21" Grid.Row="3" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label20" Text="First Gp" Grid.Row="4" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label21" Grid.Row="4" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
 
-        <Label x:Name="Label30" Text="Race Distance" Grid.Row="4" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
-        <Label x:Name="Label31" Grid.Row="4" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label30" Text="Race Distance" Grid.Row="5" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label31" Grid.Row="5" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
 
-        <Label x:Name="Label40" Text="Lap Record" Grid.Row="5" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
-        <Label x:Name="Label41" Grid.Row="5" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label40" Text="Lap Record" Grid.Row="6" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="Label41" Grid.Row="6" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
 
         
     </Grid>

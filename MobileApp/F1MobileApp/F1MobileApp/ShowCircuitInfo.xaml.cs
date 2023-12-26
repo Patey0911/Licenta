@@ -19,6 +19,7 @@ using static Android.Renderscripts.Sampler;
 using Org.Xmlpull.V1.Sax2;
 using Java.Lang;
 using Java.Sql;
+using static Android.Renderscripts.ScriptGroup;
 
 namespace F1MobileApp
 {
@@ -33,11 +34,17 @@ namespace F1MobileApp
         }
         protected override async void OnAppearing()
         {
-            
-
             var Circuit = await CircuitRepository.GetByName(circuit);
 
             ImageCircuit.Source = circuit.Replace("-","_") + ".png";
+
+            circuit = circuit.Replace("-", " ");
+            circuit = circuit.Replace("_", " ");
+            var index = circuit.IndexOf(' ') + 1;
+            var circ = circuit.Substring(0, index) + char.ToUpper(circuit[index]) + circuit.Substring(index + 1, circuit.Length - index - 1);
+            circuit = circ.ToString();
+            circuit = char.ToUpper(circuit[0]) + circuit.Substring(1);
+            LabelTitle.Text = circuit + " Info";
 
             Label01.Text = Circuit.CircuitLength.ToString();
             Label11.Text = Circuit.NoLaps.ToString();

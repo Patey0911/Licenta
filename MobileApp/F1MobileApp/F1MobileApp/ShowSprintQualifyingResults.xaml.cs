@@ -44,7 +44,7 @@ namespace F1MobileApp
             CircuitModel Results = await CircuitRepository.GetByName(circuitname);
             DriverModel Driver;
 
-            RaceName.Text = Results.CircuitName.ToUpper();
+            RaceName.Text = Results.CircuitName.ToUpper() + " Shootout";
 
             //1st Place
             Driver = await DriverRepository.GetByNo(Results.SprintQualifying1);
