@@ -28,7 +28,7 @@
         </Grid.ColumnDefinitions>
 
         <Image x:Name="ImageDriver" Grid.Row="0" Grid.ColumnSpan="2" />
-        
+
         <Label x:Name="Label00" Text="Position" Grid.Row="1" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
         <Label x:Name="Label01" Grid.Row="1" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
 
