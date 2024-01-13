@@ -126,7 +126,7 @@ namespace F1MobileApp
                 var allDrivers = await GetAllCircuits();
                 await firebaseClient
                 .Child("Circuits")
-                .Child("2023")
+                .Child("2024")
                 .OnceAsync<CircuitModel>();
                 return allDrivers.Where(a => a.CircuitName == name).FirstOrDefault();
             }

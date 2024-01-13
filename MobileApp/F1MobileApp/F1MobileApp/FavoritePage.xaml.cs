@@ -140,7 +140,7 @@ namespace F1MobileApp
                 }
 
                 DateTime DateGp;
-                DateTime.TryParseExact(resultString + "/" + NoMonth + "/2023", "dd/MM/yyyy", null, DateTimeStyles.None, out DateGp);
+                DateTime.TryParseExact(resultString + "/" + NoMonth + "/2024", "dd/MM/yyyy", null, DateTimeStyles.None, out DateGp);
 
                 c.DateGP = DateGp;
             }
@@ -185,8 +185,10 @@ namespace F1MobileApp
                 NoMonth = "9";
             else if (month.Contains("Oct"))
                 NoMonth = "10";
-            else
+            else if (month.Contains("Nov"))
                 NoMonth = "11";
+            else
+                NoMonth = "12";
             return NoMonth;
         }
 

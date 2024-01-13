@@ -58,7 +58,7 @@ namespace F1MobileApp
                 }
 
                 DateTime DateGp;
-                DateTime.TryParseExact(resultString + "/" + NoMonth + "/2023", "dd/MM/yyyy", null, DateTimeStyles.None, out DateGp);
+                DateTime.TryParseExact(resultString + "/" + NoMonth + "/2024", "dd/MM/yyyy", null, DateTimeStyles.None, out DateGp);
 
                 c.DateGP=DateGp;
             }
@@ -401,6 +401,38 @@ namespace F1MobileApp
                         if (CircuitsSortedList[index].FutureRace == "0")
                             CompletedRace++;
                         break;
+                    case 22:
+                        Image23.Source = CircuitsSortedList[index].CircuitName.Replace("-", "_") + "Flag.png";
+                        modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
+                        if (modifiedcircuit.Contains("-"))
+                        {
+                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            char[] CharCircuits = modifiedcircuit.ToCharArray();
+                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            modifiedcircuit = new string(CharCircuits);
+                        }
+                        Label23.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
+                        LabelDate23.Text = CircuitsSortedList[index].Date;
+                        if (CircuitsSortedList[index].FutureRace == "0")
+                            CompletedRace++;
+                        break;
+                    case 23:
+                        Image24.Source = CircuitsSortedList[index].CircuitName.Replace("-", "_") + "Flag.png";
+                        modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
+                        if (modifiedcircuit.Contains("-"))
+                        {
+                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            char[] CharCircuits = modifiedcircuit.ToCharArray();
+                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            modifiedcircuit = new string(CharCircuits);
+                        }
+                        Label24.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
+                        LabelDate24.Text = CircuitsSortedList[index].Date;
+                        if (CircuitsSortedList[index].FutureRace == "0")
+                            CompletedRace++;
+                        break;
+                    default:
+                        break;
                 }
             }
         }
@@ -422,10 +454,12 @@ namespace F1MobileApp
                 NoMonth = "8";
             else if (month.Contains("Sep"))
                 NoMonth = "9";
-            else if(month.Contains("Oct"))
+            else if (month.Contains("Oct"))
                 NoMonth = "10";
-            else
+            else if (month.Contains("Nov"))
                 NoMonth = "11";
+            else
+                NoMonth = "12";
             return NoMonth;
         }
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
@@ -536,6 +570,16 @@ namespace F1MobileApp
         private async void TapGestureRecognizer_Tapped_21(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new ShowCircuit(CircuitsSortedList[21].CircuitName));
+        }
+
+        private async void TapGestureRecognizer_Tapped_22(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ShowCircuit(CircuitsSortedList[22].CircuitName));
+        }
+
+        private async void TapGestureRecognizer_Tapped_23(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ShowCircuit(CircuitsSortedList[23].CircuitName));
         }
     }
 }
