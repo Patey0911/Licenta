@@ -56,9 +56,9 @@ namespace F1MobileApp
 		{
             switch (FavTeam)
             {
-                case "Alfa Romeo":
+                case "Kick Sauber":
                     return "#C92D4B";
-                case "AlphaTauri":
+                case "RB":
                     return "#5E8FAA";
                 case "Alpine":
                     return "#2293D1";

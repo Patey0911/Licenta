@@ -7379,21 +7379,9 @@
             "target": "Package",
             "version": "[1.8.0, )"
           },
-          "Xamarin.Essentials": {
-            "target": "Package",
-            "version": "[1.8.0, )"
-          },
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2612, )"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "[5.0.0.2612, )"
-          },
-          "Xamarin.Forms.InputKit": {
-            "target": "Package",
-            "version": "[4.1.6, )"
           },
           "Xamarin.Forms.InputKit": {
             "target": "Package",

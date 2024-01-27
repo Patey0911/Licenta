@@ -21,7 +21,7 @@ namespace F1MobileApp
         {
             var circuitslist = (await firebaseClient
             .Child("Circuits")
-            .Child("2023")
+            .Child("2024")
             .OnceAsync<CircuitModel>()).Select(item =>
             new CircuitModel
             {

@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 using Xamarin.Essentials;
 
 
-var CircuitsList = await CircuitRepository2023.GetAllCircuits();
+var CircuitsList = await CircuitRepository2024.GetAllCircuits();
 var Drivers = await DriverRepository.GetAllDrivers();
 List<DriverModel> DriverSortedList = null;
 List<DriverModel> LastRaceClassification = null;
@@ -64,7 +64,7 @@ foreach (CircuitModel c in CircuitsList)
     }
 
     DateTime DateGp;
-    DateTime.TryParseExact(resultString + "/" + NoMonth + "/2023", "dd/MM/yyyy", null, DateTimeStyles.None, out DateGp);
+    DateTime.TryParseExact(resultString + "/" + NoMonth + "/2024", "dd/MM/yyyy", null, DateTimeStyles.None, out DateGp);
 
     c.DateGP = DateGp;
 }
@@ -74,33 +74,33 @@ await sendmail();
 //Avg Pos from the last 5 races
 await Last5Races();
 
-var Circuit2022 = await CircuitRepository2022.GetByName(NextRace.CircuitName);
-if (Circuit2022 != null)
+var Circuit2023 = await CircuitRepository2023.GetByName(NextRace.CircuitName);
+if (Circuit2023 != null)
 {
-    Console.WriteLine(Circuit2022.ToString());
+    Console.WriteLine(Circuit2023.ToString());
 
     foreach (var driver in DriverSortedList)
     {
-        if (Circuit2022.Place1 == driver.No) LastYearPos = 1;
-        else if (Circuit2022.Place2 == driver.No) LastYearPos = 2;
-        else if (Circuit2022.Place3 == driver.No) LastYearPos = 3;
-        else if (Circuit2022.Place4 == driver.No) LastYearPos = 4;
-        else if (Circuit2022.Place5 == driver.No) LastYearPos = 5;
-        else if (Circuit2022.Place6 == driver.No) LastYearPos = 6;
-        else if (Circuit2022.Place7 == driver.No) LastYearPos = 7;
-        else if (Circuit2022.Place8 == driver.No) LastYearPos = 8;
-        else if (Circuit2022.Place9 == driver.No) LastYearPos = 9;
-        else if (Circuit2022.Place10 == driver.No) LastYearPos = 10;
-        else if (Circuit2022.Place11 == driver.No) LastYearPos = 11;
-        else if (Circuit2022.Place12 == driver.No) LastYearPos = 12;
-        else if (Circuit2022.Place13 == driver.No) LastYearPos = 13;
-        else if (Circuit2022.Place14 == driver.No) LastYearPos = 14;
-        else if (Circuit2022.Place15 == driver.No) LastYearPos = 15;
-        else if (Circuit2022.Place16 == driver.No) LastYearPos = 16;
-        else if (Circuit2022.Place17 == driver.No) LastYearPos = 17;
-        else if (Circuit2022.Place18 == driver.No) LastYearPos = 18;
-        else if (Circuit2022.Place19 == driver.No) LastYearPos = 19;
-        else if (Circuit2022.Place20 == driver.No) LastYearPos = 20;
+        if (Circuit2023.Place1 == driver.No) LastYearPos = 1;
+        else if (Circuit2023.Place2 == driver.No) LastYearPos = 2;
+        else if (Circuit2023.Place3 == driver.No) LastYearPos = 3;
+        else if (Circuit2023.Place4 == driver.No) LastYearPos = 4;
+        else if (Circuit2023.Place5 == driver.No) LastYearPos = 5;
+        else if (Circuit2023.Place6 == driver.No) LastYearPos = 6;
+        else if (Circuit2023.Place7 == driver.No) LastYearPos = 7;
+        else if (Circuit2023.Place8 == driver.No) LastYearPos = 8;
+        else if (Circuit2023.Place9 == driver.No) LastYearPos = 9;
+        else if (Circuit2023.Place10 == driver.No) LastYearPos = 10;
+        else if (Circuit2023.Place11 == driver.No) LastYearPos = 11;
+        else if (Circuit2023.Place12 == driver.No) LastYearPos = 12;
+        else if (Circuit2023.Place13 == driver.No) LastYearPos = 13;
+        else if (Circuit2023.Place14 == driver.No) LastYearPos = 14;
+        else if (Circuit2023.Place15 == driver.No) LastYearPos = 15;
+        else if (Circuit2023.Place16 == driver.No) LastYearPos = 16;
+        else if (Circuit2023.Place17 == driver.No) LastYearPos = 17;
+        else if (Circuit2023.Place18 == driver.No) LastYearPos = 18;
+        else if (Circuit2023.Place19 == driver.No) LastYearPos = 19;
+        else if (Circuit2023.Place20 == driver.No) LastYearPos = 20;
         else
             LastYearPos = 25;//because that pilot who doesn't compete on this circuit before, doesn't know it
 
@@ -215,7 +215,7 @@ var place20 = DriverSortedList[19].LastName;
 
 var CircuitResult = new CircuitModel(NextRace.CircuitLength, NextRace.CircuitName, NextRace.Date, NextRace.FastestLap, NextRace.FirstGP, NextRace.FutureRace, NextRace.LapRecord, NextRace.NoLaps, place1, place2, place3, place4, place5, place6, place7, place8, place9, place10, place11, place12, place13, place14, place15, place16, place17, place18, place19, place20, NextRace.Qualifying1, NextRace.Qualifying2, NextRace.Qualifying3, NextRace.Qualifying4, NextRace.Qualifying5, NextRace.Qualifying6, NextRace.Qualifying7, NextRace.Qualifying8, NextRace.Qualifying9, NextRace.Qualifying10, NextRace.Qualifying11, NextRace.Qualifying12, NextRace.Qualifying13, NextRace.Qualifying14, NextRace.Qualifying15, NextRace.Qualifying16, NextRace.Qualifying17, NextRace.Qualifying18, NextRace.Qualifying19, NextRace.Qualifying20, NextRace.RaceDistance, NextRace.Sprint1, NextRace.Sprint2, NextRace.Sprint3, NextRace.Sprint4, NextRace.Sprint5, NextRace.Sprint6, NextRace.Sprint7, NextRace.Sprint8, NextRace.Sprint9, NextRace.Sprint10, NextRace.Sprint11, NextRace.Sprint12, NextRace.Sprint13, NextRace.Sprint14, NextRace.Sprint15, NextRace.Sprint16, NextRace.Sprint17, NextRace.Sprint18, NextRace.Sprint19, NextRace.Sprint20, NextRace.SprintQualifying1, NextRace.SprintQualifying2, NextRace.SprintQualifying3, NextRace.SprintQualifying4, NextRace.SprintQualifying5, NextRace.SprintQualifying6, NextRace.SprintQualifying7, NextRace.SprintQualifying8, NextRace.SprintQualifying9, NextRace.SprintQualifying10, NextRace.SprintQualifying11, NextRace.SprintQualifying12, NextRace.SprintQualifying13, NextRace.SprintQualifying14, NextRace.SprintQualifying15, NextRace.SprintQualifying16, NextRace.SprintQualifying17, NextRace.SprintQualifying18, NextRace.SprintQualifying19, NextRace.SprintQualifying20, NextRace.SprintRace);
 
-await CircuitRepository2023.Save(NextRace.CircuitName, CircuitResult);
+await CircuitRepository2024.Save(NextRace.CircuitName, CircuitResult);
 
 
 

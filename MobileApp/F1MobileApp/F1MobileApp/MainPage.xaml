@@ -31,10 +31,6 @@
                 <local:SchedulePage/>
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage Title="Statistics" Icon="Statistics.png">
-            <x:Arguments>
-                <local:StatisticPage/>
-            </x:Arguments>
-        </NavigationPage>
+
     </TabbedPage.Children>
 </TabbedPage>

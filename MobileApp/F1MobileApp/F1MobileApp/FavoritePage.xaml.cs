@@ -169,7 +169,9 @@ namespace F1MobileApp
         private string ReturnMonth(string month)
         {
             string NoMonth;
-            if (month.Contains("Mar"))
+            if (month.Contains("Feb"))
+                NoMonth = "2";
+            else if (month.Contains("Mar"))
                 NoMonth = "3";
             else if (month.Contains("Apr"))
                 NoMonth = "4";
@@ -196,10 +198,10 @@ namespace F1MobileApp
 		{
             switch (FavTeam.Team)
             {
-                case "Alfa Romeo":
+                case "Kick Sauber":
                     this.BackgroundColor = Color.FromHex("#C92D4B");
                     break;
-                case "AlphaTauri":
+                case "RB":
                     this.BackgroundColor = Color.FromHex("#5E8FAA");
                     break;
                 case "Alpine":

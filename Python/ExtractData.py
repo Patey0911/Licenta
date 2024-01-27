@@ -715,9 +715,9 @@ def GetResults2024(index, name):
                         ref = db.reference("/")
                         db.reference("/Circuits/2024/" + name + "/" + "SprintQualifying" + desired_data[0]).set(desired_data[1])
                         ref.get()
-            if exist == 0:
-                for i in range(1, 21):
-                    db.reference("/Circuits/2024/" + name + "/" + "SprintQualifying" + str(i)).set("")
+        if exist == 0:
+            for i in range(1, 21):
+                db.reference("/Circuits/2024/" + name + "/" + "SprintQualifying" + str(i)).set("")
     else:
         for i in range(1, 21):
             db.reference("/Circuits/2024/" + name + "/" + "SprintQualifying" + str(i)).set("")
@@ -1105,12 +1105,13 @@ def DriversDetails():
     DriversLastNames = soup.find_all('span', class_='d-block f1-bold--s f1-color--carbonBlack')
     DriversFirstNames = soup.find_all('span', class_='d-block f1--xxs f1-color--carbonBlack')
 
-    for i in range(0,22):
-        print(Points[i].get_text(strip=True))
+    for i in range(0,20):
+        #Uncomment after the first race
+        #print(Points[i].get_text(strip=True))
         print(DriversLastNames[i].get_text(strip=True))
         print(DriversFirstNames[i].get_text(strip=True))
-        db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/PointsSeason").set(Points[i].get_text(strip=True))
-        print(Points[i].get_text(strip=True))
+        #db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/PointsSeason").set(Points[i].get_text(strip=True))
+        db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/PointsSeason").set("0")
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/FirstName").set(DriversFirstNames[i].get_text(strip=True))
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/LastName").set(DriversLastNames[i].get_text(strip=True))
         ref = db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/No")
@@ -1123,7 +1124,7 @@ def DriversDetails():
         print(PositionSeason[int(number)])
 
     #To obtain more information about every driver we need to visit their f1 pages
-    for i in range(0, 21):
+    for i in range(0, 20):
         url = 'https://www.formula1.com/en/drivers/'+DriversFirstNames[i].get_text(strip=True).lower()+'-'+DriversLastNames[i].get_text(strip=True).lower()+'.html'
 
         if(DriversLastNames[i].get_text(strip=True)=="De Vries"):
@@ -1187,11 +1188,13 @@ def TeamsDetails():
     DriversNames = soup.find_all('span', class_='last-name f1-uppercase f1-bold--xs d-block d-lg-inline')
 
     for i in range(0,10):
-        print(Points[i].get_text(strip=True))
+        #Uncomment after the first race
+        #print(Points[i].get_text(strip=True))
         print(TeamsNames[i].get_text(strip=True))
         print(DriversNames[2*i].get_text(strip=True))
         print(DriversNames[2*i+1].get_text(strip=True))
-        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True)+ "/Points").set(Points[i].get_text(strip=True))
+        #db.reference("/Teams/" + TeamsNames[i].get_text(strip=True)+ "/Points").set(Points[i].get_text(strip=True))
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True)+ "/Points").set(0)
         db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/Driver1").set(DriversNames[2*i].get_text(strip=True))
         db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/Driver2").set(DriversNames[2*i+1].get_text(strip=True))
         db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/Team").set(TeamsNames[i].get_text(strip=True))
@@ -1270,8 +1273,8 @@ firebase_admin.initialize_app(cred, {"databaseURL": "https://licenta-ed6d3-defau
 #    GetCircuitData2022(circuits2022[pos])
 #for pos, element in enumerate(circuits2023):
 #    GetCircuitData2023(circuits2023[pos])
-for pos, element in enumerate(circuits2024):
-    GetCircuitData2024(circuits2024[pos])
+#for pos, element in enumerate(circuits2024):
+#    GetCircuitData2024(circuits2024[pos])
 
 #Go through all results
 #for pos, element in enumerate(indexes2020):
@@ -1286,9 +1289,9 @@ for pos, element in enumerate(indexes2024):
     GetResults2024(indexes2024[pos], circuits2024[pos])
 
 
-#Everytime run this 2 with GetResults2023
+#Everytime run this 2 with GetResults2024
 #DriversDetails()
 
-#TeamsDetails()
+TeamsDetails()
 
 

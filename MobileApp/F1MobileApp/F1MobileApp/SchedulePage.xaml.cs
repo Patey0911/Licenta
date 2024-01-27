@@ -440,7 +440,9 @@ namespace F1MobileApp
         private string ReturnMonth(string month)
         {
             string NoMonth;
-            if (month.Contains("Mar"))
+            if (month.Contains("Feb"))
+                NoMonth = "2";
+            else if (month.Contains("Mar"))
                 NoMonth = "3";
             else if (month.Contains("Apr"))
                 NoMonth = "4";

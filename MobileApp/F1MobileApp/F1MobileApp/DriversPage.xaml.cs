@@ -163,18 +163,6 @@ namespace F1MobileApp
                         Label20.Text = DriversSortedList[index].FirstName + " " + DriversSortedList[index].LastName;
                         LabelPts20.Text = DriversSortedList[index].PointsSeason;
                         break;
-                    case 20:
-                        ButtonStackLayout21.BackgroundColor = Color.FromHex(ChangeBackroundColor(DriversSortedList[index].Team));
-                        Image21.Source = DriversSortedList[index].LastName.Replace(" ", "") + ".png";
-                        Label21.Text = DriversSortedList[index].FirstName + " " + DriversSortedList[index].LastName;
-                        LabelPts21.Text = DriversSortedList[index].PointsSeason;
-                        break;
-                    case 21:
-                        ButtonStackLayout22.BackgroundColor = Color.FromHex(ChangeBackroundColor(DriversSortedList[index].Team));
-                        Image22.Source = DriversSortedList[index].LastName.Replace(" ", "") + ".png";
-                        Label22.Text = DriversSortedList[index].FirstName + " " + DriversSortedList[index].LastName;
-                        LabelPts22.Text = DriversSortedList[index].PointsSeason;
-                        break;
                 }
             }
         }
@@ -183,9 +171,9 @@ namespace F1MobileApp
 		{
             switch (FavTeam)
             {
-                case "Alfa Romeo":
+                case "Kick Sauber":
                     return "#C92D4B";
-                case "AlphaTauri":
+                case "RB":
                     return "#5E8FAA";
                 case "Alpine":
                     return "#2293D1";
@@ -305,16 +293,6 @@ namespace F1MobileApp
         private async void TapGestureRecognizer_Tapped_19(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new ShowDriver(DriversSortedList[19].LastName));
-        }
-
-        private async void TapGestureRecognizer_Tapped_20(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new ShowDriver(DriversSortedList[20].LastName));
-        }
-
-        private async void TapGestureRecognizer_Tapped_21(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new ShowDriver(DriversSortedList[21].LastName));
         }
     }
 }

@@ -1,3 +1,9 @@
+C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\bin\Debug\netstandard2.0\F1MobileApp.deps.json
+C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\bin\Debug\netstandard2.0\F1MobileApp.dll
+C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\bin\Debug\netstandard2.0\F1MobileApp.pdb
+C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\bin\Debug\netstandard2.0\Mono.Android.xml
 C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\obj\Debug\netstandard2.0\F1MobileApp.csproj.AssemblyReference.cache
 C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\obj\Debug\netstandard2.0\F1MobileApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\obj\Debug\netstandard2.0\App.xaml.g.cs
@@ -22,12 +28,6 @@ C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\obj\Debug\netstand
 C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\obj\Debug\netstandard2.0\F1MobileApp.AssemblyInfo.cs
 C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\obj\Debug\netstandard2.0\F1MobileApp.csproj.CoreCompileInputs.cache
 C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\obj\Debug\netstandard2.0\F1MobileApp.sourcelink.json
-C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\bin\Debug\netstandard2.0\F1MobileApp.deps.json
-C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\bin\Debug\netstandard2.0\F1MobileApp.dll
-C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\bin\Debug\netstandard2.0\F1MobileApp.pdb
-C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\bin\Debug\netstandard2.0\Mono.Android.dll
-C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\bin\Debug\netstandard2.0\Mono.Android.pdb
-C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\bin\Debug\netstandard2.0\Mono.Android.xml
 C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\obj\Debug\netstandard2.0\F1MobileApp.csproj.CopyComplete
 C:\Users\ok\Desktop\Licenta\MobileApp\F1MobileApp\F1MobileApp\obj\Debug\netstandard2.0\F1MobileApp.dll
