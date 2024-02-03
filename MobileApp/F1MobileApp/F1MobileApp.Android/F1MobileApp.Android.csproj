@@ -273,10 +273,7 @@
     <AndroidResource Include="Resources\drawable\Williams.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\AlphaTauri.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\AlfaRomeo.png" />
+    <AndroidResource Include="Resources\drawable\RB.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\australiaFlag.png" />
@@ -429,10 +426,10 @@
     <AndroidResource Include="Resources\drawable\WilliamsCar.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\AlfaRomeoCar.png" />
+    <AndroidResource Include="Resources\drawable\KickSauberCar.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\AlphaTauriCar.png" />
+    <AndroidResource Include="Resources\drawable\RBCar.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\AlpineCar.png" />
@@ -463,6 +460,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\KickSauber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\emiliaRomagnaFlag.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\emiliaRomagna.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

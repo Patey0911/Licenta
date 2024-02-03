@@ -4,7 +4,7 @@
              xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
              x:Class="F1MobileApp.SchedulePage"
              NavigationPage.HasNavigationBar="False">
-    <ScrollView>
+    <ScrollView BackgroundColor="Black">
         <RelativeLayout>
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" RowSpacing="0">
                 <Grid.RowDefinitions>
@@ -33,33 +33,33 @@
                     <RowDefinition Height="70" />
                     <RowDefinition Height="70" />
                 </Grid.RowDefinitions>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="0" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="1" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="2" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="3" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="4" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="5" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="6" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="7" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="8" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="9" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="10" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="11" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="12" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="13" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="14" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="15" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="16" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="17" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="18" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="19" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="20" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="21" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="22" Stroke="Black" RadiusX="30" RadiusY="50"/>
-                <Rectangle Fill="#c4c1c0" StrokeThickness="3" Grid.Row="23" Stroke="Black" RadiusX="30" RadiusY="50"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="0" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="1" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="2" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="3" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="4" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="5" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="6" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="7" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="8" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="9" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="10" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="11" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="12" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="13" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="14" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="15" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="16" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="17" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="18" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="19" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="20" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="21" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="22" Stroke="Black" RadiusX="40" RadiusY="40"/>
+                <Rectangle Fill="#e10701" StrokeThickness="3" Grid.Row="23" Stroke="Black" RadiusX="40" RadiusY="40"/>
 
                 <StackLayout Grid.Row="0">
-                    <StackLayout VerticalOptions="End">
+                    <StackLayout VerticalOptions="Start" HorizontalOptions="Start">
                         <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout1" Orientation="Horizontal" Padding="2,2,2,2">
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
@@ -71,8 +71,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image1"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Start" />
-                                <Label Grid.Column="1" x:Name="Label1" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image1"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label1" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate1" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -93,8 +93,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image2"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Start" />
-                                <Label Grid.Column="1" x:Name="Label2" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image2"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label2" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate2" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -115,8 +115,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image3"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label3" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image3"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label3" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate3" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -137,8 +137,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image4"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label4" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image4"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label4" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate4" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -159,8 +159,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image5"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label5" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image5"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label5" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate5" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -181,8 +181,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image6"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label6" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image6"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label6" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate6" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -203,8 +203,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image7"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label7" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image7"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label7" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate7" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -225,8 +225,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image8"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label8" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image8"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label8" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate8" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -247,8 +247,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image9"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label9" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image9"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label9" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate9" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -269,8 +269,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image10"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label10" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image10"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label10" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate10" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -291,8 +291,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image11"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label11" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image11"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label11" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate11" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -313,8 +313,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image12"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label12" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image12"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label12" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate12" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -335,8 +335,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image13"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label13" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image13"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label13" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate13" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -357,8 +357,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image14"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label14" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image14"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label14" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate14" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -379,8 +379,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image15"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label15" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image15"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label15" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate15" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -401,8 +401,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image16"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label16" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image16"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label16" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate16" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -423,8 +423,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image17"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label17" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image17"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label17" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate17" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -445,8 +445,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image18"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label18" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image18"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label18" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate18" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -467,8 +467,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image19"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label19" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image19"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label19" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate19" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -489,8 +489,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image20"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label20" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image20"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label20" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate20" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -511,8 +511,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image21"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label21" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image21"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label21" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate21" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -533,8 +533,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image22"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label22" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image22"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label22" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate22" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -555,8 +555,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image23"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label23" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image23"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label23" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate23" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
@@ -577,8 +577,8 @@
                                     <ColumnDefinition Width="230"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Grid.Column="0" x:Name="Image24"  WidthRequest="70" VerticalOptions="End" HorizontalOptions="Center" />
-                                <Label Grid.Column="1" x:Name="Label24" FontSize="30" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
+                                <Image Grid.Column="0" x:Name="Image24"  WidthRequest="65" VerticalOptions="End" HorizontalOptions="End" />
+                                <Label Grid.Column="1" x:Name="Label24" FontSize="28" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start" />
                                 <Label Grid.Column="2" x:Name="LabelDate24" FontSize="25" TextColor="Black" FontAttributes="Bold" VerticalOptions="End" HorizontalOptions="Start"></Label>
                                 <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                             </Grid>
