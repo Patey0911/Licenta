@@ -1,4 +1,5 @@
 ﻿using Firebase.Auth;
+using Org.BouncyCastle.Math.EC;
 using Prediction;
 using System.Diagnostics;
 using System.Globalization;
@@ -6,6 +7,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Net.Mime;
 using System.Reactive.Subjects;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using Xamarin.Essentials;
 
@@ -68,6 +70,109 @@ foreach (CircuitModel c in CircuitsList)
 
     c.DateGP = DateGp;
 }
+
+//Calculate index we calculate the index of how much qualifications matter for race result
+var Circuits2023 = await CircuitRepository2023.GetAllCircuits();
+
+int ReturnPosQuali(CircuitModel c, int NoDriver)
+{
+    int posQuali=0;
+
+    if (Int32.Parse(c.Qualifying1) == NoDriver)
+        posQuali = 1;
+    else if (Int32.Parse(c.Qualifying2) == NoDriver)
+        posQuali = 2;
+    else if (Int32.Parse(c.Qualifying3) == NoDriver)
+        posQuali = 3;
+    else if (Int32.Parse(c.Qualifying4) == NoDriver)
+        posQuali = 4;
+    else if (Int32.Parse(c.Qualifying5) == NoDriver)
+        posQuali = 5;
+    else if (Int32.Parse(c.Qualifying6) == NoDriver)
+        posQuali = 6;
+    else if (Int32.Parse(c.Qualifying7) == NoDriver)
+        posQuali = 7;
+    else if (Int32.Parse(c.Qualifying8) == NoDriver)
+        posQuali = 8;
+    else if (Int32.Parse(c.Qualifying9) == NoDriver)
+        posQuali = 9;
+    else if (Int32.Parse(c.Qualifying10) == NoDriver)
+        posQuali = 10;
+    else if (Int32.Parse(c.Qualifying11) == NoDriver)
+        posQuali = 11;
+    else if (Int32.Parse(c.Qualifying12) == NoDriver)
+        posQuali = 12;
+    else if (Int32.Parse(c.Qualifying13) == NoDriver)
+        posQuali = 13;
+    else if (Int32.Parse(c.Qualifying14) == NoDriver)
+        posQuali = 14;
+    else if (Int32.Parse(c.Qualifying15) == NoDriver)
+        posQuali = 15;
+    else if (Int32.Parse(c.Qualifying16) == NoDriver)
+        posQuali = 16;
+    else if (Int32.Parse(c.Qualifying17) == NoDriver)
+        posQuali = 17;
+    else if (Int32.Parse(c.Qualifying18) == NoDriver)
+        posQuali = 18;
+    else if (Int32.Parse(c.Qualifying19) == NoDriver)
+        posQuali = 19;
+    else if (Int32.Parse(c.Qualifying20) == NoDriver)
+        posQuali = 20;
+
+   
+
+    return posQuali;
+}
+
+float ReturnIndexOvertake(CircuitModel circuit)
+{
+        var index = 0;
+        var posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place1));
+        index += Math.Abs(posQuali - 1);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place2));
+        index += Math.Abs(posQuali - 2);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place3));
+        index += Math.Abs(posQuali - 3);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place4));
+        index += Math.Abs(posQuali - 4);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place5));
+        index += Math.Abs(posQuali - 5);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place6));
+        index += Math.Abs(posQuali - 6);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place7));
+        index += Math.Abs(posQuali - 7);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place8));
+        index += Math.Abs(posQuali - 8);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place9));
+        index += Math.Abs(posQuali - 9);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place10));
+        index += Math.Abs(posQuali - 10);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place11));
+        index += Math.Abs(posQuali - 11);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place12));
+        index += Math.Abs(posQuali - 12);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place13));
+        index += Math.Abs(posQuali - 13);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place14));
+        index += Math.Abs(posQuali - 14);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place15));
+        index += Math.Abs(posQuali - 15);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place16));
+        index += Math.Abs(posQuali - 16);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place17));
+        index += Math.Abs(posQuali - 17);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place18));
+        index += Math.Abs(posQuali - 18);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place19));
+        index += Math.Abs(posQuali - 19);
+        posQuali = ReturnPosQuali(circuit, Int32.Parse(circuit.Place20));
+        index += Math.Abs(posQuali - 20);
+
+        Console.WriteLine(circuit.CircuitName + " " + index);
+    return index;
+}
+
+
 
 await sendmail();
 
@@ -132,7 +237,7 @@ if (Circuit2023 != null)
             else if (NextRace.Qualifying19 == driver.No) PosQuali = 19;
             else if (NextRace.Qualifying20 == driver.No) PosQuali = 20;
 
-            AvgPos = (float)((float)PosQuali * 0.4 + (float)(driver.AvgPlace5Races) * 0.3 + float.Parse(driver.Position) * 0.1 + LastYearPos * 0.2);
+            AvgPos = (float)((float)PosQuali * (200 - ReturnIndexOvertake(NextRace)) * 0.5 + (float)(driver.AvgPlace5Races) * ReturnIndexOvertake(NextRace) * 0.2 + float.Parse(driver.Position) * 0.1 + LastYearPos * 0.2);
         }
         driver.AvgPlace = AvgPos;
     }
