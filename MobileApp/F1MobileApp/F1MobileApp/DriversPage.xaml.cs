@@ -172,15 +172,15 @@ namespace F1MobileApp
             switch (FavTeam)
             {
                 case "Kick Sauber":
-                    return "#C92D4B";
+                    return "#52E252";
                 case "RB":
-                    return "#5E8FAA";
+                    return "#6692FF";
                 case "Alpine":
-                    return "#2293D1";
+                    return "#FF87BC";
                 case "Aston Martin":
                     return "#358C75";
                 case "Ferrari":
-                    return "#F91536";
+                    return "#E8002D";
                 case "Haas F1 Team":
                     return "#B6BABD";
                 case "McLaren":
@@ -190,7 +190,7 @@ namespace F1MobileApp
                 case "Red Bull Racing":
                     return "#3671C6";
                 case "Williams":
-                    return "#37BEDD";
+                    return "#64C4FF";
                 default:
                     return "0";
             }

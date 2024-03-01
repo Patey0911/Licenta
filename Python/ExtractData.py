@@ -1285,8 +1285,8 @@ firebase_admin.initialize_app(cred, {"databaseURL": "https://licenta-ed6d3-defau
 #    GetResults2022(indexes2022[pos], circuits2022[pos])
 #for pos, element in enumerate(indexes2023):
 #    GetResults2023(indexes2023[pos], circuits2023[pos])
-for pos, element in enumerate(indexes2024):
-    GetResults2024(indexes2024[pos], circuits2024[pos])
+#for pos, element in enumerate(indexes2024):
+#    GetResults2024(indexes2024[pos], circuits2024[pos])
 
 
 #Everytime run this 2 with GetResults2024

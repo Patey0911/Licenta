@@ -199,19 +199,19 @@ namespace F1MobileApp
             switch (FavTeam.Team)
             {
                 case "Kick Sauber":
-                    this.BackgroundColor = Color.FromHex("#C92D4B");
+                    this.BackgroundColor = Color.FromHex("#52E252");
                     break;
                 case "RB":
-                    this.BackgroundColor = Color.FromHex("#5E8FAA");
+                    this.BackgroundColor = Color.FromHex("#6692FF");
                     break;
                 case "Alpine":
-                    this.BackgroundColor = Color.FromHex("#2293D1");
+                    this.BackgroundColor = Color.FromHex("#FF87BC");
                     break;
                 case "Aston Martin":
                     this.BackgroundColor = Color.FromHex("#358C75");
                     break;
                 case "Ferrari":
-                    this.BackgroundColor = Color.FromHex("#F91536");
+                    this.BackgroundColor = Color.FromHex("#E8002D");
                     break;
                 case "Haas F1 Team":
                     this.BackgroundColor = Color.FromHex("#B6BABD");
@@ -226,7 +226,7 @@ namespace F1MobileApp
                     this.BackgroundColor = Color.FromHex("#3671C6");
                     break;
                 case "Williams":
-                    this.BackgroundColor = Color.FromHex("#37BEDD");
+                    this.BackgroundColor = Color.FromHex("#64C4FF");
                     break;
             }
         }
