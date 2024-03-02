@@ -1107,11 +1107,10 @@ def DriversDetails():
 
     for i in range(0,20):
         #Uncomment after the first race
-        #print(Points[i].get_text(strip=True))
+        print(Points[i].get_text(strip=True))
         print(DriversLastNames[i].get_text(strip=True))
         print(DriversFirstNames[i].get_text(strip=True))
-        #db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/PointsSeason").set(Points[i].get_text(strip=True))
-        db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/PointsSeason").set("0")
+        db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/PointsSeason").set(Points[i].get_text(strip=True))
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/FirstName").set(DriversFirstNames[i].get_text(strip=True))
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/LastName").set(DriversLastNames[i].get_text(strip=True))
         ref = db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/No")
@@ -1189,12 +1188,11 @@ def TeamsDetails():
 
     for i in range(0,10):
         #Uncomment after the first race
-        #print(Points[i].get_text(strip=True))
+        print(Points[i].get_text(strip=True))
         print(TeamsNames[i].get_text(strip=True))
         print(DriversNames[2*i].get_text(strip=True))
         print(DriversNames[2*i+1].get_text(strip=True))
-        #db.reference("/Teams/" + TeamsNames[i].get_text(strip=True)+ "/Points").set(Points[i].get_text(strip=True))
-        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True)+ "/Points").set(0)
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True)+ "/Points").set(Points[i].get_text(strip=True))
         db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/Driver1").set(DriversNames[2*i].get_text(strip=True))
         db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/Driver2").set(DriversNames[2*i+1].get_text(strip=True))
         db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/Team").set(TeamsNames[i].get_text(strip=True))
@@ -1285,12 +1283,12 @@ firebase_admin.initialize_app(cred, {"databaseURL": "https://licenta-ed6d3-defau
 #    GetResults2022(indexes2022[pos], circuits2022[pos])
 #for pos, element in enumerate(indexes2023):
 #    GetResults2023(indexes2023[pos], circuits2023[pos])
-#for pos, element in enumerate(indexes2024):
-#    GetResults2024(indexes2024[pos], circuits2024[pos])
+for pos, element in enumerate(indexes2024):
+    GetResults2024(indexes2024[pos], circuits2024[pos])
 
 
 #Everytime run this 2 with GetResults2024
-#DriversDetails()
+DriversDetails()
 
 TeamsDetails()
 
