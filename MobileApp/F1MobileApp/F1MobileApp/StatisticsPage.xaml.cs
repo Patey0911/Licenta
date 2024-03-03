@@ -849,17 +849,17 @@ namespace F1MobileApp
             switch (Driver)
             {
                 case "Bottas":
-                    return "#C92D4B";
+                    return "#52E252";
                 case "Zhou":
-                    return "E85F6F";
+                    return "#35C135";
                 case "Tsunoda":
                     return "#5E8FAA";
                 case "Ricciardo":
                     return "#6BB4AA";
                 case "Gasly":
-                    return "#2293D1";
+                    return "#FF87BC";
                 case "Ocon":
-                    return "#1FA8B5";
+                    return "#EB4D93";
                 case "Alonso":
                     return "#358C75";
                 case "Stroll":
@@ -932,9 +932,9 @@ namespace F1MobileApp
             foreach (DriverModel Driver in Drivers)
             {
                 //DriversAndPositions[posdriver].name = Driver.LastName;
-                string[] races = new string[23];
-                string[] sprintraces = new string[23];
-                for (var pos = 0; pos < 23; pos++)
+                string[] races = new string[24];
+                string[] sprintraces = new string[24];
+                for (var pos = 0; pos < 24; pos++)
                     sprintraces[pos] = "0";
                 string fastestlap = null;
                 posdriver++;
@@ -1085,7 +1085,7 @@ namespace F1MobileApp
             foreach (DriverModel Driver in Drivers)
             {
                 //DriversAndPositions[posdriver].name = Driver.LastName;
-                string[] races = new string[23];
+                string[] races = new string[24];
                 posdriver++;
                 nocircuit = -1;
                 foreach (CircuitModel Circ in Circuits)
