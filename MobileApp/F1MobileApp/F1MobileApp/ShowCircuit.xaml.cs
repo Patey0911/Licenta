@@ -37,12 +37,28 @@ namespace F1MobileApp
         {
             base.OnAppearing();
             circuit = await CircuitRepository.GetByName(circuitname);
+
+            ImageCircuit.Source = circuitname.Replace("-", "_") + ".png";
+
+            circuitname = circuitname.Replace("-", " ");
+            circuitname = circuitname.Replace("_", " ");
+            var index = circuitname.IndexOf(' ') + 1;
+            var circ = circuitname.Substring(0, index) + char.ToUpper(circuitname[index]) + circuitname.Substring(index + 1, circuitname.Length - index - 1);
+            var circuitString = circ.ToString();
+            circuitString = char.ToUpper(circuitString[0]) + circuitString.Substring(1);
+
+            Label01.Text = circuit.CircuitLength.ToString();
+            Label11.Text = circuit.NoLaps.ToString();
+            Label21.Text = circuit.FirstGP.ToString();
+            Label31.Text = circuit.RaceDistance.ToString();
+            Label41.Text = circuit.LapRecord.ToString();
+
             circuit.CircuitName = circuit.CircuitName.Replace("_", "-");
             var index_sing = circuit.CircuitName.IndexOf("-") + 1;
             char[] CharCircuits = circuit.CircuitName.ToCharArray();
             CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
             circuit.CircuitName = new string(CharCircuits);
-            LabelRaceName.Text = char.ToUpper(circuit.CircuitName[0]) + circuit.CircuitName.Substring(1);
+            LabelTitle.Text = char.ToUpper(circuit.CircuitName[0]) + circuit.CircuitName.Substring(1);
 
             if (circuit.Place1 == "" || !char.IsDigit(circuit.Place1[0]))
             {

@@ -5,30 +5,58 @@
              x:Class="F1MobileApp.ShowCircuit"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="White">
-    <StackLayout>
-        <Label x:Name="LabelRaceName" 
-               FontSize="40" 
-               TextColor="Black" 
-               FontAttributes="Bold" 
-               VerticalOptions="Start" 
-               HorizontalOptions="CenterAndExpand" />
-        
-        <Button x:Name="InfoBtn"                 
-                Text="Circuit Info" 
-                FontSize="30"
-                FontAttributes="Bold"
-                TextColor="Black" 
-                BackgroundColor="#e10701" 
-                BorderWidth="1"
-                BorderColor="Black"
-                CornerRadius="50"
-                Clicked="InfoBtn_Clicked"
-                VerticalOptions="Start"
-                HorizontalOptions="CenterAndExpand"
-                WidthRequest="500">
-        </Button>
 
-        <Button x:Name="ResultsBtn"                 
+
+    <ScrollView>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="250" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="110" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="110" />
+                <RowDefinition Height="5" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="LabelTitle" Grid.Row="0" Grid.ColumnSpan="2" FontSize="40" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"></Label>
+
+            <Image x:Name="ImageCircuit" Grid.Row="1" Grid.ColumnSpan="2" />
+
+            <Label x:Name="Label00" Text="Circuit Length" Grid.Row="2" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+            <Label x:Name="Label01" Grid.Row="2" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+            <Label x:Name="Label10" Text="No Laps" Grid.Row="3" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+            <Label x:Name="Label11" Grid.Row="3" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+            <Label x:Name="Label20" Text="First Gp" Grid.Row="4" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+            <Label x:Name="Label21" Grid.Row="4" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+            <Label x:Name="Label30" Text="Race Distance" Grid.Row="5" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+            <Label x:Name="Label31" Grid.Row="5" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+            <Label x:Name="Label40" Text="Lap Record" Grid.Row="6" Grid.Column="0" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+            <Label x:Name="Label41" Grid.Row="6" Grid.Column="1" FontSize="20" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+
+            <Button x:Name="ResultsBtn"
+                Grid.Row="10"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
                 Text="Show Race Results" 
                 FontSize="30"
                 FontAttributes="Bold"
@@ -41,9 +69,12 @@
                 VerticalOptions="Start"
                 HorizontalOptions="CenterAndExpand"
                 WidthRequest="500">
-        </Button>
+            </Button>
 
-        <Button x:Name="ResultQualiBtn"                 
+            <Button x:Name="ResultQualiBtn"    
+                Grid.Row="12"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
                 Text="Show Qualifying Results" 
                 FontSize="30"
                 FontAttributes="Bold"
@@ -54,11 +85,14 @@
                 CornerRadius="50"
                 Clicked="QualiBtn_Clicked"
                 VerticalOptions="Start"
-                HorizontalOptions="CenterAndExpand"
+                HorizontalOptions="Start"
                 WidthRequest="500">
-        </Button>
+            </Button>
 
-        <Button x:Name="ResultsSprintBtn"                 
+            <Button x:Name="ResultsSprintBtn" 
+                Grid.Row="14"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
                 Text="Show Sprint Results" 
                 FontSize="30"
                 FontAttributes="Bold"
@@ -69,11 +103,14 @@
                 CornerRadius="50"
                 Clicked="ResultsSprintBtn_Clicked"
                 VerticalOptions="Start"
-                HorizontalOptions="CenterAndExpand"
+                HorizontalOptions="Start"
                 WidthRequest="500">
-        </Button>
+            </Button>
 
-        <Button x:Name="ResultSprintQualiBtn"                 
+            <Button x:Name="ResultSprintQualiBtn"  
+                Grid.Row="16"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
                 Text="Show Sprint Shootout Results" 
                 FontSize="30"
                 FontAttributes="Bold"
@@ -86,8 +123,9 @@
                 VerticalOptions="Start"
                 HorizontalOptions="CenterAndExpand"
                 WidthRequest="500">
-        </Button>
-    </StackLayout>
+            </Button>
+        </Grid>
+    </ScrollView>
 </ContentPage>
     
     

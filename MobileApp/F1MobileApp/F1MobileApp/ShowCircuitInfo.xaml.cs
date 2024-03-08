@@ -52,33 +52,5 @@ namespace F1MobileApp
             Label31.Text = Circuit.RaceDistance.ToString();
             Label41.Text = Circuit.LapRecord.ToString();
         }
-        private string ChangeBackroundColor(string FavTeam)
-		{
-            switch (FavTeam)
-            {
-                case "Kick Sauber":
-                    return "#C92D4B";
-                case "RB":
-                    return "#5E8FAA";
-                case "Alpine":
-                    return "#2293D1";
-                case "Aston Martin":
-                    return "#358C75";
-                case "Ferrari":
-                    return "#F91536";
-                case "Haas F1 Team":
-                    return "#B6BABD";
-                case "McLaren":
-                    return "#F58020";
-                case "Mercedes":
-                    return "#6CD3BF";
-                case "Red Bull Racing":
-                    return "#3671C6";
-                case "Williams":
-                    return "#37BEDD";
-                default:
-                    return "0";
-            }
-        }
     }
 }
