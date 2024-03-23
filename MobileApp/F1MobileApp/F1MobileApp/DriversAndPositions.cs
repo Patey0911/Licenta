@@ -12,9 +12,9 @@ namespace F1MobileApp
 
         public string[] sprintraces = new string[23];
 
-        public string fastestlap { get; set; }
+        public string[] fastestlap { get; set; }
 
-        public DriversAndPositions(string name, string[] races,string[] sprintraces, string fastestlap)
+        public DriversAndPositions(string name, string[] races,string[] sprintraces, string[] fastestlap)
         {
             this.name = name;
             this.races = races;

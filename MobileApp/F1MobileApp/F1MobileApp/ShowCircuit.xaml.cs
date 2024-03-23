@@ -38,12 +38,14 @@ namespace F1MobileApp
             base.OnAppearing();
             circuit = await CircuitRepository.GetByName(circuitname);
 
-            ImageCircuit.Source = circuitname.Replace("-", "_") + ".png";
+            var circuitnamelocal = circuitname.Replace("-", "_") + ".png";
 
-            circuitname = circuitname.Replace("-", " ");
-            circuitname = circuitname.Replace("_", " ");
-            var index = circuitname.IndexOf(' ') + 1;
-            var circ = circuitname.Substring(0, index) + char.ToUpper(circuitname[index]) + circuitname.Substring(index + 1, circuitname.Length - index - 1);
+            ImageCircuit.Source = circuitnamelocal;
+
+            var circuitnamelocal2 = circuitname.Replace("-", " ");
+
+            var index = circuitnamelocal2.IndexOf(' ') + 1;
+            var circ = circuitnamelocal2.Substring(0, index) + char.ToUpper(circuitnamelocal2[index]) + circuitnamelocal2.Substring(index + 1, circuitnamelocal2.Length - index - 1);
             var circuitString = circ.ToString();
             circuitString = char.ToUpper(circuitString[0]) + circuitString.Substring(1);
 
@@ -53,7 +55,8 @@ namespace F1MobileApp
             Label31.Text = circuit.RaceDistance.ToString();
             Label41.Text = circuit.LapRecord.ToString();
 
-            circuit.CircuitName = circuit.CircuitName.Replace("_", "-");
+            
+
             var index_sing = circuit.CircuitName.IndexOf("-") + 1;
             char[] CharCircuits = circuit.CircuitName.ToCharArray();
             CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);

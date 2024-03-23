@@ -71,7 +71,7 @@ namespace Prediction
 
             pos = int.Parse(a.Race1) + int.Parse(a.Race2) + int.Parse(a.Race3) + int.Parse(a.Race4) + int.Parse(a.Race5);
 
-            pos = pos / 5;
+            pos = pos / 2;
 
             return pos;
         }

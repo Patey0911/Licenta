@@ -312,6 +312,7 @@ namespace F1MobileApp
                                 }
                                 );
                             }
+                          
                         }
                     }
                     if (drive.name == Driver2.LastName)
@@ -455,10 +456,10 @@ namespace F1MobileApp
                                     case "10":
                                         points1 += 1; break;
                                 }
-                                if (drive.fastestlap == Driver1.No)
-                                    points1 += 1;
                                 index1++;
-                                if (drive.sprintraces[index1]!="0")
+                                if (drive.fastestlap[index1] == Driver1.No)
+                                    points1 += 1;
+                                if (drive.sprintraces[index1] != "0")
                                 {
                                     switch (drive.sprintraces[index1])
                                     {
@@ -480,6 +481,17 @@ namespace F1MobileApp
                                             points1 += 1; break;
                                     }
                                 }
+                                entries.Add(
+                                new ChartEntry(points1)
+                                {
+                                    Color = SKColor.Parse(ChangeBackroundColorDrivers(driver1))
+                                }
+                                );
+                            }
+                            if (index1 == 0 && drive.name == "Sainz")
+                            {
+                                index1++;
+                                points1 += 0;
                                 entries.Add(
                                 new ChartEntry(points1)
                                 {
@@ -524,9 +536,9 @@ namespace F1MobileApp
                                     case "10":
                                         points2 += 1; break;
                                 }
-                                if (drive.fastestlap == Driver2.No)
-                                    points2 += 1;
                                 index2++;
+                                if (drive.fastestlap[index2] == Driver2.No)
+                                    points2 += 1;
                                 if (drive.sprintraces[index2] != "0")
                                 {
                                     switch (drive.sprintraces[index2])
@@ -549,6 +561,17 @@ namespace F1MobileApp
                                             points2 += 1; break;
                                     }
                                 }
+                                entries2.Add(
+                                new ChartEntry(points2)
+                                {
+                                    Color = SKColor.Parse(ChangeBackroundColorDrivers(driver2))
+                                }
+                                );
+                            }
+                            if (index2 == 0 && drive.name == "Sainz")
+                            {
+                                index2++;
+                                points2 += 0;
                                 entries2.Add(
                                 new ChartEntry(points2)
                                 {
@@ -639,6 +662,8 @@ namespace F1MobileApp
                 int raceno2 = 0;
                 int sprintraceno1 = 0;
                 int sprintraceno2 = 0;
+                int index1 = -1;
+                int index2 = -1;
 
                 foreach (var team in TeamsPage.TeamsSortedList)
                 {
@@ -681,9 +706,12 @@ namespace F1MobileApp
                                             case "10":
                                                 points1 += 1; break;
                                         }
-                                        if (driver.fastestlap == team.Driver1)
+                                        index1++;
+                                        if (driver.name == "Sainz" && index1 == 3)
+                                            points1 += 6;
+                                        if (driver.fastestlap[index1] == team.Driver1)
                                             points1 += 1;
-                                        if (driver.fastestlap == team.Driver2)
+                                        if (driver.fastestlap[index1] == team.Driver2)
                                             points1 += 1;
                                         switch (driver.sprintraces[raceno1])
                                         {
@@ -766,9 +794,12 @@ namespace F1MobileApp
                                             case "10":
                                                 points2 += 1; break;
                                         }
-                                        if (driver.fastestlap == team.Driver1)
+                                        index2++;
+                                        if (driver.name == "Sainz" && index2 == 1)
+                                            points1 += 6;
+                                        if (driver.fastestlap[index2] == team.Driver1)
                                             points2 += 1;
-                                        if (driver.fastestlap == team.Driver2)
+                                        if (driver.fastestlap[index2] == team.Driver2)
                                             points2 += 1;
                                         switch (driver.sprintraces[raceno2])
                                         {
@@ -936,7 +967,7 @@ namespace F1MobileApp
                 string[] sprintraces = new string[24];
                 for (var pos = 0; pos < 24; pos++)
                     sprintraces[pos] = "0";
-                string fastestlap = null;
+                string[] fastestlap = new string[24];
                 posdriver++;
                 nocircuit = -1;
                 foreach (CircuitModel Circ in Circuits)
@@ -1024,7 +1055,7 @@ namespace F1MobileApp
                     }
                     else
                         races[nocircuit] = "0";
-                    fastestlap = Circ.FastestLap;
+                    fastestlap[nocircuit] = Circ.FastestLap;
 
                     //Sprint
                     if (Circ.SprintRace == "1")

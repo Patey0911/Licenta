@@ -1082,7 +1082,8 @@ def GetCircuitData2024(name):
 
     soup = BeautifulSoup(html_content, 'html.parser')
 
-    Date = soup.find_all('span', class_='ms-schedule-table-date__value text-md font-semi uppercase')
+    Date = soup.find_all('span', class_='ms-schedule-table-date__value text-body font-bold uppercase')
+    print(Date)
     DateGood = Date[2*pos].get_text(strip=True)
 
     db.reference("/Circuits/2024/" + name + "/Date").set(DateGood)
@@ -1113,8 +1114,9 @@ def DriversDetails():
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/PointsSeason").set(Points[i].get_text(strip=True))
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/FirstName").set(DriversFirstNames[i].get_text(strip=True))
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/LastName").set(DriversLastNames[i].get_text(strip=True))
-        ref = db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/No")
-        number = ref.get()
+        if(DriversLastNames[i] != "Bearmen"):
+            ref = db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/No")
+            number = ref.get()
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/AccumulatedPos").set(str(PositionSeason[int(number)]))
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/AccumulatedPosSprint").set(str(PositionSeasonSprint[int(number)]))
         db.reference("/Drivers/" + DriversLastNames[i].get_text(strip=True) + "/Position").set(str(i+1))
@@ -1289,6 +1291,7 @@ for pos, element in enumerate(indexes2024):
 
 #Everytime run this 2 with GetResults2024
 DriversDetails()
+
 
 TeamsDetails()
 
