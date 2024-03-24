@@ -448,6 +448,27 @@
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
+            <StackLayout Grid.Row="20">
+                <StackLayout VerticalOptions="End">
+                    <StackLayout IsVisible="{Binding NoConnection}" x:Name="ButtonStackLayout21" Orientation="Horizontal" Padding="2,2,2,2">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_20"/>
+                        </StackLayout.GestureRecognizers>
+                        <StackLayout HeightRequest="50"></StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70"/>
+                                <ColumnDefinition Width="250"/>
+                                <ColumnDefinition Width="60"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0" x:Name="Image21"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
+                            <Label Grid.Column="1" x:Name="Label21" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="2" x:Name="LabelPts21" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
+                            <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
         </Grid>
     </ScrollView>
 </ContentPage>

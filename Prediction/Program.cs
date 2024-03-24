@@ -335,13 +335,13 @@ async Task Last5Races()
             {
                 Race2 = c;
             }
-            //else if (Race3 == null)
+            else if (Race3 == null)
+            {
+                Race3 = c;
+            }
+            // else if (Race4 == null)
             //{
-            //    Race3 = c;
-           // }
-           // else if (Race4 == null)
-            //{
-             //   Race4 = c;
+            //   Race4 = c;
             //}
             //else
             //{
@@ -352,7 +352,7 @@ async Task Last5Races()
 
     Console.WriteLine(Race1.CircuitName);
     Console.WriteLine(Race2.CircuitName);
-    //Console.WriteLine(Race3.CircuitName);
+    Console.WriteLine(Race3.CircuitName);
     //Console.WriteLine(Race4.CircuitName);
     //Console.WriteLine(Race5.CircuitName);
     //Console.WriteLine(NextRace.CircuitName);
@@ -489,69 +489,69 @@ async Task Last5Races()
             p.Race2 = "25";
 
     ////Race3
-    //pilot = await DriverRepository.GetByNo(Race3.Place1);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "1";
+    pilot = await DriverRepository.GetByNo(Race3.Place1);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "1";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place2);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "2";
+    pilot = await DriverRepository.GetByNo(Race3.Place2);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "2";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place3);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "3";
+    pilot = await DriverRepository.GetByNo(Race3.Place3);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "3";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place4);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "4";
+    pilot = await DriverRepository.GetByNo(Race3.Place4);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "4";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place5);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "5";
+    pilot = await DriverRepository.GetByNo(Race3.Place5);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "5";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place6);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "6";
+    pilot = await DriverRepository.GetByNo(Race3.Place6);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "6";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place7);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "7";
+    pilot = await DriverRepository.GetByNo(Race3.Place7);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "7";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place8);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "8";
+    pilot = await DriverRepository.GetByNo(Race3.Place8);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "8";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place9);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "9";
+    pilot = await DriverRepository.GetByNo(Race3.Place9);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "9";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place10);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "10";
+    pilot = await DriverRepository.GetByNo(Race3.Place10);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "10";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place11);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "11";
+    pilot = await DriverRepository.GetByNo(Race3.Place11);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "11";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place12);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "12";
+    pilot = await DriverRepository.GetByNo(Race3.Place12);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "12";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place13);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "13";
+    pilot = await DriverRepository.GetByNo(Race3.Place13);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "13";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place14);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "14";
+    pilot = await DriverRepository.GetByNo(Race3.Place14);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "14";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place15);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "15";
+    pilot = await DriverRepository.GetByNo(Race3.Place15);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "15";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place16);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "16";
+    pilot = await DriverRepository.GetByNo(Race3.Place16);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "16";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place17);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "17";
+    pilot = await DriverRepository.GetByNo(Race3.Place17);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "17";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place18);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "18";
+    pilot = await DriverRepository.GetByNo(Race3.Place18);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "18";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place19);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "19";
+    pilot = await DriverRepository.GetByNo(Race3.Place19);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "19";
 
-    //pilot = await DriverRepository.GetByNo(Race3.Place20);
-    //foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "20";
+    pilot = await DriverRepository.GetByNo(Race3.Place20);
+    foreach (var p in Drivers) if (p.No == pilot.No) p.Race3 = "20";
 
-    //foreach (var p in Drivers)
-    //    if (p.Race3 == "0")
-    //        p.Race3 = "25";
+    foreach (var p in Drivers)
+        if (p.Race3 == "0")
+            p.Race3 = "25";
 
     ////Race4
     //pilot = await DriverRepository.GetByNo(Race4.Place1);

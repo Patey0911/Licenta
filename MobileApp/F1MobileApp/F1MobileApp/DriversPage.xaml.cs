@@ -163,6 +163,12 @@ namespace F1MobileApp
                         Label20.Text = DriversSortedList[index].FirstName + " " + DriversSortedList[index].LastName;
                         LabelPts20.Text = DriversSortedList[index].PointsSeason;
                         break;
+                    case 20:
+                        ButtonStackLayout21.BackgroundColor = Color.FromHex(ChangeBackroundColor(DriversSortedList[index].Team));
+                        Image21.Source = DriversSortedList[index].LastName.Replace(" ", "") + ".png";
+                        Label21.Text = DriversSortedList[index].FirstName + " " + DriversSortedList[index].LastName;
+                        LabelPts21.Text = DriversSortedList[index].PointsSeason;
+                        break;
                 }
             }
         }
@@ -293,6 +299,11 @@ namespace F1MobileApp
         private async void TapGestureRecognizer_Tapped_19(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new ShowDriver(DriversSortedList[19].LastName));
+        }
+
+        private async void TapGestureRecognizer_Tapped_20(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ShowDriver(DriversSortedList[20].LastName));
         }
     }
 }
