@@ -111,6 +111,7 @@
                 </Image.GestureRecognizers>
             </Image>
             <Button 
+                x:Name="RegisterButton"
                 VerticalOptions="Center" 
                 Text="Register" 
                 FontSize="20"
