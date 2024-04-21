@@ -539,6 +539,7 @@ def GetResults2024(index, name):
 
     #Fastest Lap
     url = 'https://www.formula1.com/en/results.html/2024/races/' + index + '/' + name + '/fastest-laps.html'
+    print(url)
     response = requests.get(url)
     posDQ = 20
     if response.status_code != 200:
@@ -581,6 +582,7 @@ def GetResults2024(index, name):
 
     #Qualifying
     url = 'https://www.formula1.com/en/results.html/2024/races/' + index + '/' + name + '/qualifying.html'
+    print(url)
     response = requests.get(url)
     posDQ = 20
     if response.status_code != 200:
@@ -630,6 +632,7 @@ def GetResults2024(index, name):
     url = 'https://www.formula1.com/en/results.html/2024/races/' + index + '/' + name + '/sprint-results.html'
     response = requests.get(url)
     if name == "china" or name == "miami" or name == "austria" or name == "united_States" or name == "brazil" or name == "qatar" :
+        print(url)
         html_content = response.text
         print(name + "Sprint")
         posDQ = 20;
@@ -676,11 +679,12 @@ def GetResults2024(index, name):
         db.reference("/Circuits/2024/" + name + "/" + "SprintRace").set(str("0"))
 
     #Sprint Shootout
-    url = 'https://www.formula1.com/en/results.html/2024/races/' + index + '/' + name + '/sprint-shootout.html'
+    url = 'https://www.formula1.com/en/results.html/2024/races/' + index + '/' + name + '/sprint-qualifying.html'
     response = requests.get(url)
     if name == "china" or name == "miami" or name == "austria" or name == "united_States" or name == "brazil" or name == "qatar" :
+        print(url)
         html_content = response.text
-        print(name + "Sprint Shootout")
+        print(name + "Sprint Qualifying")
         posDQ = 20
 
         # Parsing the HTML Content
@@ -693,7 +697,7 @@ def GetResults2024(index, name):
         poz = -1
         exist = 0
 
-        Text = "SPRINT SHOOTOUT"
+        Text = "SPRINT QUALIFYING"
         # Verify if the race has results
         if tabel != None:
             # Go through all rows and columns from table to get data
@@ -1273,8 +1277,8 @@ firebase_admin.initialize_app(cred, {"databaseURL": "https://licenta-ed6d3-defau
 #    GetCircuitData2022(circuits2022[pos])
 #for pos, element in enumerate(circuits2023):
 #    GetCircuitData2023(circuits2023[pos])
-for pos, element in enumerate(circuits2024):
-    GetCircuitData2024(circuits2024[pos])
+#for pos, element in enumerate(circuits2024):
+#    GetCircuitData2024(circuits2024[pos])
 
 #Go through all results
 #for pos, element in enumerate(indexes2020):
