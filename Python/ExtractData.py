@@ -598,7 +598,7 @@ def GetResults2024(index, name):
         # The tabel will be found by class and ID
         tabel = soup.find('table', {'class': 'resultsarchive-table'})
         Text = "QUALIFYING"
-
+        Text2 = "SPRINT"
         desired_colums = [1, 2]
         poz = -1
         exist = 0
@@ -608,7 +608,7 @@ def GetResults2024(index, name):
             Valid = soup.find_all('h1', class_='ResultsArchiveTitle')
             print(str(Valid).find(Text))
             print(Text in str(Valid))
-            if(Text in str(Valid)):
+            if(Text in str(Valid) and Text2 not in str(Valid)):
                 for row in tabel.find_all('tr'):
                     cells = row.find_all('td')
                     poz = poz + 1
@@ -647,13 +647,14 @@ def GetResults2024(index, name):
         poz = -1
         exist = 0
         Text = "SPRINT"
+        Text2 = "QUALIFYING"
         # Verify if the race has results
         if tabel != None:
             # Go through all rows and columns from table to get data
             Valid = soup.find_all('h1', class_='ResultsArchiveTitle')
             print(str(Valid).find(Text))
             print(Text in str(Valid))
-            if(Text in str(Valid)):
+            if(Text in str(Valid) and Text2 not in str(Valid)):
                 for row in tabel.find_all('tr'):
                     cells = row.find_all('td')
                     poz = poz + 1
@@ -1106,9 +1107,9 @@ def DriversDetails():
 
     soup = BeautifulSoup(html_content, 'html.parser')
 
-    Points = soup.find_all('div', class_='f1-wide--s')
-    DriversLastNames = soup.find_all('span', class_='d-block f1-bold--s f1-color--carbonBlack')
-    DriversFirstNames = soup.find_all('span', class_='d-block f1--xxs f1-color--carbonBlack')
+    Points = soup.find_all('p', class_='f1-heading-wide font-formulaOneWide tracking-normal font-normal non-italic text-fs-18px leading-none normal-case')
+    DriversLastNames = soup.find_all('p', class_='f1-heading tracking-normal text-fs-18px leading-tight uppercase font-bold non-italic f1-heading__body font-formulaOne')
+    DriversFirstNames = soup.find_all('p', class_='f1-heading tracking-normal text-fs-12px leading-tight uppercase font-normal non-italic f1-heading__body font-formulaOne')
 
     for i in range(0,20):
         #Uncomment after the first race
