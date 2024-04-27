@@ -23,7 +23,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image1"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label1" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName1" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts1" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -45,7 +45,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image2"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label2" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName2" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts2" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -67,7 +67,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image3"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label3" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName3" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts3" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -89,7 +89,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image4"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label4" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName4" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts4" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -111,7 +111,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image5"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label5" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName5" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts5" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -133,7 +133,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image6"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label6" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName6" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts6" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -155,7 +155,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image7"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label7" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName7" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts7" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -177,7 +177,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image8"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label8" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName8" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts8" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -199,7 +199,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image9"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label9" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName9" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts9" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -221,7 +221,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image10"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label10" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName10" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts10" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -243,7 +243,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image11"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label11" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName11" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts11" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -265,7 +265,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image12"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label12" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName12" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts12" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -287,7 +287,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image13"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label13" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName13" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts13" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -309,7 +309,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image14"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label14" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName14" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts14" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -331,7 +331,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image15"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label15" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName15" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts15" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -353,7 +353,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image16"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label16" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName16" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts16" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -375,7 +375,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image17"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label17" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName17" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts17" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -397,7 +397,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image18"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label18" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName18" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts18" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -419,7 +419,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image19"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label19" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName19" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts19" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -441,7 +441,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image20"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label20" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName20" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts20" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>
@@ -462,7 +462,7 @@
                                 <ColumnDefinition Width="60"/>
                             </Grid.ColumnDefinitions>
                             <Image Grid.Column="0" x:Name="Image21"  WidthRequest="50" VerticalOptions="Start" HorizontalOptions="Center" />
-                            <Label Grid.Column="1" x:Name="Label21" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                            <Label Grid.Column="1" x:Name="LabelName21" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
                             <Label Grid.Column="2" x:Name="LabelPts21" FontSize="20" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand" HorizontalOptions="End"></Label>
                             <StackLayout HorizontalOptions="EndAndExpand"></StackLayout>
                         </Grid>

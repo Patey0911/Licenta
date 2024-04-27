@@ -200,7 +200,7 @@ namespace F1MobileApp
                     return "#358C75";
                 case "Ferrari":
                     return "#E8002D";
-                case "Haas F1 Team":
+                case "Haas":
                     return "#B6BABD";
                 case "McLaren":
                     return "#F58020";

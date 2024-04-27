@@ -33,75 +33,75 @@ namespace F1MobileApp
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            int index = -1;
+            int NoTeams = -1;
             this.BackgroundColor = Color.FromHex("#FFFFFF");
-            List<TeamModel> TeamsList = await TeamRepository.GetAllTeams();
-            TeamsSortedList = TeamsList.OrderByDescending(o => int.Parse(o.Points)).ToList();
+            List<TeamModel> TeamsSortedList = await TeamRepository.GetAllTeams();
+            TeamsSortedList = TeamsSortedList.OrderByDescending(o => int.Parse(o.Points)).ToList();
 
-            foreach (var Driver in TeamsSortedList)
+            foreach (var Team in TeamsSortedList)
             {
-                index++;
-                switch(index)
+                NoTeams++;
+                switch(NoTeams)
                 {
                     case 0:
-                        ButtonStackLayout1.BackgroundColor=Color.FromHex(ChangeBackroundColor(TeamsSortedList[index].Team));
-                        Image1.Source = TeamsSortedList[index].Team.Replace(" ","") + ".png";
-                        Label1.Text = TeamsSortedList[index].Team;
-                        LabelPts1.Text = TeamsSortedList[index].Points;
+                        ButtonStackLayout1.BackgroundColor=Color.FromHex(ChangeBackroundColor(TeamsSortedList[NoTeams].Team));
+                        Image1.Source = TeamsSortedList[NoTeams].Team.Replace(" ","") + ".png";
+                        LabelTeam1.Text = TeamsSortedList[NoTeams].Team;
+                        LabelPts1.Text = TeamsSortedList[NoTeams].Points;
                         break;
                     case 1:
-                        ButtonStackLayout2.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[index].Team));
-                        Image2.Source = TeamsSortedList[index].Team.Replace(" ", "") + ".png";
-                        Label2.Text = TeamsSortedList[index].Team;
-                        LabelPts2.Text = TeamsSortedList[index].Points;
+                        ButtonStackLayout2.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[NoTeams].Team));
+                        Image2.Source = TeamsSortedList[NoTeams].Team.Replace(" ", "") + ".png";
+                        LabelTeam2.Text = TeamsSortedList[NoTeams].Team;
+                        LabelPts2.Text = TeamsSortedList[NoTeams].Points;
                         break;
                     case 2:
-                        ButtonStackLayout3.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[index].Team));
-                        Image3.Source = TeamsSortedList[index].Team.Replace(" ", "") + ".png";
-                        Label3.Text = TeamsSortedList[index].Team;
-                        LabelPts3.Text = TeamsSortedList[index].Points;
+                        ButtonStackLayout3.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[NoTeams].Team));
+                        Image3.Source = TeamsSortedList[NoTeams].Team.Replace(" ", "") + ".png";
+                        LabelTeam3.Text = TeamsSortedList[NoTeams].Team;
+                        LabelPts3.Text = TeamsSortedList[NoTeams].Points;
                         break;
                     case 3:
-                        ButtonStackLayout4.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[index].Team));
-                        Image4.Source = TeamsSortedList[index].Team.Replace(" ", "") + ".png";
-                        Label4.Text = TeamsSortedList[index].Team;
-                        LabelPts4.Text = TeamsSortedList[index].Points;
+                        ButtonStackLayout4.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[NoTeams].Team));
+                        Image4.Source = TeamsSortedList[NoTeams].Team.Replace(" ", "") + ".png";
+                        LabelTeam4.Text = TeamsSortedList[NoTeams].Team;
+                        LabelPts4.Text = TeamsSortedList[NoTeams].Points;
                         break;
                     case 4:
-                        ButtonStackLayout5.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[index].Team));
-                        Image5.Source = TeamsSortedList[index].Team.Replace(" ", "") + ".png";
-                        Label5.Text = TeamsSortedList[index].Team;
-                        LabelPts5.Text = TeamsSortedList[index].Points;
+                        ButtonStackLayout5.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[NoTeams].Team));
+                        Image5.Source = TeamsSortedList[NoTeams].Team.Replace(" ", "") + ".png";
+                        LabelTeam5.Text = TeamsSortedList[NoTeams].Team;
+                        LabelPts5.Text = TeamsSortedList[NoTeams].Points;
                         break;
                     case 5:
-                        ButtonStackLayout6.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[index].Team));
-                        Image6.Source = TeamsSortedList[index].Team.Replace(" ", "") + ".png";
-                        Label6.Text = TeamsSortedList[index].Team;
-                        LabelPts6.Text = TeamsSortedList[index].Points;
+                        ButtonStackLayout6.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[NoTeams].Team));
+                        Image6.Source = TeamsSortedList[NoTeams].Team.Replace(" ", "") + ".png";
+                        LabelTeam6.Text = TeamsSortedList[NoTeams].Team;
+                        LabelPts6.Text = TeamsSortedList[NoTeams].Points;
                         break;
                     case 6:
-                        ButtonStackLayout7.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[index].Team));
-                        Image7.Source = TeamsSortedList[index].Team.Replace(" ", "") + ".png";
-                        Label7.Text = TeamsSortedList[index].Team;
-                        LabelPts7.Text = TeamsSortedList[index].Points;
+                        ButtonStackLayout7.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[NoTeams].Team));
+                        Image7.Source = TeamsSortedList[NoTeams].Team.Replace(" ", "") + ".png";
+                        LabelTeam7.Text = TeamsSortedList[NoTeams].Team;
+                        LabelPts7.Text = TeamsSortedList[NoTeams].Points;
                         break;
                     case 7:
-                        ButtonStackLayout8.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[index].Team));
-                        Image8.Source = TeamsSortedList[index].Team.Replace(" ", "") + ".png";
-                        Label8.Text = TeamsSortedList[index].Team;
-                        LabelPts8.Text = TeamsSortedList[index].Points;
+                        ButtonStackLayout8.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[NoTeams].Team));
+                        Image8.Source = TeamsSortedList[NoTeams].Team.Replace(" ", "") + ".png";
+                        LabelTeam8.Text = TeamsSortedList[NoTeams].Team;
+                        LabelPts8.Text = TeamsSortedList[NoTeams].Points;
                         break;
                     case 8:
-                        ButtonStackLayout9.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[index].Team));
-                        Image9.Source = TeamsSortedList[index].Team.Replace(" ", "") + ".png";
-                        Label9.Text = TeamsSortedList[index].Team;
-                        LabelPts9.Text = TeamsSortedList[index].Points;
+                        ButtonStackLayout9.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[NoTeams].Team));
+                        Image9.Source = TeamsSortedList[NoTeams].Team.Replace(" ", "") + ".png";
+                        LabelTeam9.Text = TeamsSortedList[NoTeams].Team;
+                        LabelPts9.Text = TeamsSortedList[NoTeams].Points;
                         break;
                     case 9:
-                        ButtonStackLayout10.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[index].Team));
-                        Image10.Source = TeamsSortedList[index].Team.Replace(" ", "") + ".png";
-                        Label10.Text = TeamsSortedList[index].Team;
-                        LabelPts10.Text = TeamsSortedList[index].Points;
+                        ButtonStackLayout10.BackgroundColor = Color.FromHex(ChangeBackroundColor(TeamsSortedList[NoTeams].Team));
+                        Image10.Source = TeamsSortedList[NoTeams].Team.Replace(" ", "") + ".png";
+                        LabelTeam10.Text = TeamsSortedList[NoTeams].Team;
+                        LabelPts10.Text = TeamsSortedList[NoTeams].Points;
                         break;
                 }
             }
@@ -121,7 +121,7 @@ namespace F1MobileApp
                     return "#358C75";
                 case "Ferrari":
                     return "#E8002D";
-                case "Haas F1 Team":
+                case "Haas":
                     return "#B6BABD";
                 case "McLaren":
                     return "#F58020";

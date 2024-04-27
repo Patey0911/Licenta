@@ -258,7 +258,7 @@
     <AndroidResource Include="Resources\drawable\Ferrari.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\HaasF1Team.png" />
+    <AndroidResource Include="Resources\drawable\Haas.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\McLaren.png" />
@@ -414,7 +414,7 @@
     <AndroidResource Include="Resources\drawable\FerrariCar.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\HaasF1TeamCar.png" />
+    <AndroidResource Include="Resources\drawable\HaasCar.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\McLarenCar.png" />

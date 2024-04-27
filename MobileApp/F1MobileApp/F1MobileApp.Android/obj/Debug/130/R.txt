@@ -2056,8 +2056,8 @@ int drawable googleg_disabled_color_18 0x7f0800bd
 int drawable googleg_standard_color_18 0x7f0800be
 int drawable great_britain 0x7f0800bf
 int drawable great_britainflag 0x7f0800c0
-int drawable haasf1team 0x7f0800c1
-int drawable haasf1teamcar 0x7f0800c2
+int drawable haas 0x7f0800c1
+int drawable haascar 0x7f0800c2
 int drawable hamilton 0x7f0800c3
 int drawable hidepassword 0x7f0800c4
 int drawable hidepasswordwhite 0x7f0800c5

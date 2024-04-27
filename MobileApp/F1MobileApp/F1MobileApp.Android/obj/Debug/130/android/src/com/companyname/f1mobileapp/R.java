@@ -9885,8 +9885,8 @@ public final class R {
     public static final int googleg_standard_color_18=0x7f0800be;
     public static final int great_britain=0x7f0800bf;
     public static final int great_britainflag=0x7f0800c0;
-    public static final int haasf1team=0x7f0800c1;
-    public static final int haasf1teamcar=0x7f0800c2;
+    public static final int haas=0x7f0800c1;
+    public static final int haascar=0x7f0800c2;
     public static final int hamilton=0x7f0800c3;
     public static final int hidepassword=0x7f0800c4;
     public static final int hidepasswordwhite=0x7f0800c5;

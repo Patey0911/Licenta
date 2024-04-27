@@ -28,24 +28,24 @@
         <Image x:Name="Image1" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" />
         <Image x:Name="Image2" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center"/>
         <Image x:Name="Image3" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center" />
-        <Label x:Name="Label11" Grid.Row="1" Grid.Column="0" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
-        <Label x:Name="Label12" Grid.Row="1" Grid.Column="2" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
+        <Label x:Name="NameDriver1" Grid.Row="1" Grid.Column="0" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
+        <Label x:Name="NameDriver2" Grid.Row="1" Grid.Column="2" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
 
-        <Label x:Name="Label22" Text="Pos" Grid.Row="2" Grid.Column="1" FontSize="20" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
-        <Label x:Name="Label21" Grid.Row="2" Grid.Column="0" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
-        <Label x:Name="Label23" Grid.Row="2" Grid.Column="2" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
+        <Label x:Name="PositionDriver1" Text="Pos" Grid.Row="2" Grid.Column="1" FontSize="20" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label Grid.Row="2" Grid.Column="0" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
+        <Label x:Name="PositionDriver2" Grid.Row="2" Grid.Column="2" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
 
-        <Label x:Name="Label32" Text="PTS" Grid.Row="3" Grid.Column="1" FontSize="20" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
-        <Label x:Name="Label31" Grid.Row="3" Grid.Column="0" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
-        <Label x:Name="Label33" Grid.Row="3" Grid.Column="2" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
+        <Label x:Name="PointsDriver1" Text="PTS" Grid.Row="3" Grid.Column="1" FontSize="20" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label Grid.Row="3" Grid.Column="0" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
+        <Label x:Name="PointsDriver2" Grid.Row="3" Grid.Column="2" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
 
-        <Label x:Name="Label42" Text="AvgPts" Grid.Row="4" Grid.Column="1" FontSize="20" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
-        <Label x:Name="Label41" Grid.Row="4" Grid.Column="0" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
-        <Label x:Name="Label43" Grid.Row="4" Grid.Column="2" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
+        <Label x:Name="AvgPtsDriver1" Text="AvgPts" Grid.Row="4" Grid.Column="1" FontSize="20" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label Grid.Row="4" Grid.Column="0" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
+        <Label x:Name="AvgPtsDriver2" Grid.Row="4" Grid.Column="2" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift" />
 
-        <Label x:Name="Label52" Text="AvgPos" Grid.Row="5" Grid.Column="1" FontSize="20" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
-        <Label x:Name="Label51" Grid.Row="5" Grid.Column="0" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
-        <Label x:Name="Label53" Grid.Row="5" Grid.Column="2" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="AvgPosDriver1" Text="AvgPos" Grid.Row="5" Grid.Column="1" FontSize="20" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label Grid.Row="5" Grid.Column="0" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
+        <Label x:Name="AvgPosDriver2" Grid.Row="5" Grid.Column="2" FontSize="30" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Bahnschrift"/>
 
         <Label Text="-------NextRacePrediction-------" Grid.Row="7" Grid.ColumnSpan="3" FontSize="30" TextColor="White" FontFamily="Bahnschrift"/>
         <Button x:Name="NextRace" CornerRadius="50" BorderWidth="1" BorderColor="Black" Grid.Row="8" Grid.ColumnSpan="3" FontSize="40" TextColor="Black" FontAttributes="Bold" FontFamily="Bahnschrift" Clicked="NextRace_Clicked_1" VerticalOptions="Center" BackgroundColor="#e10701"/>

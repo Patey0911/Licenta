@@ -43,17 +43,16 @@ namespace F1MobileApp
             FavTeam = await TeamRepository.GetByTeam(LoginPage.user.FavoriteTeam);
 
             //Customize the page
-            //await ChangeBackroundColor(FavTeam);
             this.BackgroundColor = Color.FromHex("#FFFFFF");
 
             //Show data for favourite team and drivers
-            Label11.Text = FavTeam.Driver1;
-            Label12.Text = FavTeam.Driver2;
+            NameDriver1.Text = FavTeam.Driver1;
+            NameDriver2.Text = FavTeam.Driver2;
 
             if(FavTeam.Driver1==FavDriver.LastName)
-                Label11.FontAttributes = FontAttributes.Bold;
+                NameDriver1.FontAttributes = FontAttributes.Bold;
             else
-                Label12.FontAttributes = FontAttributes.Bold;
+                NameDriver2.FontAttributes = FontAttributes.Bold;
 
             Image1.Source = FavTeam.Driver1.Replace(" ","")+".png";
             Image2.Source = FavTeam.Team.Replace(" ", "") + ".png";
@@ -63,62 +62,62 @@ namespace F1MobileApp
             //int points2 = await Calculate.CalculatePointsForOneDriverAsync(FavTeam.Driver2);
             var Driver1 = await DriverRepository.GetByName(FavTeam.Driver1);
             var Driver2 = await DriverRepository.GetByName(FavTeam.Driver2);
-            
+
             //Position
-            Label21.Text = Driver1.Position.ToString();
-            Label23.Text = Driver2.Position.ToString();
+            PositionDriver1.Text = Driver1.Position.ToString();
+            PositionDriver2.Text = Driver2.Position.ToString();
 
             if (int.Parse(Driver1.Position) > int.Parse(Driver2.Position))
-                Label23.FontAttributes = FontAttributes.Bold;
+                PositionDriver2.FontAttributes = FontAttributes.Bold;
             else if (int.Parse(Driver1.Position) < int.Parse(Driver2.Position))
-                Label21.FontAttributes = FontAttributes.Bold;
+                PositionDriver1.FontAttributes = FontAttributes.Bold;
             else
             {
-                Label21.FontAttributes = FontAttributes.Bold;
-                Label23.FontAttributes = FontAttributes.Bold;
+                PositionDriver1.FontAttributes = FontAttributes.Bold;
+                PositionDriver2.FontAttributes = FontAttributes.Bold;
             }
 
             //Points
-            Label31.Text = Driver1.PointsSeason.ToString();
-            Label33.Text = Driver2.PointsSeason.ToString();
+            PointsDriver1.Text = Driver1.PointsSeason.ToString();
+            PointsDriver2.Text = Driver2.PointsSeason.ToString();
 
             if (int.Parse(Driver1.PointsSeason) > int.Parse(Driver2.PointsSeason))
-                Label31.FontAttributes = FontAttributes.Bold;
+                PointsDriver1.FontAttributes = FontAttributes.Bold;
             else if (int.Parse(Driver1.PointsSeason) < int.Parse(Driver2.PointsSeason))
-                Label33.FontAttributes = FontAttributes.Bold;
+                PointsDriver2.FontAttributes = FontAttributes.Bold;
             else
             {
-                Label31.FontAttributes = FontAttributes.Bold;
-                Label33.FontAttributes = FontAttributes.Bold;
+                PointsDriver1.FontAttributes = FontAttributes.Bold;
+                PointsDriver2.FontAttributes = FontAttributes.Bold;
             }
 
             //AvgPoints
             var value = (float.Parse(Driver1.PointsSeason) / (float.Parse(Driver1.NoApp) / 10));
-            Label41.Text = String.Format("{0:0.00}", (float.Parse(Driver1.PointsSeason) / (float.Parse(Driver1.NoApp) / 10)));
-            Label43.Text = String.Format("{0:0.00}", (float.Parse(Driver2.PointsSeason) / (float.Parse(Driver2.NoApp) / 10)));
+            AvgPtsDriver1.Text = String.Format("{0:0.00}", (float.Parse(Driver1.PointsSeason) / (float.Parse(Driver1.NoApp) / 10)));
+            AvgPtsDriver2.Text = String.Format("{0:0.00}", (float.Parse(Driver2.PointsSeason) / (float.Parse(Driver2.NoApp) / 10)));
 
-            if(float.Parse(Label41.Text) > float.Parse(Label43.Text))
-                Label41.FontAttributes = FontAttributes.Bold;
-            else if (float.Parse(Label41.Text) < float.Parse(Label43.Text))
-                Label43.FontAttributes = FontAttributes.Bold;
+            if(float.Parse(AvgPtsDriver1.Text) > float.Parse(AvgPtsDriver2.Text))
+                AvgPtsDriver1.FontAttributes = FontAttributes.Bold;
+            else if (float.Parse(AvgPtsDriver1.Text) < float.Parse(AvgPtsDriver2.Text))
+                AvgPtsDriver2.FontAttributes = FontAttributes.Bold;
             else
             {
-                Label41.FontAttributes = FontAttributes.Bold;
-                Label43.FontAttributes = FontAttributes.Bold;
+                AvgPtsDriver1.FontAttributes = FontAttributes.Bold;
+                AvgPtsDriver2.FontAttributes = FontAttributes.Bold;
             }
 
             //AvgPos
-            Label51.Text = String.Format("{0:0.00}", (float.Parse(Driver1.AccumulatedPos) / float.Parse(Driver1.NoApp)));
-            Label53.Text = String.Format("{0:0.00}", (float.Parse(Driver2.AccumulatedPos) / float.Parse(Driver2.NoApp)));
+            AvgPosDriver1.Text = String.Format("{0:0.00}", (float.Parse(Driver1.AccumulatedPos) / float.Parse(Driver1.NoApp)));
+            AvgPosDriver2.Text = String.Format("{0:0.00}", (float.Parse(Driver2.AccumulatedPos) / float.Parse(Driver2.NoApp)));
 
-            if (float.Parse(Label51.Text) < float.Parse(Label53.Text))
-                Label51.FontAttributes = FontAttributes.Bold;
-            else if (float.Parse(Label51.Text) > float.Parse(Label53.Text))
-                Label53.FontAttributes = FontAttributes.Bold;
+            if (float.Parse(AvgPosDriver1.Text) < float.Parse(AvgPosDriver2.Text))
+                AvgPosDriver1.FontAttributes = FontAttributes.Bold;
+            else if (float.Parse(AvgPosDriver1.Text) > float.Parse(AvgPosDriver2.Text))
+                AvgPosDriver2.FontAttributes = FontAttributes.Bold;
             else
             {
-                Label51.FontAttributes = FontAttributes.Bold;
-                Label53.FontAttributes = FontAttributes.Bold;
+                AvgPosDriver1.FontAttributes = FontAttributes.Bold;
+                AvgPosDriver2.FontAttributes = FontAttributes.Bold;
             }
 
             //NextRace
@@ -192,43 +191,6 @@ namespace F1MobileApp
             else
                 NoMonth = "12";
             return NoMonth;
-        }
-
-        private async Task ChangeBackroundColor(TeamModel FavTeam)
-		{
-            switch (FavTeam.Team)
-            {
-                case "Kick Sauber":
-                    this.BackgroundColor = Color.FromHex("#52E252");
-                    break;
-                case "RB":
-                    this.BackgroundColor = Color.FromHex("#6692FF");
-                    break;
-                case "Alpine":
-                    this.BackgroundColor = Color.FromHex("#FF87BC");
-                    break;
-                case "Aston Martin":
-                    this.BackgroundColor = Color.FromHex("#358C75");
-                    break;
-                case "Ferrari":
-                    this.BackgroundColor = Color.FromHex("#E8002D");
-                    break;
-                case "Haas F1 Team":
-                    this.BackgroundColor = Color.FromHex("#B6BABD");
-                    break;
-                case "McLaren":
-                    this.BackgroundColor = Color.FromHex("#F58020");
-                    break;
-                case "Mercedes":
-                    this.BackgroundColor = Color.FromHex("#6CD3BF");
-                    break;
-                case "Red Bull Racing":
-                    this.BackgroundColor = Color.FromHex("#3671C6");
-                    break;
-                case "Williams":
-                    this.BackgroundColor = Color.FromHex("#64C4FF");
-                    break;
-            }
         }
 
         private async void NextRace_Clicked_1(object sender, EventArgs e)
