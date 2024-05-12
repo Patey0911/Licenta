@@ -86,12 +86,12 @@ namespace F1MobileApp
 
         private async void ButtonSelect_Clicked(object sender, EventArgs e)
         {
-            String[] Options = new string[2];
+            String[] Options_Select = new string[2];
 
-            Options[0] = "Teams";
-            Options[1] = "Drivers";
+            Options_Select[0] = "Teams";
+            Options_Select[1] = "Drivers";
 
-            string action = await DisplayActionSheet("Select", "Cancel", null, Options);
+            string action = await DisplayActionSheet("Select", "Cancel", null, Options_Select);
             if (action != null && action != "Cancel")
                 ButtonSelect.Text = action;
 
@@ -142,22 +142,22 @@ namespace F1MobileApp
 
         private async void ButtonMode_Clicked(object sender, EventArgs e)
         {
-            String[] Options = new string[5];
+            String[] Options_Mode = new string[5];
             if (ButtonSelect.Text == "Drivers")
             {
-                Options[0] = "Points %";
-                Options[1] = "Points % All time";
-                Options[2] = "Positions in Races";
-                Options[3] = "Positions in Qualifiyng";
-                Options[4] = "Points Evolution";
+                Options_Mode[0] = "Points %";
+                Options_Mode[1] = "Points % All time";
+                Options_Mode[2] = "Positions in Races";
+                Options_Mode[3] = "Positions in Qualifiyng";
+                Options_Mode[4] = "Points Evolution";
             }
             else if (ButtonSelect.Text == "Teams")
             {
-                Options[0] = "Points %";
-                Options[1] = "Points Evolution";
+                Options_Mode[0] = "Points %";
+                Options_Mode[1] = "Points Evolution";
             }
 
-            string action = await DisplayActionSheet("Select", "Cancel", null, Options);
+            string action = await DisplayActionSheet("Select", "Cancel", null, Options_Mode);
 
             if (action != null && action != "Cancel")
                 ButtonMode.Text = action;

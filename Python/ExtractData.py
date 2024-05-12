@@ -1111,7 +1111,7 @@ def DriversDetails():
     DriversLastNames = soup.find_all('p', class_='f1-heading tracking-normal text-fs-18px leading-tight uppercase font-bold non-italic f1-heading__body font-formulaOne')
     DriversFirstNames = soup.find_all('p', class_='f1-heading tracking-normal text-fs-12px leading-tight uppercase font-normal non-italic f1-heading__body font-formulaOne')
 
-    for i in range(0,20):
+    for i in range(0,21):
         #Uncomment after the first race
         print(Points[i].get_text(strip=True))
         print(DriversLastNames[i].get_text(strip=True))
@@ -1189,9 +1189,9 @@ def TeamsDetails():
 
     soup = BeautifulSoup(html_content, 'html.parser')
 
-    Points = soup.find_all('div', class_='f1-wide--s')
-    TeamsNames = soup.find_all('span', class_='f1-color--black')
-    DriversNames = soup.find_all('span', class_='last-name f1-uppercase f1-bold--xs d-block d-lg-inline')
+    Points = soup.find_all('p', class_='f1-heading-wide font-formulaOneWide tracking-normal font-normal non-italic text-fs-18px leading-none normal-case')
+    TeamsNames = soup.find_all('span', class_='f1-heading tracking-normal text-fs-20px tablet:text-fs-25px leading-tight normal-case font-bold non-italic f1-heading__body font-formulaOne')
+    DriversNames = soup.find_all('p', class_='f1-heading tracking-normal text-fs-14px leading-tight uppercase font-bold non-italic f1-heading__body font-formulaOne')
 
     for i in range(0,10):
         #Uncomment after the first race
@@ -1215,39 +1215,29 @@ def TeamsDetails():
         soup = BeautifulSoup(html_content, 'html.parser')
 
         # The tabel will be found by class and ID
-        tabel = soup.find('table', {'class': 'stat-list'})
-        poz = 0
         print(url)
-        for row in tabel.find_all('tr'):
-            cells = row.find_all('td')
-            print(cells[0].get_text(strip=True))
-            if poz == 0:
-                DataName = 'FullName'
-            elif poz == 1:
-                DataName = 'Base'
-            elif poz == 2:
-                DataName = 'TeamChief'
-            elif poz == 3:
-                DataName = 'TechnicalChief'
-            elif poz == 4:
-                DataName = 'Chassis'
-            elif poz == 5:
-                DataName = 'PowerUnit'
-            elif poz == 6:
-                DataName = 'FirstTeamEntry'
-            elif poz == 7:
-                DataName = 'WorldChampionships'
-            elif poz == 8:
-                DataName = 'HighestRaceFinish'
-            elif poz == 9:
-                DataName = 'PolePositions'
-            elif poz == 10:
-                DataName = 'FastestLaps'
-            if (cells[0].get_text(strip=True) == 'N/A'):
-                db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/" + DataName).set(str("0"))
-            elif poz != 0:
-                db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/" + DataName).set(cells[0].get_text(strip=True))
-            poz = poz + 1
+        TeamData = soup.find_all('dd', class_='f1-text font-titillium tracking-normal font-normal non-italic normal-case leading-snug f1-text__body text-fs-17px max-laptop:mb-normal')
+        print(TeamData[1].get_text(strip=True))
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/Base").set(TeamData[1].get_text(strip=True))
+        print(TeamData[2].get_text(strip=True))
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/TeamChief").set(TeamData[2].get_text(strip=True))
+        print(TeamData[3].get_text(strip=True))
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/TechnicalChief").set(TeamData[3].get_text(strip=True))
+        print(TeamData[4].get_text(strip=True))
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/Chassis").set(TeamData[4].get_text(strip=True))
+        print(TeamData[5].get_text(strip=True))
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/PowerUnit").set(TeamData[5].get_text(strip=True))
+        print(TeamData[6].get_text(strip=True))
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/FirstTeamEntry").set(TeamData[6].get_text(strip=True))
+        print(TeamData[7].get_text(strip=True))
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/WorldChampionships").set(TeamData[7].get_text(strip=True))
+        print(TeamData[8].get_text(strip=True))
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/HighestRaceFinish").set(TeamData[8].get_text(strip=True))
+        print(TeamData[9].get_text(strip=True))
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/PolePositions").set(TeamData[9].get_text(strip=True))
+        print(TeamData[10].get_text(strip=True))
+        db.reference("/Teams/" + TeamsNames[i].get_text(strip=True) + "/FastestLaps").set(TeamData[10].get_text(strip=True))
+
 
 
 #Initialize the arrays with the variables from link

@@ -289,9 +289,17 @@ DriverSortedList = DriverSortedList.OrderBy(o => o.AvgPlace).ToList();
 
 Console.WriteLine("NAME              PREDICTION              AVGPLACE 5RACES              DRIVER PLACE              LAST YEAR PLACE");
 var index = 0;
+if (LastYearPoss.Count == 0)
+{
+    foreach (var driver in DriverSortedList)
+    {
+        LastYearPoss.Add(int.Parse(driver.Position));
+    }
+}
 
 foreach (var d in DriverSortedList)
 {
+
     Console.WriteLine(d.LastName + "                     " + d.AvgPlace + "                       " + d.AvgPlace5Races + "                      " + d.Position + "                        " + LastYearPoss[index]);
     index++;
 }

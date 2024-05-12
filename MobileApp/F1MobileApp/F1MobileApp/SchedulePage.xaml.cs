@@ -37,7 +37,7 @@ namespace F1MobileApp
         {
             base.OnAppearing();
             CompletedRace = 0;
-            int index = -1, index_sing;
+            int index = -1, index_sign;
             this.BackgroundColor = Color.FromHex("#FFFFFF");
             var CircuitsList = await CircuitRepository.GetAllCircuits();
 
@@ -45,20 +45,20 @@ namespace F1MobileApp
             foreach(CircuitModel c in CircuitsList)
             {
                 string NoMonth = ReturnMonth(c.Date);
-                string resultString = Regex.Match(c.Date, @"\d+").Value;
+                string Day = Regex.Match(c.Date, @"\d+").Value;
 
                 if (NoMonth.Length !=2)
                 {
                     NoMonth = "0" + NoMonth;
                 }
 
-                if (resultString.Length!=2) 
+                if (Day.Length!=2) 
                 {
-                    resultString = "0" + resultString;
+                    Day = "0" + Day;
                 }
 
                 DateTime DateGp;
-                DateTime.TryParseExact(resultString + "/" + NoMonth + "/2024", "dd/MM/yyyy", null, DateTimeStyles.None, out DateGp);
+                DateTime.TryParseExact(Day + "/" + NoMonth + "/2024", "dd/MM/yyyy", null, DateTimeStyles.None, out DateGp);
 
                 c.DateGP=DateGp;
             }
@@ -66,7 +66,7 @@ namespace F1MobileApp
             CircuitsSortedList = CircuitsList.OrderBy(o => o.DateGP).ToList();
 
 
-            foreach (var Driver in CircuitsSortedList)
+            foreach (var Circuit in CircuitsSortedList)
             {
                 index++;
                 switch(index)
@@ -76,9 +76,9 @@ namespace F1MobileApp
                         string modifiedcircuit  = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label1.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -91,9 +91,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label2.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -106,9 +106,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label3.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -121,9 +121,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label4.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -136,9 +136,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label5.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -151,9 +151,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label6.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -166,9 +166,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label7.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -181,9 +181,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label8.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -196,9 +196,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label9.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -211,9 +211,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label10.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -226,9 +226,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label11.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -241,9 +241,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label12.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -256,9 +256,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label13.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -271,9 +271,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label14.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -286,9 +286,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label15.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -301,9 +301,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label16.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -316,9 +316,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label17.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -331,9 +331,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label18.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -346,9 +346,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label19.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -361,9 +361,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label20.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -376,9 +376,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label21.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -391,9 +391,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label22.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -406,9 +406,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label23.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
@@ -421,9 +421,9 @@ namespace F1MobileApp
                         modifiedcircuit = CircuitsSortedList[index].CircuitName.Replace("_", "-");
                         if (modifiedcircuit.Contains("-"))
                         {
-                            index_sing = modifiedcircuit.IndexOf("-") + 1;
+                            index_sign = modifiedcircuit.IndexOf("-") + 1;
                             char[] CharCircuits = modifiedcircuit.ToCharArray();
-                            CharCircuits[index_sing] = char.ToUpper(CharCircuits[index_sing]);
+                            CharCircuits[index_sign] = char.ToUpper(CharCircuits[index_sign]);
                             modifiedcircuit = new string(CharCircuits);
                         }
                         Label24.Text = char.ToUpper(modifiedcircuit[0]) + modifiedcircuit.Substring(1);
