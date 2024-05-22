@@ -1268,8 +1268,8 @@ firebase_admin.initialize_app(cred, {"databaseURL": "https://licenta-ed6d3-defau
 #    GetCircuitData2022(circuits2022[pos])
 #for pos, element in enumerate(circuits2023):
 #    GetCircuitData2023(circuits2023[pos])
-#for pos, element in enumerate(circuits2024):
-#    GetCircuitData2024(circuits2024[pos])
+for pos, element in enumerate(circuits2024):
+    GetCircuitData2024(circuits2024[pos])
 
 #Go through all results
 #for pos, element in enumerate(indexes2020):
@@ -1283,11 +1283,7 @@ firebase_admin.initialize_app(cred, {"databaseURL": "https://licenta-ed6d3-defau
 for pos, element in enumerate(indexes2024):
     GetResults2024(indexes2024[pos], circuits2024[pos])
 
-
 #Everytime run this 2 with GetResults2024
 DriversDetails()
 
-
 TeamsDetails()
-
-

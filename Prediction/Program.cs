@@ -285,25 +285,35 @@ else
     }
 }
 
+var copyDriverSortedList = DriverSortedList;
 DriverSortedList = DriverSortedList.OrderBy(o => o.AvgPlace).ToList();
 
 Console.WriteLine("NAME              PREDICTION              AVGPLACE 5RACES              DRIVER PLACE              LAST YEAR PLACE");
 var index = 0;
 if (LastYearPoss.Count == 0)
 {
-    foreach (var driver in DriverSortedList)
+    foreach (var copydriver in copyDriverSortedList)
     {
-        LastYearPoss.Add(int.Parse(driver.Position));
+        foreach (var driver in DriverSortedList)
+        {
+            if (driver.LastName == copydriver.LastName)
+            {
+                LastYearPoss.Add(int.Parse(driver.Position));
+                break;
+            }
+        }
+
     }
 }
 
+DriverSortedList = DriverSortedList.OrderBy(o=>o.LastName).ToList();
 foreach (var d in DriverSortedList)
 {
 
     Console.WriteLine(d.LastName + "                     " + d.AvgPlace + "                       " + d.AvgPlace5Races + "                      " + d.Position + "                        " + LastYearPoss[index]);
     index++;
 }
-
+DriverSortedList = DriverSortedList.OrderBy(o => o.AvgPlace).ToList();
 var place1 = DriverSortedList[0].LastName;
 var place2 = DriverSortedList[1].LastName;
 var place3 = DriverSortedList[2].LastName;
