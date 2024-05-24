@@ -178,7 +178,7 @@ float ReturnIndexOvertake(CircuitModel circuit)
 
 
 
-//await sendmail();
+await sendmail();
 
 //Avg Pos from the last 5 races
 await Last5Races();
@@ -243,7 +243,7 @@ if (Circuit2023 != null)
 
             LastYearRace = await CircuitRepository2023.GetByName(NextRace.CircuitName);
 
-            AvgPos = (float)((float)PosQuali * (1 - (float)ReturnIndexOvertake(LastYearRace) / 200) * 0.3 + (float)(driver.AvgPlace5Races) * (float)ReturnIndexOvertake(LastYearRace) / 200 * 0.25 + float.Parse(driver.Position) * (float)ReturnIndexOvertake(LastYearRace) / 200 * 0.1 + LastYearPos * (float)ReturnIndexOvertake(LastYearRace) / 200 * 0.25);
+            AvgPos = (float)((float)PosQuali * (1 - (float)ReturnIndexOvertake(LastYearRace) / 200) * 0.4 + (float)(driver.AvgPlace5Races) * (float)ReturnIndexOvertake(LastYearRace) / 200 * 0.25 + float.Parse(driver.Position) * (float)ReturnIndexOvertake(LastYearRace) / 200 * 0.1 + LastYearPos * (float)ReturnIndexOvertake(LastYearRace) / 200 * 0.25);
         }
         driver.AvgPlace = AvgPos;
     }
@@ -759,7 +759,7 @@ async Task sendmail()
             if (Race1 == null)
             {
                 Race1 = c;
-                Console.WriteLine("Next Race: " + c.CircuitName);
+                Console.WriteLine("Last Race: " + c.CircuitName);
                 break;
             }
         }
