@@ -178,7 +178,7 @@ float ReturnIndexOvertake(CircuitModel circuit)
 
 
 
-await sendmail();
+//await sendmail();
 
 //Avg Pos from the last 5 races
 await Last5Races();
