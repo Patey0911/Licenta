@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("F1MobileApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c760c2fb6b2a824ee3940929e6fef61c7f1579c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37a619e9dbe9373808b3ad15047a960d83f299f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("F1MobileApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("F1MobileApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
