@@ -1,0 +1,7 @@
+Link GitHub: https://github.com/Patey0911/Licenta
+
+Aplicația mobila: Se va deschide fișierul F1MobileApp.sln in Visual Studio. Se va accesa din meniul Build, opțiunea Rebuild Solution pentru a compila întregul proiect de la 0. Daca compilarea a avut loc cu succes, urmează instalarea aplicației pe telefon. Este necesară conectarea telefonului la laptop printr-un cablu care să permită transfer de date, iar din telefon trebuie activată opțiunea de dezvoltator pe un telefon care folosește ca sistem de operare Android, acest lucru fiind posibil din meniul de Setări->Despre telefon-> Apăsarea repetată pe Numărul versiunii până când este afișată informația că opțiunea a fost activată. După toți acești pași Visual Studio va recunoaște telefonul, iar pe butonul de lansare din cadrul IDE-ului va apărea numele telefonului și este suficientă apăsarea pe respectivul buton. 
+
+Extragere date: Programul de extragere a datelor este realizat în Python, este nevoie de o conexiune la internet a laptopului pentru a colecta datele de paginile site-ului și a insera datele în locurile corespunzătoare din firebase și un mediu de dezvoltare care să permită rularea de cod scris în acest limbaj.
+
+Trimitere mail și Calculare predicție: Programul este realizat în C#, și este nevoie de o conexiune la internet a laptopului, și un mediu de dezvoltare care să permită rularea de cod scris în acest limbaj.
